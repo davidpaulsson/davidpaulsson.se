@@ -1,0 +1,22 @@
+/* =Layout
+-------------------------------------------------------------- */
+
+@include border-box-sizing;
+
+.chromeframe,
+.site-header,
+.prelude,
+.about,
+.work,
+.site-main,
+.contact,
+.site-footer {
+	@include container;
+
+	@include at-breakpoint($medium) {
+		@include set-container-width;
+	}
+	@include at-breakpoint($large) {
+		@include set-container-width;
+	}
+}
