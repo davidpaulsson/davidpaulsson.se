@@ -1,0 +1,74 @@
+/* =Work
+-------------------------------------------------------------- */
+
+.work-wrapper {
+	background-color: $black;
+	color: $white;
+
+	.img {
+		img {
+			margin-top: -3em;
+			width: 286px;
+			height: auto;
+		}
+
+		@include at-breakpoint($medium) {
+			@include span-columns(4);
+		}
+		@include at-breakpoint($large) {
+			@include span-columns(5);
+		}
+	}
+
+	.work-content {
+		@include padding-leader(3);
+		@include padding-trailer(3);
+
+		@include at-breakpoint($medium) {
+			@include span-columns(4 omega);
+		}
+
+		@include at-breakpoint($large) {
+			@include span-columns(7 omega);
+		}
+	}
+
+	.intro {
+		h1,
+		h1 a {
+			color: $white;
+		}
+	}
+}
+
+// Slider specific
+// .work { 
+// 	position: relative; 
+// 	overflow: auto; 
+// 	padding-left: 0;
+// 	padding-right: 0;
+
+// 	li {
+// 		list-style-type: none;
+// 	}
+
+// 	ul {
+// 		li {
+// 			float: left;
+// 		}
+// 	}
+// }
+
+.btn {
+	@include border-radius();
+	@include leader();
+	background-color: $primary;
+	color: $white;
+	display: inline-block;
+	padding: .5em 1em;
+
+	&:hover {
+		background-color: lighten($primary,10%);
+		color: $white;
+	}
+}

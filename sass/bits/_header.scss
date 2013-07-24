@@ -1,0 +1,131 @@
+/* =Header
+-------------------------------------------------------------- */
+
+.chromeframe-wrapper {
+	@include padding-leader(4);
+	@include padding-trailer(1/2);
+	background-color: red;
+	color: $white;
+
+	a {
+		color: darken($white,10%);
+	}
+}
+
+.site-header-wrapper {
+	background-color: $black;
+	color: $white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	a {
+		color: $white;
+	}
+}
+
+.site-header-branding {
+	@include span-columns(4);
+
+	@include at-breakpoint($medium) {
+		@include span-columns(1);
+	}
+}
+
+h1.title {
+	text-indent: -999em;
+	margin: 18px 0 0 0;
+
+	a {
+		@include leader();
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iMzkuMzE0cHgiIGhlaWdodD0iNDBweCIgdmlld0JveD0iMCAwIDM5LjMxNCA0MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzkuMzE0IDQwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwb2x5Z29uIGZpbGw9IiNGRkZGRkYiIHBvaW50cz0iMTguNDkyLDAgMzkuMzE0LDExLjk1NiAzMi4zNywzMS45ODkgMTguNDk4LDQwIDAsMzQuNjYzIDIuMzEsMTQuNjM5IAkiLz4NCjwvZz4NCjwvc3ZnPg0K) no-repeat top left;
+		background-size: contain;
+		display: block;
+		margin-top: 0;
+		height: 41px;
+		width: 40px;
+	}
+}
+
+.no-svg h1.title a {
+	background-image: url(../img/davidpaulsson-logo.png);
+}
+
+.site-header-navigation {
+	@include span-columns(4);
+
+	ul {
+		list-style-type: none;
+	}
+
+	li {
+		display: block;
+		text-align: center;
+	}
+
+	.disabled {
+		color: $gray;
+		font-weight: normal;
+		text-decoration: line-through;
+	}
+
+	@include at-breakpoint($medium) {
+		@include span-columns(7 omega);
+		@include leader();
+		text-align: right;
+
+		li {
+			display: inline;
+			margin-left: 2em;
+		}
+	}
+}
+
+/* =Prelude
+-------------------------------------------------------------- */
+
+.prelude-wrapper {
+	background-image: url(../img/intro-bgr.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+.prelude {
+	@include padding-leader(2);
+	@include padding-trailer(2);
+	color: $white;
+	text-align: center;
+
+	h1 {
+		color: $white;
+		margin-bottom: 0;
+	}
+
+	a {
+		border-bottom: 1px solid $white;
+		color: $white;
+		font-weight: normal;
+
+		&:hover {
+			border-bottom: none;
+		}
+	}
+
+	@include at-breakpoint($medium) {
+		@include padding-leader(10);
+
+		p {
+			@include pre(1);
+			@include post(1);
+		}
+	}
+
+	@include at-breakpoint($large) {
+		@include padding-leader(20);
+
+		p {
+			@include pre(2);
+			@include post(2);
+		}
+	}
+}

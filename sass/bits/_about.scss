@@ -1,0 +1,40 @@
+/* =About
+-------------------------------------------------------------- */
+
+.about-wrapper {
+	background-color: $white;
+}
+
+.about {
+	@include padding-trailer(3);
+
+	&> img {
+		margin: 1em auto;
+
+		@include at-breakpoint($medium) {
+			display: inline;
+			margin-top: -1em;
+		}
+	}
+
+	@include at-breakpoint($medium) {
+		section {
+			@include post(2);
+		}
+		.left {
+			@include span-columns(4);
+		}
+		.right {
+			@include span-columns(4 omega);
+		}
+	}
+	@include at-breakpoint($large) {
+		section {
+			@include post(5);
+		}
+	}
+
+	aside {
+		@include adjust-font-size-to(18px);
+	}
+}
