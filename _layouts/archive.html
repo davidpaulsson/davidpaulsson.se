@@ -1,0 +1,39 @@
+{% include header.html %}
+
+<section class="site-small-navigation" role="complementary">
+	<nav role="navigation">
+		<ul>
+			<li>Menu</li>
+			<li><a href="/">Startpage</a></li>
+			<li class="sep"></li>
+			<li>Quick contact</li>
+			<li><a href="http://twitter.com/davidpaulsson/">@davidpaulsson</a></li>
+			<li><a href="mailto:david@davidpaulsson.se">david@davidpaulsson.se</a></li>
+		</ul>
+	</nav>
+</section><!-- .site-small-navigation -->
+
+<div class="container">
+	<h1 class="menu-toggle show-for-small">Menu</h1>
+	<div class="site-header-wrapper hide-for-small" id="top">
+		<header class="site-header" role="banner">
+			<div class="site-header-branding">
+				<h1 class="title"><a href="/">{{ site.name }}</a></h1>
+			</div><!-- .site-branding -->
+
+			<nav class="site-header-navigation" role="navigation">
+				<ul>
+					<li><a href="/">← Back to startpage</a></li>
+				</ul>
+			</nav><!-- .site-header-navigation -->
+
+		</header><!-- .site-header -->
+	</div><!-- .site-header-wrapper -->
+
+	<div class="site-main-wrapper" id="blog">
+		<section class="site-main">
+			{{ content }}
+		</section><!-- .site-main -->
+	</div><!-- .site-main-wrapper -->
+
+{% include footer.html %}
