@@ -7,6 +7,7 @@ html {
 	text-rendering: optimizeLegibility; // Improve kerning pairs. Caution: Webkit gets funny with this sometimes
 	-webkit-font-smoothing: antialiased; // Improve (or in some cases screw with) safari's legibility somewhat
 	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
 	height: 100%;
 }
 
@@ -16,6 +17,7 @@ body {
 	font-family: $font-stack;
 	height: 100%;
 	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
 }
 
 // Remove the stupid gap beneath images

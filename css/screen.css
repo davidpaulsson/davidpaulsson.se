@@ -73,6 +73,7 @@ html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
   height: 100%;
 }
 
@@ -82,6 +83,7 @@ body {
   font-family: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
   height: 100%;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 img {
@@ -390,8 +392,8 @@ h1.title a {
   text-indent: -999em;
   height: 40px;
   width: 40px;
-  top: 40px;
-  right: 40px;
+  top: 20px;
+  right: 0;
 }
 
 .no-svg .menu-toggle {
