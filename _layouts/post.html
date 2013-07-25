@@ -1,60 +1,107 @@
 {% include header.html %}
 
-		<div class="site-header-wrapper" id="top">
-			<header class="site-header" role="banner">
-				<div class="site-header-branding">
-					<h1 class="title"><a href="/">{{ site.name }}</a></h1>
-				</div><!-- .site-branding -->
+<section class="site-small-navigation" role="complementary">
+	<nav role="navigation">
+		<ul>
+			<li>Menu</li>
+			<li><a href="/">Startpage</a></li>
+			<li><a href="/archive/">Blog archive</a></li>
+			{% if page.previous.url %} 
+				<li><a href="{{ page.previous.url }}" title="Previous Post: {{ page.previous.title }}">← Previous post</a></li>
+			{% endif %} 
+			{% if page.next.url %}
+				<li><a href="{{ page.next.url }}" title="Next post: {{ page.next.title }}">Next post →</a></li>
+			{% endif %}
+			<li class="sep"></li>
+			<li>Quick contact</li>
+			<li><a href="http://twitter.com/davidpaulsson/">@davidpaulsson</a></li>
+			<li><a href="mailto:david@davidpaulsson.se">david@davidpaulsson.se</a></li>
+		</ul>
+	</nav>
+</section><!-- .site-small-navigation -->
 
-				<nav class="site-header-navigation" role="navigation">
-					<!-- <h1 class="menu-toggle">Menu</h1> -->
-					<div class="screen-reader-text">
-						<a href="#content" title="Skip to content">Skip to content</a>
-					</div>
-					<ul>
-						<li>
-							{% if page.previous.url %} 
-								<a href="{{ page.previous.url }}" title="Previous Post: {{ page.previous.title }}">← {{ page.previous.title }}</a> 
-							{% endif %} 
-						</li>
-						<li>
-							{% if page.next.url %}
-								<a href="{{ page.next.url }}" title="next Post: {{ page.next.title }}">{{ page.next.title }} →</a> 
-							{% endif %}
-						</li>
-					</ul>
-				</nav><!-- .site-header-navigation -->
+<div class="container">
+	<h1 class="menu-toggle show-for-small">Menu</h1>
+	<div class="site-header-wrapper hide-for-small" id="top">
+		<header class="site-header" role="banner">
+			<div class="site-header-branding">
+				<h1 class="title"><a href="/">{{ site.name }}</a></h1>
+			</div><!-- .site-branding -->
 
-			</header><!-- .site-header -->
-		</div><!-- .site-header-wrapper -->
+			<nav class="site-header-navigation" role="navigation">
+				<ul>
+					<li><a href="/">Startpage</a></li>
+					<li><a href="/archive/">Blog archive</a></li>
+					<li>
+						{% if page.previous.url %} 
+							<a href="{{ page.previous.url }}" title="Previous Post: {{ page.previous.title }}">← Previous post</a> 
+						{% endif %} 
+					</li>
+					<li>
+						{% if page.next.url %}
+							<a href="{{ page.next.url }}" title="next Post: {{ page.next.title }}">Next post →</a> 
+						{% endif %}
+					</li>
+				</ul>
+			</nav><!-- .site-header-navigation -->
 
-		<div class="site-main">
-			<article class="single-post">
-				<h1>{{ page.title }}</h1>
-				<p class="meta">Published {{ page.date | date_to_long_string }}</p>
+		</header><!-- .site-header -->
+	</div><!-- .site-header-wrapper -->
 
-				{{ content }}
-			</article>
+<!-- <div class="container">
+	<div class="site-header-wrapper hide-for-small" id="top">
+		<header class="site-header" role="banner">
+			<div class="site-header-branding">
+				<h1 class="title"><a href="/">{{ site.name }}</a></h1>
+			</div>
 
-			{{ % if page.comments % }}
-				<div class="comments">
-					<div id="disqus_thread"></div>
-					<script type="text/javascript">
-						/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-						var disqus_shortname = 'davidpaulsson'; // required: replace example with your forum shortname
+			<nav class="site-header-navigation" role="navigation">
+				<div class="screen-reader-text">
+					<a href="#content" title="Skip to content">Skip to content</a>
+				</div>
+				<ul>
+					<li>
+						{% if page.previous.url %} 
+							<a href="{{ page.previous.url }}" title="Previous Post: {{ page.previous.title }}">← {{ page.previous.title }}</a> 
+						{% endif %} 
+					</li>
+					<li>
+						{% if page.next.url %}
+							<a href="{{ page.next.url }}" title="next Post: {{ page.next.title }}">{{ page.next.title }} →</a> 
+						{% endif %}
+					</li>
+				</ul>
+			</nav>
 
-						/* * * DON'T EDIT BELOW THIS LINE * * */
-						(function() {
-							var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-							dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-							(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-						})();
-					</script>
-					<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-					<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-				</div><!-- .comments -->
-			{{ % endif % }}
-		
-		</div><!-- .site-main -->
+		</header>
+	</div> -->
+
+	<div class="site-main">
+		<article id="#content" class="single-post">
+			<h1>{{ page.title }}</h1>
+			<p class="meta">Published {{ page.date | date_to_long_string }}</p>
+
+			{{ content }}
+		</article>
+
+		{{ % if page.comments % }}
+			<div class="comments">
+				<div id="disqus_thread"></div>
+				<script type="text/javascript">
+					/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+					var disqus_shortname = 'davidpaulsson'; // required: replace example with your forum shortname
+
+					/* * * DON'T EDIT BELOW THIS LINE * * */
+					(function() {
+						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+						dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+			</div><!-- .comments -->
+		{{ % endif % }}
+	</div><!-- .site-main -->
 
 {% include footer.html %}

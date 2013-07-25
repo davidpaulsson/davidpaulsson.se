@@ -81,6 +81,71 @@ h1.title {
 	}
 }
 
+.site-header-wrapper {
+	display: none;
+	@include at-breakpoint($medium) {
+		display: block;
+	}
+}
+
+/* =Mobile nav */
+
+.menu-toggle {
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQwIDQwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIvPg0KPGc+DQoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEwLjMwNSwxNC4wNDNjMC0wLjgsMC42MjgtMS40MjgsMS40MjgtMS40MjhoMTcuMTQzYzAuOCwwLDEuNDI4LDAuNjI4LDEuNDI4LDEuNDI4DQoJCWMwLDAuNzQyLTAuNjI4LDEuNDI4LTEuNDI4LDEuNDI4SDExLjczNEMxMC45MzQsMTUuNDcxLDEwLjMwNSwxNC43ODUsMTAuMzA1LDE0LjA0M3ogTTMwLjMwNSwxOS43NTcNCgkJYzAsMC43NDQtMC42MjgsMS40MjgtMS40MjgsMS40MjhIMTEuNzM0Yy0wLjgsMC0xLjQyOC0wLjY4NC0xLjQyOC0xLjQyOGMwLTAuOCwwLjYyOC0xLjQyOCwxLjQyOC0xLjQyOGgxNy4xNDMNCgkJQzI5LjY3NywxOC4zMjgsMzAuMzA1LDE4Ljk1NiwzMC4zMDUsMTkuNzU3eiBNMzAuMzA1LDI1LjQ3M2MwLDAuNzQyLTAuNjI4LDEuNDI4LTEuNDI4LDEuNDI4SDExLjczNA0KCQljLTAuOCwwLTEuNDI4LTAuNjg2LTEuNDI4LTEuNDI4YzAtMC44LDAuNjI4LTEuNDI4LDEuNDI4LTEuNDI4aDE3LjE0M0MyOS42NzcsMjQuMDQ0LDMwLjMwNSwyNC42NzIsMzAuMzA1LDI1LjQ3M3oiLz4NCjwvZz4NCjwvc3ZnPg0K) no-repeat center center;
+	position: fixed;
+	text-indent: -999em;
+	height: 40px;
+	width: 40px;
+	top: 40px;
+	right: 40px;
+}
+.no-svg .menu-toggle {
+	background-image: url(../img/menu.png);
+}
+
+.site-small-navigation,
+.container {
+	@include transition(.1s all ease);
+}
+
+.site-small-navigation {
+	@include span-columns($total-columns - 1 omega);
+	background-color: $black;
+	height: 100%;
+
+	margin-right: -100%;
+
+	.show-small-navigation & {
+		margin-right: 0;
+	}
+
+	ul {
+		list-style-type: none;
+
+		li {
+			border-top: 1px solid lighten($black,5%);
+			padding: .5em 2em;
+
+			&:last-child {
+				border-bottom: 1px solid lighten($black,5%);
+			}
+
+			&.sep {
+				border: none;
+			}
+
+			a {
+				display: block;
+			}
+		}
+	}
+}
+.container {
+	.show-small-navigation & {
+		margin-left: - space($total-columns + 1);
+	}
+}
+
 /* =Prelude
 -------------------------------------------------------------- */
 
@@ -88,6 +153,15 @@ h1.title {
 	background-image: url(../img/intro-bgr.jpg);
 	background-position: center;
 	background-size: cover;
+	height: 380px;
+
+	@include at-breakpoint($medium) {
+		height: 500px;
+	}
+
+	@include at-breakpoint($large) {
+		height: 800px;
+	}
 }
 
 .prelude {

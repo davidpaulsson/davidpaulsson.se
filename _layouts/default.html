@@ -1,136 +1,147 @@
 {% include header.html %}
 
-		<div class="site-header-wrapper" id="top">
-			<header class="site-header" role="banner">
-				<div class="site-header-branding">
-					<h1 class="title"><a href="/">{{ site.name }}</a></h1>
-				</div><!-- .site-branding -->
+<section class="site-small-navigation" role="complementary">
+	<nav role="navigation">
+		<ul>
+			<li>Menu</li>
+			<li><a href="/archive/">Blog archive</a></li>
+			<li class="sep"></li>
+			<li>Quick contact</li>
+			<li><a href="http://twitter.com/davidpaulsson/">@davidpaulsson</a></li>
+			<li><a href="mailto:david@davidpaulsson.se">david@davidpaulsson.se</a></li>
+		</ul>
+	</nav>
+</section><!-- .site-small-navigation -->
 
-				<nav class="site-header-navigation" role="navigation">
-					<!-- <h1 class="menu-toggle">Menu</h1> -->
-					<div class="screen-reader-text">
-						<a href="#content" title="Skip to content">Skip to content</a>
-					</div>
-					<ul>
-						<li><a href="#about">About</a></li>
-						<li><a href="#!" class="disabled">Work (coming soon)</a></li>
-						<li><a href="#blog">Blog</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav><!-- .site-header-navigation -->
+<div class="container">
+	<h1 class="menu-toggle show-for-small">Menu</h1>
+	<div class="site-header-wrapper hide-for-small" id="top">
+		<header class="site-header" role="banner">
+			<div class="site-header-branding">
+				<h1 class="title"><a href="/">{{ site.name }}</a></h1>
+			</div><!-- .site-branding -->
 
-			</header><!-- .site-header -->
-		</div><!-- .site-header-wrapper -->
+			<nav class="site-header-navigation" role="navigation">
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#!" class="disabled">Work (coming soon)</a></li>
+					<li><a href="#blog">Blog</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav><!-- .site-header-navigation -->
 
-		<div class="prelude-wrapper">
-			<section class="prelude">
-				<h1>I’m David Paulsson</h1>
-				<p>A typical Swedish guy who's passionate about interface design, typography, usability and <a href="http://wordpress.org/">WordPress</a>. I’m currently working as a front end developer at <a href="http://www.bybrick.se/">byBrick</a>, Sweden.</p>
-			</section><!-- .prelude -->
-		</div><!-- .prelude-wrapper -->
+		</header><!-- .site-header -->
+	</div><!-- .site-header-wrapper -->
 
-		<div class="about-wrapper" id="about">
-			<article class="about">
-				<img src="img/davidpaulsson.png">
+	<div class="prelude-wrapper">
+		<section class="prelude">
+			<h1>I’m David Paulsson</h1>
+			<p>A typical Swedish guy who's passionate about interface design, typography, usability and <a href="http://wordpress.org/">WordPress</a>. I’m currently working as a front end developer at <a href="http://www.bybrick.se/">byBrick</a>, Sweden.</p>
+		</section><!-- .prelude -->
+	</div><!-- .prelude-wrapper -->
+
+	<div class="about-wrapper" id="about">
+		<article class="about">
+			<img src="img/davidpaulsson.png">
+			<header class="intro">
+				<h1>About me</h1>
+				<h2>Pretty fly (for a white guy).</h2>
+			</header>
+			<section>
+				<p>I’m a digital designer and front end developer with great knowledge about web standards, information architecture and usability. I’m also up to date with new technologies and social media.</p>
+				<p>I’m currently employed by <a href="http://www.bybrick.se/">byBrick</a> but before that I’ve been a self-employed designer and developer who worked with the entertainment buisness creating websites, merchendise, CDs/ DVDs, identity work and for some of the leading artists and brands in Sweden.</p>
+				<h2>In private</h2>
+				<p>I live in Västerås, Sweden, with <a href="http://ykp.se/">my wife Yaty</a>. The last nine years I’ve also been working as a DJ and club promoter together with <a href="https://twitter.com/tommyisacsson">@tommyisacsson</a>, arranging events all over Sweden. Much of my spare time is devoted to various side projects as I don’t really like just sittin’ around. In general (painting with a wide brush here) I like good coffee, interior design, stuff from Apple and I consider writing code without a deadline = vacation.</p>
+			</section>
+			<aside>
+				<h2>Recommendations</h2>
+
+				<div class="left">
+					<blockquote>
+						<p>David is a solid and hardworking developer! We worked together with the new website for Ametist Azordegan and it was a charm watching my pixels become the site. I know we will work more together in the future and you should too!</p>
+						<footer>
+							<img src="img/niklas-50x50.jpg">
+							<a href="http://niklasrosen.se/">Niklas Rosén</a><br>
+							Designer at <a href="http://www.theworldloves.com/">The World Loves</a>
+						</footer>
+					</blockquote>
+					<blockquote>
+						<p>I found Davids profile here on LinkedIn and jumped at the chance to hire him. Since then he has been the cornerstone of the social media services at our agency, and has excellent skills in both digital design and development. He is always up to date with the web and has strong opinions, which is great since he tends to be right. :) Excellent guy to have around!</p>
+						<footer>
+							<img src="img/erik-50x50.jpg">
+							<a href="https://twitter.com/stridell">Erik Stridell</a><br>
+							Online business developer at <a href="http://www.bybrick.se/">byBrick Interface</a>
+						</footer>
+					</blockquote>
+					<blockquote>
+						<p>Best. Looking. Guy. Ever.</p>
+						<footer>
+							<img src="img/margareta-50x50.jpg">
+							<a href="#!">Mom</a><br>
+						</footer>
+					</blockquote>
+				</div><!-- .left -->
+
+				<div class="right">
+					<blockquote>
+						<p>David is an extremely talented person with great knowledge in his field, and curiosity and drive to explore new tools for his work. In addition he has good common sense and judgement in taking measures to solve the problems he faces. He is also a great personality, which you like to have around you. Simply put – a great colleague and friend.</p>
+						<footer>
+							<img src="img/mathias-50x50.jpg">
+							<a href="https://twitter.com/MathiasLewen">Mathias Lewén</a><br>
+							CEO of <a href="http://www.bybrick.se/">byBrick Interface</a>
+						</footer>
+					</blockquote>
+					<blockquote>
+						<p>Excellent creative thinker. Takes jobs from infancy to full completion with ease and accuracy. Best graphic designer I’ve ever worked with.</p>
+						<footer>
+							<img src="img/walshy-50x50.jpg">
+							<a href="https://twitter.com/walshyfire">Walshy Fire</a><br>
+							of <a href="http://majorlazer.com/">Major Lazer</a>
+						</footer>
+					</blockquote>
+					<blockquote>
+						<p>Top qualities: Personable, Expert, High Integrity.</p>
+						<footer>
+							<img src="img/peter-50x50.jpg">
+							<a href="https://twitter.com/nomethod">Peter Gaudiano</a><br>
+							Digital Producer at <a href="http://www.fb.se/">Forsman & Bodenfors</a>
+						</footer>
+					</blockquote>
+				</div><!-- .right -->
+			</aside>
+		</article><!-- .about -->
+	</div><!-- .about-wrapper -->
+
+	<div class="work-wrapper" id="work">
+		<section class="work">
+			<div class="img">
+				<img src="img/case/bybrick-iphone.png">
+			</div>
+			<div class="work-content">
 				<header class="intro">
-					<h1>About me</h1>
-					<h2>Pretty fly (for a white guy).</h2>
+					<h1><a href="http://www.youtube.com/watch?v=piIuME8rVak">Soon come</a></h1>
+					<h2>Chill, it's coming. Just not yet.</h2>
 				</header>
-				<section>
-					<p>I’m a digital designer and front end developer with great knowledge about web standards, information architecture and usability. I’m also up to date with new technologies and social media.</p>
-					<p>I’m currently employed by <a href="http://www.bybrick.se/">byBrick</a> but before that I’ve been a self-employed designer and developer who worked with the entertainment buisness creating websites, merchendise, CDs/ DVDs, identity work and for some of the leading artists and brands in Sweden.</p>
-					<h2>In private</h2>
-					<p>I live in Västerås, Sweden, with <a href="http://ykp.se/">my wife Yaty</a>. The last nine years I’ve also been working as a DJ and club promoter together with <a href="https://twitter.com/tommyisacsson">@tommyisacsson</a>, arranging events all over Sweden. Much of my spare time is devoted to various side projects as I don’t really like just sittin’ around. In general (painting with a wide brush here) I like good coffee, interior design, stuff from Apple and I consider writing code without a deadline = vacation.</p>
-				</section>
-				<aside>
-					<h2>Recommendations</h2>
+				<p>I'm currently working on getting my case studies ready, but it takes time. Sorry. In the meantime, enjoy this iPhone with a screenshot in it. Ooh, I'm good.</p>
+				<p><a href="#!" class="btn">Read the case study (lol jk) →</a></p>
+			</div>				
+		</section><!-- .work -->
+	</div><!-- .work-wrapper -->
 
-					<div class="left">
-						<blockquote>
-							<p>David is a solid and hardworking developer! We worked together with the new website for Ametist Azordegan and it was a charm watching my pixels become the site. I know we will work more together in the future and you should too!</p>
-							<footer>
-								<img src="img/niklas-50x50.jpg">
-								<a href="http://niklasrosen.se/">Niklas Rosén</a><br>
-								Designer at <a href="http://www.theworldloves.com/">The World Loves</a>
-							</footer>
-						</blockquote>
-						<blockquote>
-							<p>I found Davids profile here on LinkedIn and jumped at the chance to hire him. Since then he has been the cornerstone of the social media services at our agency, and has excellent skills in both digital design and development. He is always up to date with the web and has strong opinions, which is great since he tends to be right. :) Excellent guy to have around!</p>
-							<footer>
-								<img src="img/erik-50x50.jpg">
-								<a href="https://twitter.com/stridell">Erik Stridell</a><br>
-								Online business developer at <a href="http://www.bybrick.se/">byBrick Interface</a>
-							</footer>
-						</blockquote>
-						<blockquote>
-							<p>Best. Looking. Guy. Ever.</p>
-							<footer>
-								<img src="img/margareta-50x50.jpg">
-								<a href="#!">Mom</a><br>
-							</footer>
-						</blockquote>
-					</div><!-- .left -->
+	<div class="site-main-wrapper" id="blog">
+		<section class="site-main">
+			{{ content }}
+		</section><!-- .site-main -->
+	</div><!-- .site-main-wrapper -->
 
-					<div class="right">
-						<blockquote>
-							<p>David is an extremely talented person with great knowledge in his field, and curiosity and drive to explore new tools for his work. In addition he has good common sense and judgement in taking measures to solve the problems he faces. He is also a great personality, which you like to have around you. Simply put – a great colleague and friend.</p>
-							<footer>
-								<img src="img/mathias-50x50.jpg">
-								<a href="https://twitter.com/MathiasLewen">Mathias Lewén</a><br>
-								CEO of <a href="http://www.bybrick.se/">byBrick Interface</a>
-							</footer>
-						</blockquote>
-						<blockquote>
-							<p>Excellent creative thinker. Takes jobs from infancy to full completion with ease and accuracy. Best graphic designer I’ve ever worked with.</p>
-							<footer>
-								<img src="img/walshy-50x50.jpg">
-								<a href="https://twitter.com/walshyfire">Walshy Fire</a><br>
-								of <a href="http://majorlazer.com/">Major Lazer</a>
-							</footer>
-						</blockquote>
-						<blockquote>
-							<p>Top qualities: Personable, Expert, High Integrity.</p>
-							<footer>
-								<img src="img/peter-50x50.jpg">
-								<a href="https://twitter.com/nomethod">Peter Gaudiano</a><br>
-								Digital Producer at <a href="http://www.fb.se/">Forsman & Bodenfors</a>
-							</footer>
-						</blockquote>
-					</div><!-- .right -->
-				</aside>
-			</article><!-- .about -->
-		</div><!-- .about-wrapper -->
-
-		<div class="work-wrapper" id="work">
-			<section class="work">
-				<div class="img">
-					<img src="img/case/bybrick-iphone.png">
-				</div>
-				<div class="work-content">
-					<header class="intro">
-						<h1><a href="http://www.youtube.com/watch?v=piIuME8rVak">Soon come</a></h1>
-						<h2>Chill, it's coming. Just not yet.</h2>
-					</header>
-					<p>I'm currently working on getting my case studies ready, but it takes time. Sorry. In the meantime, enjoy this iPhone with a screenshot in it. Ooh, I'm good.</p>
-					<p><a href="#!" class="btn">Read the case study (lol jk) →</a></p>
-				</div>				
-			</section><!-- .work -->
-		</div><!-- .work-wrapper -->
-
-		<div class="site-main-wrapper" id="blog">
-			<section class="site-main">
-				{{ content }}
-			</section><!-- .site-main -->
-		</div><!-- .site-main-wrapper -->
-
-		<div class="contact-wrapper" id="contact">
-			<section class="contact">
-				<header class="intro">
-					<h1>Contact me</h1>
-					<h2>Send me an email or tweet, let’s be friends.</h2>
-				</header>
-				<p><a href="mailto:david@davidpaulsson.se">david@davidpaulsson.se</a> <a href="https://twitter.com/davidpaulsson">@davidpaulsson</a></p>
-			</section><!-- .contact -->
-		</div><!-- .contact-wrapper -->
+	<div class="contact-wrapper" id="contact">
+		<section class="contact">
+			<header class="intro">
+				<h1>Contact me</h1>
+				<h2>Send me an email or tweet, let’s be friends.</h2>
+			</header>
+			<p><a href="mailto:david@davidpaulsson.se">david@davidpaulsson.se</a> <a href="https://twitter.com/davidpaulsson">@davidpaulsson</a></p>
+		</section><!-- .contact -->
+	</div><!-- .contact-wrapper -->
 
 {% include footer.html %}

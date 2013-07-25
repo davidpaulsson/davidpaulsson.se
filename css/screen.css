@@ -72,16 +72,40 @@ html {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 body {
   background-color: white;
   color: #666666;
   font-family: "nimbus-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 img {
   display: block;
+}
+
+/* =Helper classes
+-------------------------------------------------------------- */
+.hide-for-small {
+  display: none;
+}
+@media (min-width: 620px) {
+  .hide-for-small {
+    display: block;
+  }
+}
+
+.show-for-small {
+  display: block;
+}
+@media (min-width: 620px) {
+  .show-for-small {
+    display: none;
+  }
 }
 
 /* =Default Sizing and spacing
@@ -350,12 +374,89 @@ h1.title a {
   }
 }
 
+.site-header-wrapper {
+  display: none;
+}
+@media (min-width: 620px) {
+  .site-header-wrapper {
+    display: block;
+  }
+}
+
+/* =Mobile nav */
+.menu-toggle {
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQwIDQwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIvPg0KPGc+DQoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTEwLjMwNSwxNC4wNDNjMC0wLjgsMC42MjgtMS40MjgsMS40MjgtMS40MjhoMTcuMTQzYzAuOCwwLDEuNDI4LDAuNjI4LDEuNDI4LDEuNDI4DQoJCWMwLDAuNzQyLTAuNjI4LDEuNDI4LTEuNDI4LDEuNDI4SDExLjczNEMxMC45MzQsMTUuNDcxLDEwLjMwNSwxNC43ODUsMTAuMzA1LDE0LjA0M3ogTTMwLjMwNSwxOS43NTcNCgkJYzAsMC43NDQtMC42MjgsMS40MjgtMS40MjgsMS40MjhIMTEuNzM0Yy0wLjgsMC0xLjQyOC0wLjY4NC0xLjQyOC0xLjQyOGMwLTAuOCwwLjYyOC0xLjQyOCwxLjQyOC0xLjQyOGgxNy4xNDMNCgkJQzI5LjY3NywxOC4zMjgsMzAuMzA1LDE4Ljk1NiwzMC4zMDUsMTkuNzU3eiBNMzAuMzA1LDI1LjQ3M2MwLDAuNzQyLTAuNjI4LDEuNDI4LTEuNDI4LDEuNDI4SDExLjczNA0KCQljLTAuOCwwLTEuNDI4LTAuNjg2LTEuNDI4LTEuNDI4YzAtMC44LDAuNjI4LTEuNDI4LDEuNDI4LTEuNDI4aDE3LjE0M0MyOS42NzcsMjQuMDQ0LDMwLjMwNSwyNC42NzIsMzAuMzA1LDI1LjQ3M3oiLz4NCjwvZz4NCjwvc3ZnPg0K) no-repeat center center;
+  position: fixed;
+  text-indent: -999em;
+  height: 40px;
+  width: 40px;
+  top: 40px;
+  right: 40px;
+}
+
+.no-svg .menu-toggle {
+  background-image: url(../img/menu.png);
+}
+
+.site-small-navigation,
+.container {
+  -webkit-transition: 0.1s all ease;
+  -moz-transition: 0.1s all ease;
+  -o-transition: 0.1s all ease;
+  transition: 0.1s all ease;
+}
+
+.site-small-navigation {
+  width: 73.33333%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -20px;
+  display: inline;
+  background-color: #202020;
+  height: 100%;
+  margin-right: -100%;
+}
+.show-small-navigation .site-small-navigation {
+  margin-right: 0;
+}
+.site-small-navigation ul {
+  list-style-type: none;
+}
+.site-small-navigation ul li {
+  border-top: 1px solid #2d2d2d;
+  padding: .5em 2em;
+}
+.site-small-navigation ul li:last-child {
+  border-bottom: 1px solid #2d2d2d;
+}
+.site-small-navigation ul li.sep {
+  border: none;
+}
+.site-small-navigation ul li a {
+  display: block;
+}
+
+.show-small-navigation .container {
+  margin-left: -133.33333%;
+}
+
 /* =Prelude
 -------------------------------------------------------------- */
 .prelude-wrapper {
   background-image: url(../img/intro-bgr.jpg);
   background-position: center;
   background-size: cover;
+  height: 380px;
+}
+@media (min-width: 620px) {
+  .prelude-wrapper {
+    height: 500px;
+  }
+}
+@media (min-width: 940px) {
+  .prelude-wrapper {
+    height: 800px;
+  }
 }
 
 .prelude {
@@ -466,13 +567,8 @@ h1.title a {
   padding-bottom: 4.66667em;
 }
 .about > img {
-  margin: 1em auto;
-}
-@media (min-width: 640px) {
-  .about > img {
-    display: inline;
-    margin-top: -1em;
-  }
+  display: inline;
+  margin-top: -1em;
 }
 @media (min-width: 640px) {
   .about section {
@@ -591,6 +687,12 @@ h1.title a {
 
 .meta + h2 {
   margin-top: 0;
+}
+
+/* =Archive
+-------------------------------------------------------------- */
+header.archive {
+  padding-top: 6.22222em;
 }
 
 /* =Posts

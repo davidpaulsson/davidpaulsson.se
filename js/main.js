@@ -32,8 +32,18 @@ jQuery(document).ready(function($) {
     	$(this).after('<div class="caption">' + caption + '</div>');
 	});
 
+	//  Toggle small menu
+	$('.menu-toggle').click(function() {
+		// $(this).hide();
+		$('body').toggleClass('show-small-navigation');
+	})
+	$('container').click(function() {
+		$('.menu-toggle').show();
+		$('body').removeClass('show-small-navigation');
+	})
+
 	//  The most important feature on this site
-	var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+	var kkeys = [], konami = '38,38,40,40,37,39,37,39,66,65';
 	$(document).keydown(function(e) {
 		kkeys.push( e.keyCode );
 		if ( kkeys.toString().indexOf( konami ) >= 0 ){

@@ -9,12 +9,8 @@
 	@include padding-trailer(3);
 
 	&> img {
-		margin: 1em auto;
-
-		@include at-breakpoint($medium) {
-			display: inline;
-			margin-top: -1em;
-		}
+		display: inline;
+		margin-top: -1em;
 	}
 
 	@include at-breakpoint($medium) {
