@@ -6,7 +6,7 @@
 		<title>{{ page.title }}</title>
 		<meta name="viewport" content="width=device-width">
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
-		<link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="/css/screen.css?v={{ site.time | date: '%y%m%d%H%M%S' }}" media="screen, projection" rel="stylesheet" type="text/css" />
 		<style media="print" type="text/css">
 			body {
 			  font-family: Georgia, serif;
