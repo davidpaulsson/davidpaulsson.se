@@ -34,12 +34,7 @@ jQuery(document).ready(function($) {
 
 	//  Toggle small menu
 	$('.menu-toggle').click(function() {
-		// $(this).hide();
 		$('body').toggleClass('show-small-navigation');
-	})
-	$('container').click(function() {
-		$('.menu-toggle').show();
-		$('body').removeClass('show-small-navigation');
 	})
 
 	//  The most important feature on this site
