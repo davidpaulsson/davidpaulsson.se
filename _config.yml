@@ -1,3 +1,4 @@
 name: David Paulsson
 pygments: true
 permalink: /:title
+exclude: [sass, mockup, config.rb]
