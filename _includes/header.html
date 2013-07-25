@@ -7,7 +7,27 @@
 		<meta name="viewport" content="width=device-width">
 		<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
 		<link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-		<link href="/css/print.css" media="print" rel="stylesheet" type="text/css" />
+		<style media="print" type="text/css">
+			body {
+			  font-family: Georgia, serif;
+			  background: none;
+			  color: black;
+			}
+			.site-main {
+			  width: 100%;
+			  margin: 0;
+			  padding: 0;
+			  background: none;
+			}
+			.site-header-wrapper,
+			.comments,
+			.site-footer-wrapper {
+			  display: none;
+			}
+			.single-post a:after {
+			  content: " [" attr(href) "] ";
+			}
+		</style>
 
 		<script type="text/javascript" src="/js/modernizr.custom.25711.js"></script>
 		<script type="text/javascript" src="//use.typekit.net/pup4jil.js"></script>
