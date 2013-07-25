@@ -1,4 +1,6 @@
 name: David Paulsson
+description: Design and front end development
+url: http://davidpaulsson.se
 pygments: true
 permalink: /:title
 exclude: [sass, mockup, config.rb]
