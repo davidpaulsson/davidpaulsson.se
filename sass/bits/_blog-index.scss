@@ -114,7 +114,7 @@ header.archive {
 
 .fluid-width-video-wrapper {
 	@include trailer(2);
-	z-index: -1;
+	z-index: 1;
 }
 
 /* =Comments
