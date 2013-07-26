@@ -57,13 +57,14 @@
 		<article id="#content" class="single-post">
 			<h1>{{ page.title }}</h1>
 			<p class="meta">Published {{ page.date | date_to_long_string }}</p>
+			{% if page.vimeo %}
+				<iframe src="http://player.vimeo.com/video/{{ page.vimeo }}?title=0&amp;byline=0&amp;portrait=0" width="620" height="349" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+			{% endif %}
 			{{ content }}
 		</article><!-- .single-post -->
 
 		{{ % if page.comments % }}
 			<div class="comments">
-				<h3>Please leave a comment</h3>
-				<p class="mb">Have you found a spelling error or any other bug? Don't be shy, comment below or submit a <a href="https://github.com/davidpaulsson/davidpaulsson.se">bug or pull request on Github</a>.</p>
 				<div id="disqus_thread"></div>
 				<script type="text/javascript">
 					/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

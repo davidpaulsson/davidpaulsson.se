@@ -110,7 +110,11 @@ header.archive {
 		color: $gray;
 		text-align: center;
 	}
+}
 
+.fluid-width-video-wrapper {
+	@include trailer(2);
+	z-index: -1;
 }
 
 /* =Comments
@@ -118,8 +122,4 @@ header.archive {
 
 .comments {
 	@include leader(4);
-
-	.mb {
-		@include trailer(4);
-	}
 }

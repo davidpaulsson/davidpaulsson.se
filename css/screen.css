@@ -807,13 +807,15 @@ h1.title a {
   text-align: center;
 }
 
+.fluid-width-video-wrapper {
+  margin-bottom: 3em;
+  z-index: -1;
+}
+
 /* =Comments
 -------------------------------------------------------------- */
 .comments {
   margin-top: 6em;
-}
-.comments .mb {
-  margin-bottom: 6em;
 }
 
 /* =Footer
