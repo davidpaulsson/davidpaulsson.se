@@ -3,6 +3,7 @@ layout: post
 title: "Teckenstorlek med px, %, em eller rem?"
 comments: true
 date: 2012-05-18
+description: Jag tänkte i det här inlägget försöka gå igenom skillnaderna, styrkorna och nackdelarna med de olika sätt man kan sätta teckenstorlek på webben med.
 ---
 
 Att sätta rätt teckenstorlek på webben kan vara krångligt.  Speciellt eftersom det finns så många skolor som alla berättar varför just deras sätt är bäst. Jag tänkte i det här inlägget försöka gå igenom skillnaderna, styrkorna och nackdelarna med de olika sätt man kan sätta teckenstorlek på webben med.

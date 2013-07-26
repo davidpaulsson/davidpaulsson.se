@@ -3,6 +3,7 @@ layout: post
 title: "En levande logotyp"
 comments: true
 date: 2013-04-15
+description: Det här är min nya identitet.
 ---
 
 Jag har länge arbetat utan en logotyp, dels för att jag inte behövt en och dels därför att jag aldrig kommit till skott att skapa mig en egen logotyp (skomakarens barn och allt det där). Men nu har jag haft en idé länge som jag förverkligat. Det här är min nya identitet.

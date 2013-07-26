@@ -3,6 +3,7 @@ layout: post
 title: "WyWallet: Släpp inte en tjänst om den inte är färdig"
 comments: true
 date: 2012-10-24
+description: Hur WyWallet fungerar och varför det inte är en färdig tjänst (än).
 ---
 
 Tekniktörstande man är så har jag registrerat mig och hoppat på [WyWallet](http://wywallet.se/). Ett samarbete mellan alla stora teleoperatörer: Telia, Halebop, Tele2, Comviq, Telenor och 3. En underbar idé, äntligen kan jag betala SMS-köp via mitt kontokort—eller via min WyWallet-plånbok rättare sagt.

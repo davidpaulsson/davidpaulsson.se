@@ -3,6 +3,7 @@ layout: post
 title: "Fem minuter från mitt bröllop"
 comments: true
 date: 2012-08-02
+description: Fem minuter från mitt och Yatys bröllop.
 ---
 
 [David Paulsson & Yaty Karim Paulsson Reception](http://vimeo.com/45897056)

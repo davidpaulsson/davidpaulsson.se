@@ -3,6 +3,7 @@ layout: post
 title: "Bara så att du vet pappa"
 comments: true
 date: 2011-08-31
+description: Nu har det gått precis ett år sedan du gick bort i cancer.
 ---
 
 Nu har det gått precis ett år sedan du gick bort i cancer. Det var strax efter din 60 årsfest som vi upptäckte din hjärntumör och sedan gick det ett halvår innan du var borta. Det var det snabbaste halvåret jag upplevt.

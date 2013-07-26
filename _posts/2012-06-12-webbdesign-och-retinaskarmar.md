@@ -3,6 +3,7 @@ layout: post
 title: "Webbdesign och retinaskärmar"
 comments: true
 date: 2012-06-12
+description: Ska vi fortsätta hysterin och göra separata bilder för alla olika enheter eller ska webbutvecklare äntligen börja arbeta med CSS3 och skalbar grafik på webben?
 ---
 
 [Igår släppte Apple sin nya MacBook Pro](http://www.apple.com/se/macbook-pro/) och äntligen får vi retinaupplösning på våra ”vanliga” skärmar. Fotografer och filmskapare är lyriska, men hur ska vi som jobbar med design på webben anpassa oss för en upplösning på 2880×1800 pixlar på en 15” skärm som ger hela 226.42 ppi?
