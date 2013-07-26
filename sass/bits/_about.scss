@@ -29,8 +29,4 @@
 			@include post(5);
 		}
 	}
-
-	aside {
-		@include adjust-font-size-to(18px);
-	}
 }
