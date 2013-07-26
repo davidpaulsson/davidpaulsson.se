@@ -28,14 +28,14 @@ jQuery(document).ready(function($) {
 
 	//  Use image alt text as caption
 	$('.single-post img').each(function() {
-    	var caption = $(this).attr('alt');
-    	$(this).after('<div class="caption">' + caption + '</div>');
+		var caption = $(this).attr('alt');
+		$(this).after('<div class="caption">' + caption + '</div>');
 	});
 
 	//  Toggle small menu
 	$('.menu-toggle').click(function() {
 		$('body').toggleClass('show-small-navigation');
-	})
+	});
 
 	//  The most important feature on this site
 	var kkeys = [], konami = '38,38,40,40,37,39,37,39,66,65';
@@ -49,6 +49,5 @@ jQuery(document).ready(function($) {
 			});
 		}
 	});
-
 
 });
