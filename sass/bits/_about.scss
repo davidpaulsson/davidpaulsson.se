@@ -30,3 +30,51 @@
 		}
 	}
 }
+
+$height: recommendations-sprite-height(niklas);
+$width: recommendations-sprite-width(niklas);
+.niklas {
+	@include recommendations-sprite(niklas);
+	height: $height;
+	width: $width;
+}
+
+$height: recommendations-sprite-height(erik);
+$width: recommendations-sprite-width(erik);
+.erik {
+	@include recommendations-sprite(erik);
+	height: $height;
+	width: $width;
+}
+
+$height: recommendations-sprite-height(margareta);
+$width: recommendations-sprite-width(margareta);
+.margareta {
+	@include recommendations-sprite(margareta);
+	height: $height;
+	width: $width;
+}
+
+$height: recommendations-sprite-height(mathias);
+$width: recommendations-sprite-width(mathias);
+.mathias {
+	@include recommendations-sprite(mathias);
+	height: $height;
+	width: $width;
+}
+
+$height: recommendations-sprite-height(walshy);
+$width: recommendations-sprite-width(walshy);
+.walshy {
+	@include recommendations-sprite(walshy);
+	height: $height;
+	width: $width;
+}
+
+$height: recommendations-sprite-height(peter);
+$width: recommendations-sprite-width(peter);
+.peter {
+	@include recommendations-sprite(peter);
+	height: $height;
+	width: $width;
+}

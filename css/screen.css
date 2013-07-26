@@ -65,6 +65,10 @@ html {
   line-height: 1.5em;
 }
 
+.recommendations-sprite, .niklas, .erik, .margareta, .mathias, .walshy, .peter {
+  background: url('/img/recommendations-saf969477a9.png') no-repeat;
+}
+
 /* =Base
 -------------------------------------------------------------- */
 html {
@@ -226,7 +230,7 @@ blockquote p {
 blockquote footer {
   text-align: right;
 }
-blockquote footer img {
+blockquote footer div {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -598,6 +602,42 @@ h1.title a {
   .about section {
     margin-right: 42.55319%;
   }
+}
+
+.niklas {
+  background-position: 0 0;
+  height: 50px;
+  width: 50px;
+}
+
+.erik {
+  background-position: 0 -50px;
+  height: 50px;
+  width: 50px;
+}
+
+.margareta {
+  background-position: 0 -150px;
+  height: 50px;
+  width: 50px;
+}
+
+.mathias {
+  background-position: 0 -200px;
+  height: 50px;
+  width: 50px;
+}
+
+.walshy {
+  background-position: 0 -250px;
+  height: 50px;
+  width: 50px;
+}
+
+.peter {
+  background-position: 0 -100px;
+  height: 50px;
+  width: 50px;
 }
 
 /* =Work
