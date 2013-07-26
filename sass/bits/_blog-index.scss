@@ -35,7 +35,9 @@
 -------------------------------------------------------------- */
 
 header.archive {
-	@include padding-leader(4);
+	@include at-breakpoint($medium) {
+		@include padding-leader(4);
+	}
 }
 
 /* =Posts
@@ -46,19 +48,20 @@ header.archive {
 }
 
 .single-post {
-	@include padding-leader(4);
 	@include trailer(2);
-
-	h1,
-	.meta {
-		text-align: center;
-	}
 
 	.meta {
 		@include trailer(2);
 	}
 
 	@include at-breakpoint($medium) {
+		@include padding-leader(4);
+
+		h1,
+		.meta {
+			text-align: center;
+		}
+
 		#{headings(2,6)},
 		ul,
 		ol,
@@ -108,4 +111,15 @@ header.archive {
 		text-align: center;
 	}
 
+}
+
+/* =Comments
+-------------------------------------------------------------- */
+
+.comments {
+	@include leader(4);
+
+	.mb {
+		@include trailer(4);
+	}
 }
