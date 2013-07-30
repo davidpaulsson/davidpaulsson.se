@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Look, ma! No database!
-subtitle: Sed posuere consectetur est at lobortis.
+image: jekyllrb.com.png
 comments: true
 date: 2013-07-30
 description: It’s portfolio redesign season and I’ve gone static.
