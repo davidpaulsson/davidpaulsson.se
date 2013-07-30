@@ -60,7 +60,7 @@ Programs and scripts to make my life easier. Here is what I use, and now I'm sha
 
 ![iA Writer](/img/posts/iawriter.png)
 
-* [Photoshop](http://www.photoshop.com/). Yeah, design in the browser and yada yada. I still enjoy the process of mocking things up visually before I start to code. Here’s a `.psd` file of how this site looked in Photoshop  before code. 
+* [Photoshop](http://www.photoshop.com/). Yeah, design in the browser and yada yada. I still enjoy the process of mocking things up visually before I start to code. [Here’s a `.psd` file of how this site looked in Photoshop before code](http://davidpaulsson.se/img/posts/davidpaulsson_se-large.psd.zip). 
 
 ### Services
 
