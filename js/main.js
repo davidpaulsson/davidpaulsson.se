@@ -37,9 +37,6 @@ jQuery(document).ready(function($) {
 		$('body').toggleClass('show-small-navigation');
 	});
 
-	//  Fitvids
-	$('.single-post').fitVids();
-
 	//  The most important feature on this site
 	var kkeys = [], konami = '38,38,40,40,37,39,37,39,66,65';
 	$(document).keydown(function(e) {
