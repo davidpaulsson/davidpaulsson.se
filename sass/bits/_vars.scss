@@ -26,5 +26,7 @@ $text:							#666666;
 $primary:						#16a085;
 
 // Sprites
-$sprites-layout: smart;
-@import "recommendations/*.png"
+$recommendations-layout: smart;
+@import "recommendations/*.png";
+$logos-layout: smart;
+@import "logos/*.png";

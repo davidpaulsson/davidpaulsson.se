@@ -72,3 +72,130 @@
 		color: $white;
 	}
 }
+
+/* =Clients
+-------------------------------------------------------------- */
+
+.clients {
+	text-align: center;
+
+	h3 {
+		@include leader(3);
+
+		color: $gray;
+	}
+
+	div {
+		@include leader();
+		@include span-columns(2);
+		@include nth-omega(2n);
+
+		@include at-breakpoint($medium) {
+			@include remove-nth-omega(2n);
+			@include span-columns(2);
+			@include nth-omega(4n);
+		}
+
+		@include at-breakpoint($large) {
+			@include border-radius();
+			@include padding-leader();
+			@include padding-trailer();
+			@include remove-nth-omega(2n);
+			@include remove-nth-omega(4n);
+			@include span-columns(3);
+			@include nth-omega(4n);
+
+			background-color: #eee;
+		}		
+	}
+}
+
+%clients {
+	@include transition-duration(0ms);
+	display: block !important;
+	background-position: center;
+	text-indent: -999em;
+	margin: 0 auto !important;
+	height: 140px !important;
+	width: 140px !important;
+}
+
+.abb a {
+	@extend %clients;
+	@include logos-sprite(abb);
+	&:hover {
+		@include logos-sprite(abb-hover);
+	}
+}
+
+.atlascopco a {
+	@extend %clients;
+	@include logos-sprite(atlascopco);
+	&:hover {
+		@include logos-sprite(atlascopco-hover);
+	}
+}
+
+.berattarministeriet a {
+	@extend %clients;
+	@include logos-sprite(berattarministeriet);
+	&:hover {
+		@include logos-sprite(berattarministeriet-hover);
+	}
+}
+
+.frontit a {
+	@extend %clients;
+	@include logos-sprite(frontit);
+	&:hover {
+		@include logos-sprite(frontit-hover);
+	}
+}
+
+.ge a {
+	@extend %clients;
+	@include logos-sprite(ge);
+	&:hover {
+		@include logos-sprite(ge-hover);
+	}
+}
+
+.ikea a {
+	@extend %clients;
+	@include logos-sprite(ikea);
+	&:hover {
+		@include logos-sprite(ikea-hover);
+	}
+}
+
+.itrim a {
+	@extend %clients;
+	@include logos-sprite(itrim);
+	&:hover {
+		@include logos-sprite(itrim-hover);
+	}
+}
+
+.looptrooprockers a {
+	@extend %clients;
+	@include logos-sprite(looptrooprockers);
+	&:hover {
+		@include logos-sprite(looptrooprockers-hover);
+	}
+}
+
+.malarenergi a {
+	@extend %clients;
+	@include logos-sprite(malarenergi);
+	&:hover {
+		@include logos-sprite(malarenergi-hover);
+	}
+}
+
+.vave a {
+	@extend %clients;
+	@include logos-sprite(vave);
+	&:hover {
+		@include logos-sprite(vave-hover);
+	}
+}

@@ -66,7 +66,11 @@ html {
 }
 
 .recommendations-sprite, .niklas, .erik, .margareta, .mathias, .walshy, .peter {
-  background: url('/img/recommendations-saf969477a9.png') no-repeat;
+  background: url('/img/recommendations-s5db60581e8.png') no-repeat;
+}
+
+.logos-sprite, .abb a, .abb a:hover, .atlascopco a, .atlascopco a:hover, .berattarministeriet a, .berattarministeriet a:hover, .frontit a, .frontit a:hover, .ge a, .ge a:hover, .ikea a, .ikea a:hover, .itrim a, .itrim a:hover, .looptrooprockers a, .looptrooprockers a:hover, .malarenergi a, .malarenergi a:hover, .vave a, .vave a:hover {
+  background: url('/img/logos-s0e7e7ea452.png') no-repeat;
 }
 
 /* =Base
@@ -521,6 +525,7 @@ h1.title a {
 .prelude,
 .about,
 .work,
+.clients,
 .site-main,
 .contact,
 .site-footer {
@@ -538,6 +543,7 @@ h1.title a {
 .prelude:after,
 .about:after,
 .work:after,
+.clients:after,
 .site-main:after,
 .contact:after,
 .site-footer:after {
@@ -552,6 +558,7 @@ h1.title a {
   .prelude,
   .about,
   .work,
+  .clients,
   .site-main,
   .contact,
   .site-footer {
@@ -565,6 +572,7 @@ h1.title a {
   .prelude,
   .about,
   .work,
+  .clients,
   .site-main,
   .contact,
   .site-footer {
@@ -607,25 +615,25 @@ h1.title a {
 }
 
 .niklas {
-  background-position: 0 0;
-  height: 50px;
-  width: 50px;
-}
-
-.erik {
-  background-position: 0 -50px;
-  height: 50px;
-  width: 50px;
-}
-
-.margareta {
   background-position: 0 -150px;
   height: 50px;
   width: 50px;
 }
 
+.erik {
+  background-position: 0 0;
+  height: 50px;
+  width: 50px;
+}
+
+.margareta {
+  background-position: 0 -50px;
+  height: 50px;
+  width: 50px;
+}
+
 .mathias {
-  background-position: 0 -200px;
+  background-position: 0 -100px;
   height: 50px;
   width: 50px;
 }
@@ -637,7 +645,7 @@ h1.title a {
 }
 
 .peter {
-  background-position: 0 -100px;
+  background-position: 0 -200px;
   height: 50px;
   width: 50px;
 }
@@ -707,8 +715,159 @@ h1.title a {
   color: white;
 }
 
+/* =Clients
+-------------------------------------------------------------- */
+.clients {
+  text-align: center;
+}
+.clients h3 {
+  margin-top: 4.5em;
+  color: #cccccc;
+}
+.clients div {
+  margin-top: 1.5em;
+  width: 46.66667%;
+  float: left;
+  margin-right: 6.66667%;
+  display: inline;
+}
+.clients div:nth-child(2n) {
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 640px) {
+  .clients div {
+    width: 22.58065%;
+    float: left;
+    margin-right: 3.22581%;
+  }
+  .clients div:nth-child(2n) {
+    float: left;
+    margin-right: 3.22581%;
+  }
+  .clients div:nth-child(4n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 960px) {
+  .clients div {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    width: 23.40426%;
+    float: left;
+    margin-right: 2.12766%;
+    background-color: #eee;
+  }
+  .clients div:nth-child(2n) {
+    float: left;
+    margin-right: 2.12766%;
+  }
+  .clients div:nth-child(4n) {
+    float: left;
+    margin-right: 2.12766%;
+  }
+  .clients div:nth-child(4n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+.abb a, .atlascopco a, .berattarministeriet a, .frontit a, .ge a, .ikea a, .itrim a, .looptrooprockers a, .malarenergi a, .vave a {
+  -webkit-transition-duration: 0ms;
+  -moz-transition-duration: 0ms;
+  -o-transition-duration: 0ms;
+  transition-duration: 0ms;
+  display: block !important;
+  background-position: center;
+  text-indent: -999em;
+  margin: 0 auto !important;
+  height: 140px !important;
+  width: 140px !important;
+}
+
+.abb a {
+  background-position: 0 -140px;
+}
+.abb a:hover {
+  background-position: 0 0;
+}
+
+.atlascopco a {
+  background-position: 0 -420px;
+}
+.atlascopco a:hover {
+  background-position: 0 -280px;
+}
+
+.berattarministeriet a {
+  background-position: 0 -700px;
+}
+.berattarministeriet a:hover {
+  background-position: 0 -560px;
+}
+
+.frontit a {
+  background-position: 0 -980px;
+}
+.frontit a:hover {
+  background-position: 0 -840px;
+}
+
+.ge a {
+  background-position: 0 -1260px;
+}
+.ge a:hover {
+  background-position: 0 -1120px;
+}
+
+.ikea a {
+  background-position: 0 -1540px;
+}
+.ikea a:hover {
+  background-position: 0 -1400px;
+}
+
+.itrim a {
+  background-position: 0 -1820px;
+}
+.itrim a:hover {
+  background-position: 0 -1680px;
+}
+
+.looptrooprockers a {
+  background-position: 0 -2100px;
+}
+.looptrooprockers a:hover {
+  background-position: 0 -1960px;
+}
+
+.malarenergi a {
+  background-position: 0 -2380px;
+}
+.malarenergi a:hover {
+  background-position: 0 -2240px;
+}
+
+.vave a {
+  background-position: 0 -2660px;
+}
+.vave a:hover {
+  background-position: 0 -2520px;
+}
+
 /* =Blog index
 -------------------------------------------------------------- */
+.site-main-wrapper {
+  margin-top: 4.5em;
+  border-top: 1px solid #cccccc;
+}
+
 .site-main {
   margin-top: 4.5em;
   margin-bottom: 4.5em;
