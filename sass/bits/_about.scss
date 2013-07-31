@@ -11,6 +11,10 @@
 	&> img {
 		display: inline;
 		margin-top: -1em;
+		-webkit-animation-delay: 1s;
+		-moz-animation-delay: 1s;
+		-o-animation-delay: 1s;
+		animation-delay: 1s;
 	}
 
 	@include at-breakpoint($medium) {
@@ -31,50 +35,50 @@
 	}
 }
 
-$height: recommendations-sprite-height(niklas);
-$width: recommendations-sprite-width(niklas);
+$height: sprite-sprite-height(niklas);
+$width: sprite-sprite-width(niklas);
 .niklas {
-	@include recommendations-sprite(niklas);
+	@include sprite-sprite(niklas);
 	height: $height;
 	width: $width;
 }
 
-$height: recommendations-sprite-height(erik);
-$width: recommendations-sprite-width(erik);
+$height: sprite-sprite-height(erik);
+$width: sprite-sprite-width(erik);
 .erik {
-	@include recommendations-sprite(erik);
+	@include sprite-sprite(erik);
 	height: $height;
 	width: $width;
 }
 
-$height: recommendations-sprite-height(margareta);
-$width: recommendations-sprite-width(margareta);
+$height: sprite-sprite-height(margareta);
+$width: sprite-sprite-width(margareta);
 .margareta {
-	@include recommendations-sprite(margareta);
+	@include sprite-sprite(margareta);
 	height: $height;
 	width: $width;
 }
 
-$height: recommendations-sprite-height(mathias);
-$width: recommendations-sprite-width(mathias);
+$height: sprite-sprite-height(mathias);
+$width: sprite-sprite-width(mathias);
 .mathias {
-	@include recommendations-sprite(mathias);
+	@include sprite-sprite(mathias);
 	height: $height;
 	width: $width;
 }
 
-$height: recommendations-sprite-height(walshy);
-$width: recommendations-sprite-width(walshy);
+$height: sprite-sprite-height(walshy);
+$width: sprite-sprite-width(walshy);
 .walshy {
-	@include recommendations-sprite(walshy);
+	@include sprite-sprite(walshy);
 	height: $height;
 	width: $width;
 }
 
-$height: recommendations-sprite-height(peter);
-$width: recommendations-sprite-width(peter);
+$height: sprite-sprite-height(peter);
+$width: sprite-sprite-width(peter);
 .peter {
-	@include recommendations-sprite(peter);
+	@include sprite-sprite(peter);
 	height: $height;
 	width: $width;
 }

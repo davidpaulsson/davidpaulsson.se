@@ -18,15 +18,13 @@ $base-line-height: 				24px;
 $round-to-nearest-half-line:	true;
 @include establish-baseline;
 
-$white:							#ffffff;
-$black:							#202020;
-$gray:							#cccccc;
-$grayDark:						#999999;
-$text:							#666666;
+$white:							#ecf0f1;
+$black:							#34495e;
+$gray:							#bdc3c7;
+$grayDark:						#7f8c8d;
+$text:							#34495e;
 $primary:						#16a085;
 
 // Sprites
-$recommendations-layout: smart;
-@import "recommendations/*.png";
-$logos-layout: smart;
-@import "logos/*.png";
+$sprite-layout: smart;
+@import "sprite/*.png";

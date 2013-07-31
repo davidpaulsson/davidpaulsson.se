@@ -22,7 +22,6 @@
 
 	.work-content {
 		@include padding-leader(3);
-		@include padding-trailer(3);
 
 		@include at-breakpoint($medium) {
 			@include span-columns(4 omega);
@@ -41,24 +40,6 @@
 	}
 }
 
-// Slider specific
-// .work { 
-// 	position: relative; 
-// 	overflow: auto; 
-// 	padding-left: 0;
-// 	padding-right: 0;
-
-// 	li {
-// 		list-style-type: none;
-// 	}
-
-// 	ul {
-// 		li {
-// 			float: left;
-// 		}
-// 	}
-// }
-
 .btn {
 	@include border-radius();
 	@include leader();
@@ -76,38 +57,55 @@
 /* =Clients
 -------------------------------------------------------------- */
 
+.clients-wrapper {
+	@include padding-leader();
+	@include transition-property(all);
+	@include transition-duration(100ms);
+	@include transition-timing-function(ease-in-out);	
+
+	background-color: $gray;
+
+	&:hover {
+		background-color: lighten($gray,5%);
+	}
+}
+
 .clients {
-	text-align: center;
-
 	h3 {
-		@include leader(3);
+		display: inline-block;		
+		font-weight: 200;
+		text-align: center;
 
-		color: $gray;
-	}
-
-	div {
-		@include leader();
-		@include span-columns(2);
-		@include nth-omega(2n);
-
-		@include at-breakpoint($medium) {
-			@include remove-nth-omega(2n);
-			@include span-columns(2);
-			@include nth-omega(4n);
+		&:hover {
+			cursor: pointer;
 		}
-
-		@include at-breakpoint($large) {
-			@include border-radius();
-			@include padding-leader();
-			@include padding-trailer();
-			@include remove-nth-omega(2n);
-			@include remove-nth-omega(4n);
-			@include span-columns(3);
-			@include nth-omega(4n);
-
-			background-color: #eee;
-		}		
 	}
+	.logos {
+		div {
+			@include padding-leader();
+			@include span-columns(2);
+			@include nth-omega(2n);
+
+			@include at-breakpoint($medium) {
+				@include remove-nth-omega(2n);
+				@include span-columns(2);
+				@include nth-omega(4n);
+			}
+
+			@include at-breakpoint($large) {
+				@include remove-nth-omega(2n);
+				@include remove-nth-omega(4n);
+				@include span-columns(3);
+				@include nth-omega(4n);
+			}
+		}
+	}
+}
+
+.logos {
+	@include clearfix();
+	@include padding-trailer(3);
+	display: none;
 }
 
 %clients {
@@ -116,86 +114,124 @@
 	background-position: center;
 	text-indent: -999em;
 	margin: 0 auto !important;
-	height: 140px !important;
-	width: 140px !important;
 }
 
+$height: sprite-sprite-height(abb);
+$width: sprite-sprite-width(abb);
 .abb a {
 	@extend %clients;
-	@include logos-sprite(abb);
+	@include sprite-sprite(abb);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(abb-hover);
+		@include sprite-sprite(abb-hover);
 	}
 }
 
+$height: sprite-sprite-height(atlascopco);
+$width: sprite-sprite-width(atlascopco);
 .atlascopco a {
 	@extend %clients;
-	@include logos-sprite(atlascopco);
+	@include sprite-sprite(atlascopco);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(atlascopco-hover);
+		@include sprite-sprite(atlascopco-hover);
 	}
 }
 
+$height: sprite-sprite-height(berattarministeriet);
+$width: sprite-sprite-width(berattarministeriet);
 .berattarministeriet a {
 	@extend %clients;
-	@include logos-sprite(berattarministeriet);
+	@include sprite-sprite(berattarministeriet);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(berattarministeriet-hover);
+		@include sprite-sprite(berattarministeriet-hover);
 	}
 }
 
+$height: sprite-sprite-height(frontit);
+$width: sprite-sprite-width(frontit);
 .frontit a {
 	@extend %clients;
-	@include logos-sprite(frontit);
+	@include sprite-sprite(frontit);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(frontit-hover);
+		@include sprite-sprite(frontit-hover);
 	}
 }
 
+$height: sprite-sprite-height(ge);
+$width: sprite-sprite-width(ge);
 .ge a {
 	@extend %clients;
-	@include logos-sprite(ge);
+	@include sprite-sprite(ge);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(ge-hover);
+		@include sprite-sprite(ge-hover);
 	}
 }
 
+$height: sprite-sprite-height(ikea);
+$width: sprite-sprite-width(ikea);
 .ikea a {
 	@extend %clients;
-	@include logos-sprite(ikea);
+	@include sprite-sprite(ikea);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(ikea-hover);
+		@include sprite-sprite(ikea-hover);
 	}
 }
 
+$height: sprite-sprite-height(itrim);
+$width: sprite-sprite-width(itrim);
 .itrim a {
 	@extend %clients;
-	@include logos-sprite(itrim);
+	@include sprite-sprite(itrim);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(itrim-hover);
+		@include sprite-sprite(itrim-hover);
 	}
 }
 
+$height: sprite-sprite-height(looptrooprockers);
+$width: sprite-sprite-width(looptrooprockers);
 .looptrooprockers a {
 	@extend %clients;
-	@include logos-sprite(looptrooprockers);
+	@include sprite-sprite(looptrooprockers);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(looptrooprockers-hover);
+		@include sprite-sprite(looptrooprockers-hover);
 	}
 }
 
+$height: sprite-sprite-height(malarenergi);
+$width: sprite-sprite-width(malarenergi);
 .malarenergi a {
 	@extend %clients;
-	@include logos-sprite(malarenergi);
+	@include sprite-sprite(malarenergi);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(malarenergi-hover);
+		@include sprite-sprite(malarenergi-hover);
 	}
 }
 
+$height: sprite-sprite-height(vave);
+$width: sprite-sprite-width(vave);
 .vave a {
 	@extend %clients;
-	@include logos-sprite(vave);
+	@include sprite-sprite(vave);
+	height: $height;
+	width: $width;
 	&:hover {
-		@include logos-sprite(vave-hover);
+		@include sprite-sprite(vave-hover);
 	}
 }

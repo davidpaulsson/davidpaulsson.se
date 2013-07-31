@@ -23,6 +23,10 @@ jQuery(document).ready(function($) {
 		return false;
 	});
 
+	//  Animate
+	$('.prelude').addClass('animated fadeInDown');
+	$('.about > img').addClass('animated flipInY');
+
 	//  Remove the P tag that surround images
 	$('p > img').removeAttr('height').removeAttr('width').unwrap();
 
@@ -35,6 +39,12 @@ jQuery(document).ready(function($) {
 	//  Toggle small menu
 	$('.menu-toggle').click(function() {
 		$('body').toggleClass('show-small-navigation');
+	});
+
+	//  Toggle clients
+	$('.clients h3').click(function() {
+		$(this).parent().toggleClass('active');
+		$('.logos').slideToggle();
 	});
 
 	//  The most important feature on this site
