@@ -42,50 +42,32 @@ jQuery(document).ready(function($) {
 	});
 
 	//  Slideshow
-	$('.work ul').cycle({
+	var slideShow = $('.work ul');
+
+	slideShow.cycle({
 		autoHeight: 0,
 		fx: 'sparksHorz',
-		// fx: 'scrollHorz',
 		slides: '> li',
 		speed: 500,
 		timeout: 0,
 		centerHorz: true,
-		// updateView: -1,
 		next: '.slide-next',
 		prev: '.slide-prev'
-	});	
-            // var $zillaSlider = $('.slideshow');
+	});
+	slideShow.on('cycle-update-view', function(e,o,sh,cs) {
+		var $this = $(this),
+		$currentSlide = $(cs);
 
-            // $zillaSlider.cycle({
-            //     autoHeight: 0,
-            //                         fx: 'sparksHorz',
-            //                     slides: '> li',
-            //     speed: 500,
-            //     timeout: 0,
-            //                         centerHorz: true,
-            //                     updateView: 1, // fire update view one time
-            //     // next: '#zilla-slide-next-featured-portfolios',
-            //     // prev: '#zilla-slide-prev-featured-portfolios'
-            // });
+		$this.animate({
+			height: $currentSlide.height()
+		}, 300); // adjust height on slide transition
 
-            // $zillaSlider.on('cycle-update-view', function(e,o,sh,cs) {
-            //     var $this = $(this),
-            //         $currentSlide = $(cs);
-
-            //         $this.animate({
-            //             height: $currentSlide.height()
-            //         }, 300); // adjust height on slide transition
-
-            //     $(window).resize(function() {
-            //         $this.stop().animate({
-            //             height: $currentSlide.height()
-            //         }, 500);
-            //     }); // adjust height of slide on screen resize
-            // });
-
-
-
-
+		$(window).resize(function() {
+			$this.stop().animate({
+				height: $currentSlide.height()
+			}, 500);
+		});
+	});
 
 	//  Toggle clients
 	$('.clients h3').click(function() {
