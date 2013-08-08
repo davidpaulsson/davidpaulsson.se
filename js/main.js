@@ -1,3 +1,8 @@
+// @codekit-prepend "jquery.cycle2.js"
+// @codekit-prepend "jquery.cycle2.sparksHorz.min.js"
+// @codekit-prepend "jquery.cycle2.center.js"
+// @codekit-prepend "jquery.fitvids.js"
+
 jQuery(document).ready(function($) {
 
 	//  Find any element starting with a # in the URL
@@ -43,7 +48,6 @@ jQuery(document).ready(function($) {
 
 	//  Slideshow
 	var slideShow = $('.work ul');
-
 	slideShow.cycle({
 		autoHeight: 0,
 		fx: 'sparksHorz',
@@ -68,6 +72,9 @@ jQuery(document).ready(function($) {
 			}, 500);
 		});
 	});
+
+	//  Fitvids
+	$('.single-post').fitVids();
 
 	//  Toggle clients
 	$('.clients h3').click(function() {

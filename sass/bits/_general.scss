@@ -7,6 +7,14 @@ html {
 	text-rendering: optimizeLegibility; // Improve kerning pairs. Caution: Webkit gets funny with this sometimes
 	-webkit-font-smoothing: antialiased; // Improve (or in some cases screw with) safari's legibility somewhat
 	height: 100%;
+
+	/* =Stop iPhone/iPad from scaling text
+	 * =Absolute measure here, as we're talking about devices, not screen size
+	-------------------------------------------------------------- */
+	@media screen and (max-width: 769px) {  
+		-webkit-text-size-adjust:none;
+	}
+
 }
 
 body { 
@@ -198,14 +206,6 @@ a {
 		background-color: lighten($primary,10%);
 		color: $white;
 	}
-}
-
-/* =Stop iPhone/iPad from scaling text
- * =Absolute measure here, as we're talking about devices, not screen size
--------------------------------------------------------------- */
-
-@media screen and (max-width: 769px) {  
-	-webkit-text-size-adjust:none;
 }
 
 /* =Screen readers
