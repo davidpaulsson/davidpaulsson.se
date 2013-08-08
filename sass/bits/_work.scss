@@ -8,7 +8,6 @@
 
 .work { 
 	@include clearfix;
-
 	color: $white;
 	position: relative;
 
@@ -45,14 +44,28 @@
 	}
 
 	img {
-		filter: alpha(opacity=0);
-		max-width: 100%;
+		-webkit-filter: grayscale(100%); /* Chrome 19+, Safari 6+, Safari 6+ iOS */
+		@include transition-duration(100ms);
+		@include transition-property(all);
+		@include transition-timing-function(linear);
+		filter: gray; /* IE6-9 */
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */
 		height: auto;
+		max-width: 100%;
 	}
 
 	article {
 		@include padding-leader(3);
 		@include padding-trailer(2);
+	}
+
+	a {
+		color: darken($white,20%);
+	}
+
+	.btn {
+		background-color: $white;
+		color: $black;
 	}
 }
 
@@ -60,11 +73,35 @@
 	@include trailer();
 
 	span {
-		@include border-radius();
 		@include adjust-font-size-to(12px);
-		background-color: #f39c12;
+		@include border-radius();
+		@include transition-duration(100ms);
+		@include transition-property(all);
+		@include transition-timing-function(linear);
+		background-color: $white;
 		color: $black;
 		padding: 2px 4px;
+	}
+}
+
+.cycle-slide-active {
+	img {
+		-webkit-filter: grayscale(0%);
+		filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	}
+
+	a {
+		color: $primary;
+	}
+
+	span {
+		background-color: #f39c12;
+		color: $white;
+	}
+
+	.btn {
+		background-color: $primary;
+		color: $white;
 	}
 }
 
@@ -76,17 +113,16 @@
 
 .slide-prev,
 .slide-next {
-	@include border-top-right-radius();
 	@include border-bottom-right-radius();	
-	// background: $primary url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNy4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNDBweCIgaGVpZ2h0PSI0MHB4IiB2aWV3Qm94PSIwIDAgNDAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQwIDQwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGRpc3BsYXk9Im5vbmUiIGZpbGw9IiNGRkZGRkYiIGQ9Ik05LjUsMTMuOTk5YzAtMC44NCwwLjY2LTEuNSwxLjUtMS41aDE4YzAuODQsMCwxLjUsMC42NiwxLjUsMS41YzAsMC43NzktMC42NiwxLjUtMS41LDEuNQ0KCUgxMUMxMC4xNiwxNS40OTksOS41LDE0Ljc3OSw5LjUsMTMuOTk5eiBNMzAuNSwxOS45OTljMCwwLjc4Mi0wLjY2LDEuNS0xLjUsMS41SDExYy0wLjg0LDAtMS41LTAuNzE4LTEuNS0xLjUNCgljMC0wLjgzOCwwLjY2LTEuNSwxLjUtMS41aDE4QzI5Ljg0LDE4LjQ5OSwzMC41LDE5LjE2MSwzMC41LDE5Ljk5OXogTTMwLjUsMjYuMDAxYzAsMC43NzktMC42NiwxLjUtMS41LDEuNUgxMQ0KCWMtMC44NCwwLTEuNS0wLjcyMS0xLjUtMS41YzAtMC44NCwwLjY2LTEuNSwxLjUtMS41aDE4QzI5Ljg0LDI0LjUwMSwzMC41LDI1LjE2LDMwLjUsMjYuMDAxeiIvPg0KPGc+DQoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTE2LjA2NSwyMS4wMDljLTAuMjU2LTAuMjU2LTAuNDEtMC42MTQtMC40MS0xLjAyNmMwLTAuMzU4LDAuMTU0LTAuNzE2LDAuNDEtMC45NzINCgkJYzAsMCw1LjIyNi01LjQ4MSw1Ljc4OS02LjA0NGMwLjUxMy0wLjUxMywxLjQ4Ni0wLjU2NCwyLjA1LDBjMC41NjQsMC41NjMsMC42MTQsMS4zMywwLDIuMDQ4bC00Ljc2NSw0Ljk2OWw0Ljc2NSw1LjAyMQ0KCQljMC42MTQsMC43MTcsMC41NjQsMS40ODUsMCwyLjA0OWMtMC41NjQsMC41MTItMS41MzcsMC41MTItMi4wNSwwQzIxLjI5LDI2LjQ5LDE2LjA2NSwyMS4wMDksMTYuMDY1LDIxLjAwOXoiLz4NCjwvZz4NCjwvc3ZnPg0K) no-repeat center center;	
+	@include border-top-right-radius();
 	background: $primary inline-image('../img/prev.svg') no-repeat center center;
 	display: inline-block;
-	position: absolute;
 	height: 80px;
-	width: 70px;
-	top: 40%;
-	text-indent: -999em;
 	left: 0;
+	position: absolute;
+	text-indent: -999em;
+	top: 40%;
+	width: 70px;
 	z-index: 999;
 
 	&:hover {
@@ -109,10 +145,9 @@
 
 .clients-wrapper {
 	@include padding-leader();
-	@include transition-property(all);
 	@include transition-duration(100ms);
+	@include transition-property(all);
 	@include transition-timing-function(ease-in-out);	
-
 	background-color: $gray;
 
 	&:hover {
@@ -133,21 +168,21 @@
 	}
 	.logos {
 		div {
+			@include nth-omega(2n);
 			@include padding-leader();
 			@include span-columns(2);
-			@include nth-omega(2n);
 
 			@include at-breakpoint($medium) {
+				@include nth-omega(4n);
 				@include remove-nth-omega(2n);
 				@include span-columns(2);
-				@include nth-omega(4n);
 			}
 
 			@include at-breakpoint($large) {
+				@include nth-omega(4n);
 				@include remove-nth-omega(2n);
 				@include remove-nth-omega(4n);
 				@include span-columns(3);
-				@include nth-omega(4n);
 			}
 		}
 	}
@@ -161,10 +196,10 @@
 
 %clients {
 	@include transition-duration(0ms);
-	display: block !important;
 	background-position: center;
-	text-indent: -999em;
+	display: block !important;
 	margin: 0 auto !important;
+	text-indent: -999em;
 }
 
 $height: sprite-sprite-height(abb);

@@ -2,16 +2,17 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8317",
   "files" : {
-    "\/_site\/img\/posts\/12px.png" : {
+    "\/sass\/animate\/_properties.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/posts\/12px.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/posts\/12px.png",
-      "initialSize" : 1337,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/sass\/animate\/_properties.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_properties.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/sass\/animate\/_bounce.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -59,17 +60,16 @@
       "initialSize" : 2238,
       "fileType" : 8192
     },
-    "\/sass\/animate\/_properties.scss" : {
+    "\/_site\/img\/posts\/12px.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_properties.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_properties.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/_site\/img\/posts\/12px.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/posts\/12px.png",
+      "initialSize" : 1337,
+      "fileType" : 8192
     },
     "\/_site\/img\/case\/evolution.png" : {
       "ignoreWasSetByUser" : 0,
@@ -148,17 +148,6 @@
       "initialSize" : 3663,
       "fileType" : 8192
     },
-    "\/img\/sprite\/peter-50x50.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/sprite\/peter-50x50.jpg",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/sprite\/peter-50x50.jpg",
-      "initialSize" : 1483,
-      "fileType" : 4096
-    },
     "\/img\/posts\/csshat-test.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -169,6 +158,17 @@
       "outputAbbreviatedPath" : "\/img\/posts\/csshat-test.png",
       "initialSize" : 58692,
       "fileType" : 8192
+    },
+    "\/img\/sprite\/peter-50x50.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/sprite\/peter-50x50.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/sprite\/peter-50x50.jpg",
+      "initialSize" : 1483,
+      "fileType" : 4096
     },
     "\/_site\/img\/posts\/dp-logo-1.png" : {
       "ignoreWasSetByUser" : 0,
@@ -261,13 +261,13 @@
     },
     "\/img\/sprite\/ikea-hover.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/sprite\/ikea-hover.png",
       "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/sprite\/ikea-hover.png",
-      "initialSize" : 2238,
+      "initialSize" : 3076,
       "fileType" : 8192
     },
     "\/sass\/animate\/_rollIn.scss" : {
@@ -347,17 +347,6 @@
       "initialSize" : 5637,
       "fileType" : 8192
     },
-    "\/img\/posts\/marsfesten.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/posts\/marsfesten.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/posts\/marsfesten.png",
-      "initialSize" : 706357,
-      "fileType" : 8192
-    },
     "\/sass\/animate\/_bounceInUp.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -369,6 +358,17 @@
       "outputAbbreviatedPath" : "\/css\/_bounceInUp.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/img\/posts\/marsfesten.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/posts\/marsfesten.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/posts\/marsfesten.png",
+      "initialSize" : 706357,
+      "fileType" : 8192
     },
     "\/img\/case\/looptroop-rockers.png" : {
       "ignoreWasSetByUser" : 0,
@@ -515,17 +515,6 @@
       "initialSize" : 3916,
       "fileType" : 8192
     },
-    "\/img\/posts\/wywallet-1.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/posts\/wywallet-1.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/posts\/wywallet-1.png",
-      "initialSize" : 152770,
-      "fileType" : 8192
-    },
     "\/sass\/animate\/_wobble.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -537,6 +526,17 @@
       "outputAbbreviatedPath" : "\/css\/_wobble.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/img\/posts\/wywallet-1.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/posts\/wywallet-1.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/posts\/wywallet-1.png",
+      "initialSize" : 152770,
+      "fileType" : 8192
     },
     "\/sass\/animate\/_flipInY.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -572,6 +572,29 @@
       "initialSize" : 207014,
       "fileType" : 8192
     },
+    "\/sass\/animate\/_flipInX.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/animate\/_flipInX.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_flipInX.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/_site\/img\/posts\/wywallet-1.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/img\/posts\/wywallet-1.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/posts\/wywallet-1.png",
+      "initialSize" : 152770,
+      "fileType" : 8192
+    },
     "\/sass\/susy\/_margin.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -595,29 +618,6 @@
       "outputAbbreviatedPath" : "\/css\/_units.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/sass\/animate\/_flipInX.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_flipInX.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_flipInX.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/_site\/img\/posts\/wywallet-1.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/posts\/wywallet-1.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/posts\/wywallet-1.png",
-      "initialSize" : 152770,
-      "fileType" : 8192
     },
     "\/img\/posts\/sublimetext.png" : {
       "ignoreWasSetByUser" : 0,
@@ -651,17 +651,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_site\/img\/menu.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/menu.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/menu.png",
-      "initialSize" : 310,
-      "fileType" : 8192
-    },
     "\/sass\/animate\/_flip.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -673,6 +662,17 @@
       "outputAbbreviatedPath" : "\/css\/_flip.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_site\/img\/menu.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/img\/menu.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/menu.png",
+      "initialSize" : 310,
+      "fileType" : 8192
     },
     "\/_site\/teckenstorlek-med-px-em-eller-rem\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -716,15 +716,15 @@
       "initialSize" : 164761,
       "fileType" : 8192
     },
-    "\/sass\/animate\/_fadeOutDownBig.scss" : {
+    "\/sass\/bits\/_footer.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_fadeOutDownBig.scss",
+      "inputAbbreviatedPath" : "\/sass\/bits\/_footer.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_fadeOutDownBig.css",
+      "outputAbbreviatedPath" : "\/css\/_footer.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -739,15 +739,15 @@
       "initialSize" : 90945,
       "fileType" : 8192
     },
-    "\/sass\/bits\/_footer.scss" : {
+    "\/sass\/animate\/_fadeOutDownBig.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/bits\/_footer.scss",
+      "inputAbbreviatedPath" : "\/sass\/animate\/_fadeOutDownBig.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_footer.css",
+      "outputAbbreviatedPath" : "\/css\/_fadeOutDownBig.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -830,6 +830,17 @@
       "initialSize" : 340,
       "fileType" : 8192
     },
+    "\/_site\/img\/case\/yes.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/img\/case\/yes.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/case\/yes.png",
+      "initialSize" : 152109,
+      "fileType" : 8192
+    },
     "\/_site\/img\/sprite\/atlascopco.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -851,17 +862,6 @@
       "outputAbbreviatedPath" : "\/img\/sprite\/margareta-50x50.jpg",
       "initialSize" : 1247,
       "fileType" : 4096
-    },
-    "\/_site\/img\/case\/yes.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/case\/yes.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/case\/yes.png",
-      "initialSize" : 152109,
-      "fileType" : 8192
     },
     "\/img\/davidpaulsson-logo.png" : {
       "ignoreWasSetByUser" : 0,
@@ -896,29 +896,6 @@
       "initialSize" : 164761,
       "fileType" : 8192
     },
-    "\/_site\/img\/sprite\/niklas.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/niklas.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/niklas.png",
-      "initialSize" : 5996,
-      "fileType" : 8192
-    },
-    "\/sass\/susy\/_padding.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/susy\/_padding.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_padding.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/img\/case\/itrim.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -942,6 +919,30 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/sass\/animate\/_rotateInUpRight.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/animate\/_rotateInUpRight.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_rotateInUpRight.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/sass\/susy\/_padding.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/susy\/_padding.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_padding.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/_site\/img\/case\/itrim.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -953,17 +954,16 @@
       "initialSize" : 312297,
       "fileType" : 8192
     },
-    "\/sass\/bits\/_vars.scss" : {
+    "\/img\/sprite\/malarenergi.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/bits\/_vars.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_vars.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/img\/sprite\/malarenergi.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/sprite\/malarenergi.png",
+      "initialSize" : 3240,
+      "fileType" : 8192
     },
     "\/_site\/js\/jquery.cycle2.sparksHorz.min.js" : {
       "ignoreWasSetByUser" : 1,
@@ -987,17 +987,6 @@
       "initialSize" : 1716,
       "fileType" : 4096
     },
-    "\/img\/sprite\/malarenergi.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/sprite\/malarenergi.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/sprite\/malarenergi.png",
-      "initialSize" : 4103,
-      "fileType" : 8192
-    },
     "\/sass\/animate\/_fadeOutLeft.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1010,17 +999,28 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/sass\/animate\/_rotateInUpRight.scss" : {
+    "\/sass\/bits\/_vars.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/bits\/_vars.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_vars.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/_site\/img\/sprite\/niklas.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_rotateInUpRight.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_rotateInUpRight.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/niklas.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/niklas.png",
+      "initialSize" : 5996,
+      "fileType" : 8192
     },
     "\/js\/modernizr-2.6.2-respond-1.1.0.min.js" : {
       "ignoreWasSetByUser" : 1,
@@ -1099,18 +1099,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/sass\/animate\/_bounceIn.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_bounceIn.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_bounceIn.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/sass\/animate\/_fadeOutUp.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1120,6 +1108,18 @@
       "outputStyle" : 3,
       "shouldRunBless" : 1,
       "outputAbbreviatedPath" : "\/css\/_fadeOutUp.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/sass\/animate\/_bounceIn.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/animate\/_bounceIn.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_bounceIn.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -1156,16 +1156,17 @@
       "initialSize" : 596,
       "fileType" : 8192
     },
-    "\/_site\/img\/sprite\/frontit-hover.png" : {
+    "\/sass\/susy\/_support.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/frontit-hover.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/frontit-hover.png",
-      "initialSize" : 2633,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/sass\/susy\/_support.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_support.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/_site\/img\/sprite\/niklas-50x50.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1178,17 +1179,16 @@
       "initialSize" : 1944,
       "fileType" : 4096
     },
-    "\/sass\/susy\/_support.scss" : {
+    "\/_site\/img\/sprite\/frontit-hover.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/susy\/_support.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_support.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/frontit-hover.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/frontit-hover.png",
+      "initialSize" : 2633,
+      "fileType" : 8192
     },
     "\/_site\/img\/posts\/retinaskarm-pixel.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1212,6 +1212,17 @@
       "outputAbbreviatedPath" : "\/_site\/js\/main.min.js",
       "fileType" : 64
     },
+    "\/_site\/js\/jquery.cycle2.center.js" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/js\/jquery.cycle2.center.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/_site\/js\/jquery.cycle2.center.min.js",
+      "fileType" : 64
+    },
     "\/sass\/animate\/_fadeOutDown.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1226,25 +1237,14 @@
     },
     "\/img\/sprite\/looptrooprockers.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/img\/sprite\/looptrooprockers.png",
       "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/sprite\/looptrooprockers.png",
-      "initialSize" : 7530,
+      "initialSize" : 5742,
       "fileType" : 8192
-    },
-    "\/_site\/js\/jquery.cycle2.center.js" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/js\/jquery.cycle2.center.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/_site\/js\/jquery.cycle2.center.min.js",
-      "fileType" : 64
     },
     "\/_site\/img\/posts\/retinajs.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1327,6 +1327,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_site\/img\/sprite\/vave-hover.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/vave-hover.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/vave-hover.png",
+      "initialSize" : 7218,
+      "fileType" : 8192
+    },
     "\/sass\/susy\/_isolation.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -1349,15 +1360,6 @@
       "outputAbbreviatedPath" : "\/_site\/img\/sprite\/berattarministeriet.png",
       "initialSize" : 2007,
       "fileType" : 8192
-    },
-    "\/_site\/wywallet-slapp-inte-en-tjanst-om-den-inte-ar-fardig\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/wywallet-slapp-inte-en-tjanst-om-den-inte-ar-fardig\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/img\/posts\/dp-logo-3.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1389,19 +1391,17 @@
       "inputAbbreviatedPath" : "\/img\/sprite\/ge-hover.png",
       "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/sprite\/ge-hover.png",
-      "initialSize" : 5711,
+      "initialSize" : 8072,
       "fileType" : 8192
     },
-    "\/_site\/img\/sprite\/vave-hover.png" : {
+    "\/_site\/wywallet-slapp-inte-en-tjanst-om-den-inte-ar-fardig\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/vave-hover.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/vave-hover.png",
-      "initialSize" : 7218,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/_site\/wywallet-slapp-inte-en-tjanst-om-den-inte-ar-fardig\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/sass\/animate\/_rotateIn.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1415,15 +1415,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_site\/en-levande-logotyp\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/en-levande-logotyp\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_site\/img\/posts\/dp-logo-4.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1434,6 +1425,15 @@
       "outputAbbreviatedPath" : "\/_site\/img\/posts\/dp-logo-4.png",
       "initialSize" : 4351,
       "fileType" : 8192
+    },
+    "\/_site\/en-levande-logotyp\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/en-levande-logotyp\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/img\/posts\/12px.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1491,6 +1491,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_site\/bara-sa-att-du-vet-pappa\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/bara-sa-att-du-vet-pappa\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/_site\/img\/sprite\/looptrooprockers.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1512,15 +1521,6 @@
       "outputAbbreviatedPath" : "\/_site\/img\/sprite\/atlascopco-hover.png",
       "initialSize" : 2394,
       "fileType" : 8192
-    },
-    "\/_site\/bara-sa-att-du-vet-pappa\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/bara-sa-att-du-vet-pappa\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/_site\/img\/sprite\/itrim-hover.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1660,7 +1660,7 @@
       "inputAbbreviatedPath" : "\/img\/sprite\/itrim.png",
       "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/sprite\/itrim.png",
-      "initialSize" : 3372,
+      "initialSize" : 3892,
       "fileType" : 8192
     },
     "\/sass\/screen.scss" : {
@@ -1774,7 +1774,7 @@
       "inputAbbreviatedPath" : "\/img\/sprite\/vave.png",
       "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/sprite\/vave.png",
-      "initialSize" : 3132,
+      "initialSize" : 4739,
       "fileType" : 8192
     },
     "\/sass\/_susy.scss" : {
@@ -1808,17 +1808,8 @@
       "inputAbbreviatedPath" : "\/img\/sprite\/berattarministeriet.png",
       "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/sprite\/berattarministeriet.png",
-      "initialSize" : 2318,
+      "initialSize" : 2007,
       "fileType" : 8192
-    },
-    "\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/sass\/animate\/_rotateInDownRight.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1831,6 +1822,15 @@
       "outputAbbreviatedPath" : "\/css\/_rotateInDownRight.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/js\/jquery.cycle2.center.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1887,26 +1887,6 @@
       "initialSize" : 3127,
       "fileType" : 8192
     },
-    "\/_site\/img\/sprite\/abb-hover.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/abb-hover.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/abb-hover.png",
-      "initialSize" : 1448,
-      "fileType" : 8192
-    },
-    "\/css\/animate\/bounce.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/animate\/bounce.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/sass\/animate\/_pulse.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1918,6 +1898,26 @@
       "outputAbbreviatedPath" : "\/css\/_pulse.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/css\/animate\/bounce.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/animate\/bounce.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/_site\/img\/sprite\/abb-hover.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/abb-hover.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/abb-hover.png",
+      "initialSize" : 1448,
+      "fileType" : 8192
     },
     "\/_site\/img\/posts\/marsfesten.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1953,6 +1953,17 @@
       "initialSize" : 273012,
       "fileType" : 8192
     },
+    "\/img\/sprite\/walshy-50x50.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/sprite\/walshy-50x50.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/sprite\/walshy-50x50.jpg",
+      "initialSize" : 1675,
+      "fileType" : 4096
+    },
     "\/sass\/animate\/_shake.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1965,16 +1976,17 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/sprite\/walshy-50x50.jpg" : {
+    "\/sass\/bits\/_general.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/sprite\/walshy-50x50.jpg",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/sprite\/walshy-50x50.jpg",
-      "initialSize" : 1675,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/sass\/bits\/_general.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_general.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/sass\/animate\/_fadeOutRight.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1985,18 +1997,6 @@
       "outputStyle" : 3,
       "shouldRunBless" : 1,
       "outputAbbreviatedPath" : "\/css\/_fadeOutRight.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/sass\/bits\/_general.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/bits\/_general.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_general.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -2076,15 +2076,15 @@
       "initialSize" : 2394,
       "fileType" : 8192
     },
-    "\/img\/sprite\/ge.png" : {
+    "\/img\/sprite\/abb.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/sprite\/ge.png",
+      "inputAbbreviatedPath" : "\/img\/sprite\/abb.png",
       "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/sprite\/ge.png",
-      "initialSize" : 5637,
+      "outputAbbreviatedPath" : "\/img\/sprite\/abb.png",
+      "initialSize" : 1450,
       "fileType" : 8192
     },
     "\/img\/sprite\/walshy.png" : {
@@ -2098,15 +2098,15 @@
       "initialSize" : 3663,
       "fileType" : 8192
     },
-    "\/img\/sprite\/abb.png" : {
+    "\/img\/sprite\/ge.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/sprite\/abb.png",
+      "inputAbbreviatedPath" : "\/img\/sprite\/ge.png",
       "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/sprite\/abb.png",
-      "initialSize" : 1450,
+      "outputAbbreviatedPath" : "\/img\/sprite\/ge.png",
+      "initialSize" : 7702,
       "fileType" : 8192
     },
     "\/sass\/animate\/_rotateOutUpLeft.scss" : {
@@ -2121,15 +2121,24 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/sprite\/mathias-50x50.jpg" : {
+    "\/_site\/look-ma-no-database\/index.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/sprite\/mathias-50x50.jpg",
+      "inputAbbreviatedPath" : "\/_site\/look-ma-no-database\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/img\/sprite\/niklas-50x50.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/sprite\/niklas-50x50.jpg",
       "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/sprite\/mathias-50x50.jpg",
-      "initialSize" : 1154,
+      "outputAbbreviatedPath" : "\/img\/sprite\/niklas-50x50.jpg",
+      "initialSize" : 1944,
       "fileType" : 4096
     },
     "\/sass\/animate\/_flipOutX.scss" : {
@@ -2144,25 +2153,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/img\/sprite\/niklas-50x50.jpg" : {
+    "\/img\/sprite\/mathias-50x50.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/sprite\/niklas-50x50.jpg",
+      "inputAbbreviatedPath" : "\/img\/sprite\/mathias-50x50.jpg",
       "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/sprite\/niklas-50x50.jpg",
-      "initialSize" : 1944,
+      "outputAbbreviatedPath" : "\/img\/sprite\/mathias-50x50.jpg",
+      "initialSize" : 1154,
       "fileType" : 4096
-    },
-    "\/_site\/look-ma-no-database\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/look-ma-no-database\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/_site\/img\/sprite\/looptrooprockers-hover.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2288,15 +2288,15 @@
       "initialSize" : 4934,
       "fileType" : 8192
     },
-    "\/sass\/animate\/_wiggle.scss" : {
+    "\/sass\/animate\/_fadeInRight.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_wiggle.scss",
+      "inputAbbreviatedPath" : "\/sass\/animate\/_fadeInRight.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_wiggle.css",
+      "outputAbbreviatedPath" : "\/css\/_fadeInRight.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -2311,15 +2311,15 @@
       "initialSize" : 3127,
       "fileType" : 8192
     },
-    "\/sass\/animate\/_fadeInRight.scss" : {
+    "\/sass\/animate\/_wiggle.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_fadeInRight.scss",
+      "inputAbbreviatedPath" : "\/sass\/animate\/_wiggle.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_fadeInRight.css",
+      "outputAbbreviatedPath" : "\/css\/_wiggle.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -2386,7 +2386,7 @@
       "inputAbbreviatedPath" : "\/img\/sprite\/itrim-hover.png",
       "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/sprite\/itrim-hover.png",
-      "initialSize" : 3383,
+      "initialSize" : 4098,
       "fileType" : 8192
     },
     "\/sass\/animate\/_bounceOut.scss" : {
@@ -2486,7 +2486,7 @@
       "inputAbbreviatedPath" : "\/img\/sprite\/frontit.png",
       "processed" : 1,
       "outputAbbreviatedPath" : "\/img\/sprite\/frontit.png",
-      "initialSize" : 2586,
+      "initialSize" : 3061,
       "fileType" : 8192
     },
     "\/img\/case\/nyafilmstaden.png" : {
@@ -2567,6 +2567,18 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/sass\/animate\/_bounceOutUp.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/animate\/_bounceOutUp.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_bounceOutUp.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/sass\/animate\/_bounceOutDown.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2609,18 +2621,6 @@
       "outputStyle" : 3,
       "shouldRunBless" : 1,
       "outputAbbreviatedPath" : "\/css\/_fadeOutUpBig.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/sass\/animate\/_bounceOutUp.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_bounceOutUp.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_bounceOutUp.css",
       "fileType" : 4,
       "debugStyle" : 0
     }

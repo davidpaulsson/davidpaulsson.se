@@ -72,8 +72,8 @@ header.archive {
 		blockquote,
 		p,
 		.caption {
-			@include pre(1);
 			@include post(1);
+			@include pre(1);
 		}
 	}
 
@@ -84,8 +84,8 @@ header.archive {
 		blockquote,
 		p,
 		.caption {
-			@include pre(2);
 			@include post(2);
+			@include pre(2);
 		}
 
 		.highlight {
@@ -96,21 +96,21 @@ header.archive {
 			pre {
 				@include padding-leader();
 				@include padding-trailer();
-				@include pre(1);
 				@include post(1);
+				@include pre(1);
 			}
 		}
 	}
 
 	img {
+		height: auto;
 		margin: 0 auto;
 		max-width: 100%;
-		height: auto;
 	}
 
 	.caption {
-		@include trailer();
 		@include adjust-font-size-to(14px);
+		@include trailer();
 		color: $gray;
 		text-align: center;
 	}

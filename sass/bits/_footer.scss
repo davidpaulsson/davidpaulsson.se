@@ -4,7 +4,6 @@
 .contact-wrapper {
 	@include padding-leader(2);
 	@include padding-trailer(2);
-
 	background-color: $black;
 	color: $white;
 	text-align: center;
@@ -29,10 +28,9 @@
 .site-footer-wrapper {
 	@include padding-leader(2);
 	@include padding-trailer(2);
-
 	background-color: darken($black,10%);
-	text-align: center;
 	color: darken($white,20%);
+	text-align: center;
 
 	h4 {
 		color: $white;
@@ -49,8 +47,8 @@
 
 	.contact {
 		@include at-breakpoint($large) {
-			@include pre(1);
 			@include post(1);
+			@include pre(1);
 		}
 	}
 

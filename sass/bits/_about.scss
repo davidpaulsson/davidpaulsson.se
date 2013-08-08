@@ -9,12 +9,12 @@
 	@include padding-trailer(3);
 
 	&> img {
-		display: inline;
-		margin-top: -1em;
-		-webkit-animation-delay: 1s;
 		-moz-animation-delay: 1s;
 		-o-animation-delay: 1s;
+		-webkit-animation-delay: 1s;
 		animation-delay: 1s;
+		display: inline;
+		margin-top: -1em;
 	}
 
 	@include at-breakpoint($medium) {
