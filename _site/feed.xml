@@ -73,7 +73,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#39;https://github.com/&#39;&gt;Github&lt;/a&gt;. I push all my source files to Github. Easy to manage, fun to share. Version control and…ye, I don’t need to tell you how awesome it is.&lt;/li&gt;
 
-&lt;li&gt;&lt;a href=&#39;http://ftploy.com/&#39;&gt;FTPloy&lt;/a&gt;. Push to Github (or &lt;a href=&#39;https://bitbucket.org/&#39;&gt;Bitbucket&lt;/a&gt;) and deploy with FTP/SSH. (Ok, to be honest I don’t actually use FTPloy for this site yet. But soon they will be adding deployments from specific repository folders.) Did I mention it’s free?&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;http://ftploy.com/&#39;&gt;FTPloy&lt;/a&gt;. Push to Github (or &lt;a href=&#39;https://bitbucket.org/&#39;&gt;Bitbucket&lt;/a&gt;) and deploy with FTP/SSH. Did I mention it’s free?&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img alt=&#39;FTPloy&#39; src=&#39;/img/posts/ftploy.png&#39; /&gt;&lt;/p&gt;

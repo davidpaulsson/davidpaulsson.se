@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Teckenstorlek med px, %, em eller rem? | David Paulsson</title>
+
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@davidpaulsson">
+		<meta name="twitter:creator" content="@davidpaulsson">
+		<meta content="David Paulsson" property="og:site_name">
+		<meta property="fb:admins" content="702052650"/>
+		<meta property="og:url" content="http://davidpaulsson.se/teckenstorlek-med-px-em-eller-rem">
+		<meta property="og:title" content="Teckenstorlek med px, %, em eller rem?">
+		<meta content="article" property="og:type">
+		<meta property="og:description" content="Jag tänkte i det här inlägget försöka gå igenom skillnaderna, styrkorna och nackdelarna med de olika sätt man kan sätta teckenstorlek på webben med.">
+		<meta content="2012-05-18T00:00:00+02:00" property="article:published_time">
+		<meta property="og:image" content="http://davidpaulsson.se/img/davidpaulsson.png">
+		<link rel="author" href="https://plus.google.com/114775156962186169341"/>
+
+		<link rel="alternate" type="application/rss+xml" title="David Paulsson" href="http://davidpaulsson.se/feed.xml">
+		<link href="/css/screen.css?v130812112856" media="screen, projection" rel="stylesheet" type="text/css" />
+		<style media="print" type="text/css">
+			body {
+			  font-family: Georgia, serif;
+			  background: none;
+			  color: black;
+			}
+			.site-main {
+			  width: 100%;
+			  margin: 0;
+			  padding: 0;
+			  background: none;
+			}
+			.site-header-wrapper,
+			.comments,
+			.site-footer-wrapper {
+			  display: none;
+			}
+			.single-post a:after {
+			  content: " [" attr(href) "] ";
+			}
+		</style>
+
+		<script type="text/javascript" src="/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script type="text/javascript" src="//use.typekit.net/pup4jil.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+			<div class="chromeframe-wrapper">
+				<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+			</div>
+		<![endif]-->
+
+<section class="site-small-navigation" role="complementary">
+	<h1 class="menu-toggle">Menu</h1>
+	<nav role="navigation">
+		<ul>
+			<li>Menu</li>
+			<li><a href="/">Startpage</a></li>
+			<li><a href="/archive/">Blog archive</a></li>
+			 
+				<li>
+					Previous post:<br>
+					<a href="/bara-sa-att-du-vet-pappa" title="Previous Post: Bara så att du vet pappa">Bara så att du vet pappa</a>
+				</li>
+			 
+			
+				<li>
+					Next post:<br>
+					<a href="/webbdesign-och-retinaskarmar" title="Next post: Webbdesign och retinaskärmar">Webbdesign och retinaskärmar</a>
+				</li>
+			
+			<li class="no-border"></li>
+			<li>Quick contact</li>
+			<li><a href="http://twitter.com/davidpaulsson/">@davidpaulsson</a></li>
+			<li class="no-border"><a href="mailto:david@davidpaulsson.se">david@davidpaulsson.se</a></li>
+		</ul>
+	</nav>
+</section><!-- .site-small-navigation -->
+
+<div class="container">
+	<div class="site-header-wrapper" id="top">
+		<header class="site-header" role="banner">
+			<div class="site-header-branding">
+				<h1 class="title"><a href="/">David Paulsson</a></h1>
+			</div><!-- .site-branding -->
+
+			<nav class="site-header-navigation" role="navigation">
+				<ul>
+					<li><a href="/">Startpage</a></li>
+					<li><a href="/archive/">Blog archive</a></li>
+					<li>
+						 
+							<a href="/bara-sa-att-du-vet-pappa" title="Previous Post: Bara så att du vet pappa">←&nbsp;Previous post</a> 
+						 
+					</li>
+					<li>
+						
+							<a href="/webbdesign-och-retinaskarmar" title="next Post: Webbdesign och retinaskärmar">Next post&nbsp;→</a> 
+						
+					</li>
+				</ul>
+			</nav><!-- .site-header-navigation -->
+		</header><!-- .site-header -->
+	</div><!-- .site-header-wrapper -->
+
+	<div class="site-main">
+		<article id="#content" class="single-post">
+			<h1>Teckenstorlek med px, %, em eller rem?</h1>
+			<p class="meta">Published 18 May 2012</p>
+			
+			<p>Att sätta rätt teckenstorlek på webben kan vara krångligt. Speciellt eftersom det finns så många skolor som alla berättar varför just deras sätt är bäst. Jag tänkte i det här inlägget försöka gå igenom skillnaderna, styrkorna och nackdelarna med de olika sätt man kan sätta teckenstorlek på webben med.</p>
+
+<p>Generellt så gäller följande regel: <strong>1em = 12pt = 16px = 100%</strong>.</p>
+
+<h2 id='px'>px</h2>
+
+<p>Den lättaste lösningen är att kopiera samma teckenstorlek som förlagan i Photoshop (är teckenstorleken 12 pt så motsvarar det 16 px i vår CSS (vi skriver aldrig pt i CSS, men om det senare)). Men detta har visat sig dåligt då användaren inte kan använda textförstoring i webbläsaren utan måste zooma in hela webbsidan.</p>
+
+<p>Att skriva teckenstorleken i px är det absolut bästa sättet om man vill vara riktigt pixelexakt med sin design utifrån förlagan. 12 px är helt enkelt 12 pixlar.</p>
+
+<p><img alt='Text som är satt till 12px med CSS är 12 pixlar hög.' src='http://davidpaulsson.se/img/posts/12px.png' /></p>
+
+<p>Att sätta text med pixlar har som sagt ett rätt dåligt rykte bland webbutvecklare och tillgänglighetsexperter då text som angetts i pixlar inte kan skalas upp/zoomas av besökare som använder IE6 eller tidigare. Inte ens i nyare versioner av Internet Explorer fungerar detta, men då finns det i alla fall en zoom-funktion i Internet Explorer som tillåter att användaren zoomar in ALLT innehåll på sidan. Det kan vara värt att tänka på, även om dina 20-någonting-ögon kan läsa text satt till 12px så är det inte alls säkert att dina besökare kan det.</p>
+
+<h3 id='hur_var_det_med_pt_nu_d'>Hur var det med pt nu då?</h3>
+
+<p>Jo, pt, eller punkter, är bara för print-stil! Detta är viktigt att komma ihåg. pt kommer skala bra för storlek när man skriver ut, men måtten på ett papper (dpi, dots per inch) är inte alls samma sak som måtten på en skärm (ppi, pixels per inch). Det är helt enkelt fel att använda pt på webben. Så vi går inte in djupare på det, kom bara ihåg; använd det inte.</p>
+
+<h2 id='em'>EM</h2>
+
+<p>EM är ett gammalt begrepp från <a href='http://en.wikipedia.org/wiki/Em_%28typography%29'>tryckvärlden</a> där ett M angav en full höjd och bredd på typsnittens tecken. Att använda em är kanske det knepigaste sättet i CSS då EM ärver stil från sina föräldrar. Så till exempel; om vi inte har deklarerat en typsnittsstorlek för vårt HTML-dokument så kommer det att vara webbläsarens standard (16px) och då är 1em = 16px. Skulle vi sätta <code>body { font-size:12px; }</code> så skulle 1em = 12px, 2em = 24px och 0.5em = 6px.</p>
+
+<p>Det här med att EM ärver storleken från sin förälder blir lite svårt att hålla reda på om man har en djup struktur i sin CSS. Om man har en liknande struktur för t.ex. ett blogginlägg:</p>
+<div class='highlight'><pre><code class='html'><span class='nt'>&lt;article&gt;</span>
+  <span class='nt'>&lt;header&gt;</span>
+    <span class='nt'>&lt;hgroup&gt;</span>
+      <span class='nt'>&lt;h1&gt;</span>Titel<span class='nt'>&lt;/h1&gt;</span>
+      <span class='nt'>&lt;h2&gt;</span>Undertitel<span class='nt'>&lt;/h2&gt;</span>
+    <span class='nt'>&lt;/hgroup&gt;</span>
+    <span class='nt'>&lt;div&gt;</span>
+      <span class='nt'>&lt;p&gt;</span>Publicerat den …<span class='nt'>&lt;/p&gt;</span>
+    <span class='nt'>&lt;/div&gt;</span>
+  <span class='nt'>&lt;/header&gt;</span>
+  <span class='nt'>&lt;div&gt;</span>
+    <span class='c'>&lt;!-- Innehåll … --&gt;</span>
+  <span class='nt'>&lt;/div&gt;</span>
+<span class='nt'>&lt;/article&gt;</span>
+</code></pre></div>
+<p>Nu vill vi sätta större text på våra rubriker och mindre text på vår meta-information när inlägget har publicerats. Skriver vi då <code>header { font-size: 2em; }</code> och sen <code>header div { font-size: .5em; }</code> så kommer vår metainformation bli halva storleken av förälderns element (dvs motsvarigheten till 1em). Alltså inte alls vad vi egentligen ville. Så här gäller det att hålla tungan rätt i mun.</p>
+
+<p>EM kan även användas som en generell måttenhet, så det går utmärkt att skriva t.ex. <code>margin: 2em 0;</code>. För att enkelt komma ihåg textstorlekarna och kunna översätta Photoshop till CSS så brukar man ange <code>html { font-size: 62.5%; }</code> i sin reset så att 1em = 10px. Då kan man enkelt skriva 1.6em för att få text som är 16px stor (t.ex.).</p>
+
+<h2 id='id1'>%</h2>
+
+<p>Procent beter sig ungefär som EM och skalar tillsammans med förälderns element. Jag har läst att procent skalar annorlunda när man använder font-size: smallest eller font-size: largest och liknande, men jag har själv inte lyckats återskapa problemet. Det kan vara ett Internet Explorer-problem (som så mycket annat ;)). Men använder du inte den typen av deklarationer kan du använda % eller EM, helt beroende på vad du själv tycker är enklast.</p>
+
+<h2 id='rem'>REM</h2>
+
+<p>REM, eller Root EM, är en hyfsat ny måttenhet som kom med CSS3 och beter sig som EM, men med den stora skillnaden att den inte bryr sig om sin förälder. Med Root så menas den att den bara bryr sig om dokumentets root, alltså HTML-deklarationen som styr teckenstorleken. Så har man angett html { font-size: 62.5%; } i sin CSS så är 1.2rem samma sak som 12px, oavsett vad det omslutande elementet har. Sweet!</p>
+
+<h3 id='men_hur_ser_det_ut_med_baktkompabilitet_fr_rem_d'>Men; hur ser det ut med bakåtkompabilitet för REM då?</h3>
+
+<p>Jo, tyvärr så är det rätt så kasst–men det finns ljuspunkter. Minns ni vad jag skrev om att inte ens nya versioner av Internet Explorer klarar av att skala text utan att zooma hela webbsidan? Ta-daa; från och med Internet Explorer 9 och uppåt klarar man det, men bara med REM. Dock så har inte versioner tidigare än Internet Explorer 9 någon som helst aning om vad REM är så då måste vi lägga in en fallback i vår kod. Men ändå, att skriva en fallback är ett litet pris att betala för att slippa slita sitt hår varje gång man vill ta vara på användarvänlighet och enkelt kunna räkna ut teckenstorleken.</p>
+<div class='highlight'><pre><code class='css'><span class='nt'>p</span> <span class='p'>{</span>
+  <span class='k'>font-size</span><span class='o'>:</span> <span class='m'>12px</span><span class='p'>;</span> <span class='o'>//</span> <span class='n'>Fallback</span> <span class='n'>f</span><span class='err'>ö</span><span class='n'>r</span> <span class='n'>IE8</span> <span class='n'>och</span> <span class='n'>tidigare</span>
+  <span class='k'>font-size</span><span class='o'>:</span> <span class='m'>1</span><span class='o'>.</span><span class='m'>2</span><span class='n'>rem</span><span class='p'>;</span> <span class='o'>//</span> <span class='n'>Alla</span> <span class='n'>andra</span> <span class='n'>vettiga</span> <span class='n'>webbl</span><span class='err'>ä</span><span class='n'>sare</span>
+<span class='p'>}</span>
+</code></pre></div>
+<h2 id='slutsats'>Slutsats</h2>
+
+<p>Vill du enkelt kunna ange rätt teckenstorlek utan att bli galen på vägen samtidigt som du försöker omfamna användarvänliga utvecklingsmetoder så använd REM med fallback som px.</p>
+		</article><!-- .single-post -->
+
+		
+			<div class="comments">
+				<div id="disqus_thread"></div>
+				<script type="text/javascript">
+					/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+					var disqus_shortname = 'davidpaulsson'; // required: replace example with your forum shortname
+
+					/* * * DON'T EDIT BELOW THIS LINE * * */
+					(function() {
+						var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+						dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+						(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+					})();
+				</script>
+				<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+				<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+			</div><!-- .comments -->
+		
+	</div><!-- .site-main -->
+
+			<div class="site-footer-wrapper">
+				<footer class="site-footer" role="contentinfo">
+					<div class="contact">
+						<p>This site is built with <a href="http://jekyllrb.com/">Jekyll</a> and hosted on <a href="https://fsdata.se/">FSData</a>. Last updated 12 August 2013. <a href="https://typekit.com/fonts/aktiv-grotesk-std">Aktiv Grotesk Std</a> served by <a href="https://typekit.com/">Typekit</a>. Lots of <span>♥</span> to <a href="http://sass-lang.com/">SASS</a> & <a href="http://compass-style.org/">Compass</a>. <a href="https://github.com/davidpaulsson/davidpaulsson.se">The source code is on Github</a> if you want to poke about or <a href="https://github.com/davidpaulsson/davidpaulsson.se/issues">submit a bug</a>.</p>
+					</div>
+					<div class="contact">
+						<h4>You can find me pretty much everywhere <br>(links in alphabetical order)</h4>
+						<p>
+							<a href="http://behance.net/davidpaulsson">behance.net/davidpaulsson</a><br>
+							<a href="http://dribbble.com/davidpaulsson">dribbble.com/davidpaulsson</a><br>
+							<a href="http://facebook.com/davidpaulsson">facebook.com/davidpaulsson</a><br>
+							<a href="http://forrst.me/davidpaulsson">forrst.me/davidpaulsson</a><br>
+							<a href="http://github.com/davidpaulsson/">github.com/davidpaulsson</a><br>
+							<a href="http://instagram.com/davidpaulsson">instagram.com/davidpaulsson</a><br>
+							<a href="http://last.fm/user/davidpaulsson">last.fm/user/davidpaulsson</a><br>
+							<a href="http://linkedin.com/in/davidpaulsson">linkedin.com/in/davidpaulsson</a><br>
+							<a href="http://open.spotify.com/user/david.paulsson">spotify.com/user/david.paulsson</a><br>
+							<a href="http://reddit.com/user/davidpaulsson">reddit.com/user/davidpaulsson</a><br>
+							<a href="http://soundcloud.com/davidpaulsson">soundcloud.com/davidpaulsson</a><br>
+							<a href="http://davidpaulsson.tumblr.com/">davidpaulsson.tumblr.com</a><br>
+							<a href="http://twitter.com/davidpaulsson/">twitter.com/davidpaulsson</a><br>
+							<a href="http://youtube.com/user/davidpaulsson">youtube.com/user/davidpaulsson</a><br>
+						</p>
+					</div><!-- .contact -->
+				</footer><!-- .site-footer -->
+			</div><!-- .site-footer-wrapper -->
+		</div><!-- .container -->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="/js/jquery-1.10.1.min.js"><\/script>')</script>
+		<script src="/js/main.min.js?v=130812112856"></script>
+
+		<script>
+			var _gaq=[['_setAccount','UA-20393268-1'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+
+	</body>
+</html>

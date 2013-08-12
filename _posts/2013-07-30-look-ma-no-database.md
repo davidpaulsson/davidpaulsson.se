@@ -65,7 +65,7 @@ Programs and scripts to make my life easier. Here is what I use, and now I'm sha
 ### Services
 
 * [Github](https://github.com/). I push all my source files to Github. Easy to manage, fun to share. Version control and…ye, I don’t need to tell you how awesome it is.
-* [FTPloy](http://ftploy.com/). Push to Github (or [Bitbucket](https://bitbucket.org/)) and deploy with FTP/SSH. (Ok, to be honest I don’t actually use FTPloy for this site yet. But soon they will be adding deployments from specific repository folders.) Did I mention it’s free?
+* [FTPloy](http://ftploy.com/). Push to Github (or [Bitbucket](https://bitbucket.org/)) and deploy with FTP/SSH. Did I mention it’s free?
 
 ![FTPloy](/img/posts/ftploy.png)
 
