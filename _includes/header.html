@@ -44,6 +44,17 @@
 			}
 		</style>
 
+		{% if page.bigimage %}
+			<style type="text/css">
+				.bigimage {
+					background-image: url(/img/posts/{{ page.bigimage }});
+					background-repeat: no-repeat;
+					background-size: cover;
+					height: 400px;
+				}
+			</style>
+		{% endif %}
+		
 		<script type="text/javascript" src="/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<script type="text/javascript" src="//use.typekit.net/pup4jil.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>

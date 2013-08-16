@@ -143,181 +143,181 @@
 /* =Clients
 -------------------------------------------------------------- */
 
-.clients-wrapper {
-	@include padding-leader();
-	@include transition-duration(100ms);
-	@include transition-property(all);
-	@include transition-timing-function(ease-in-out);	
-	background-color: $gray;
+// .clients-wrapper {
+// 	@include padding-leader();
+// 	@include transition-duration(100ms);
+// 	@include transition-property(all);
+// 	@include transition-timing-function(ease-in-out);	
+// 	background-color: $gray;
 
-	&:hover {
-		background-color: lighten($gray,5%);
-	}
-}
+// 	&:hover {
+// 		background-color: lighten($gray,5%);
+// 	}
+// }
 
-.clients {
-	text-align: center;
+// .clients {
+// 	text-align: center;
 	
-	h3 {
-		display: inline-block;		
-		font-weight: 200;
+// 	h3 {
+// 		display: inline-block;		
+// 		font-weight: 200;
 
-		&:hover {
-			cursor: pointer;
-		}
-	}
-	.logos {
-		div {
-			@include nth-omega(2n);
-			@include padding-leader();
-			@include span-columns(2);
+// 		&:hover {
+// 			cursor: pointer;
+// 		}
+// 	}
+// 	.logos {
+// 		div {
+// 			@include nth-omega(2n);
+// 			@include padding-leader();
+// 			@include span-columns(2);
 
-			@include at-breakpoint($medium) {
-				@include nth-omega(4n);
-				@include remove-nth-omega(2n);
-				@include span-columns(2);
-			}
+// 			@include at-breakpoint($medium) {
+// 				@include nth-omega(4n);
+// 				@include remove-nth-omega(2n);
+// 				@include span-columns(2);
+// 			}
 
-			@include at-breakpoint($large) {
-				@include nth-omega(4n);
-				@include remove-nth-omega(2n);
-				@include remove-nth-omega(4n);
-				@include span-columns(3);
-			}
-		}
-	}
-}
+// 			@include at-breakpoint($large) {
+// 				@include nth-omega(4n);
+// 				@include remove-nth-omega(2n);
+// 				@include remove-nth-omega(4n);
+// 				@include span-columns(3);
+// 			}
+// 		}
+// 	}
+// }
 
-.logos {
-	@include clearfix();
-	@include padding-trailer(3);
-	display: none;
-}
+// .logos {
+// 	@include clearfix();
+// 	@include padding-trailer(3);
+// 	display: none;
+// }
 
-%clients {
-	@include transition-duration(0ms);
-	background-position: center;
-	display: block !important;
-	margin: 0 auto !important;
-	text-indent: -999em;
-}
+// %clients {
+// 	@include transition-duration(0ms);
+// 	background-position: center;
+// 	display: block !important;
+// 	margin: 0 auto !important;
+// 	text-indent: -999em;
+// }
 
-$height: sprite-sprite-height(abb);
-$width: sprite-sprite-width(abb);
-.abb a {
-	@extend %clients;
-	@include sprite-sprite(abb);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(abb-hover);
-	}
-}
+// $height: sprite-sprite-height(abb);
+// $width: sprite-sprite-width(abb);
+// .abb a {
+// 	@extend %clients;
+// 	@include sprite-sprite(abb);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(abb-hover);
+// 	}
+// }
 
-$height: sprite-sprite-height(atlascopco);
-$width: sprite-sprite-width(atlascopco);
-.atlascopco a {
-	@extend %clients;
-	@include sprite-sprite(atlascopco);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(atlascopco-hover);
-	}
-}
+// $height: sprite-sprite-height(atlascopco);
+// $width: sprite-sprite-width(atlascopco);
+// .atlascopco a {
+// 	@extend %clients;
+// 	@include sprite-sprite(atlascopco);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(atlascopco-hover);
+// 	}
+// }
 
-$height: sprite-sprite-height(berattarministeriet);
-$width: sprite-sprite-width(berattarministeriet);
-.berattarministeriet a {
-	@extend %clients;
-	@include sprite-sprite(berattarministeriet);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(berattarministeriet-hover);
-	}
-}
+// $height: sprite-sprite-height(berattarministeriet);
+// $width: sprite-sprite-width(berattarministeriet);
+// .berattarministeriet a {
+// 	@extend %clients;
+// 	@include sprite-sprite(berattarministeriet);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(berattarministeriet-hover);
+// 	}
+// }
 
-$height: sprite-sprite-height(frontit);
-$width: sprite-sprite-width(frontit);
-.frontit a {
-	@extend %clients;
-	@include sprite-sprite(frontit);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(frontit-hover);
-	}
-}
+// $height: sprite-sprite-height(frontit);
+// $width: sprite-sprite-width(frontit);
+// .frontit a {
+// 	@extend %clients;
+// 	@include sprite-sprite(frontit);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(frontit-hover);
+// 	}
+// }
 
-$height: sprite-sprite-height(ge);
-$width: sprite-sprite-width(ge);
-.ge a {
-	@extend %clients;
-	@include sprite-sprite(ge);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(ge-hover);
-	}
-}
+// $height: sprite-sprite-height(ge);
+// $width: sprite-sprite-width(ge);
+// .ge a {
+// 	@extend %clients;
+// 	@include sprite-sprite(ge);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(ge-hover);
+// 	}
+// }
 
-$height: sprite-sprite-height(ikea);
-$width: sprite-sprite-width(ikea);
-.ikea a {
-	@extend %clients;
-	@include sprite-sprite(ikea);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(ikea-hover);
-	}
-}
+// $height: sprite-sprite-height(ikea);
+// $width: sprite-sprite-width(ikea);
+// .ikea a {
+// 	@extend %clients;
+// 	@include sprite-sprite(ikea);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(ikea-hover);
+// 	}
+// }
 
-$height: sprite-sprite-height(itrim);
-$width: sprite-sprite-width(itrim);
-.itrim a {
-	@extend %clients;
-	@include sprite-sprite(itrim);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(itrim-hover);
-	}
-}
+// $height: sprite-sprite-height(itrim);
+// $width: sprite-sprite-width(itrim);
+// .itrim a {
+// 	@extend %clients;
+// 	@include sprite-sprite(itrim);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(itrim-hover);
+// 	}
+// }
 
-$height: sprite-sprite-height(looptrooprockers);
-$width: sprite-sprite-width(looptrooprockers);
-.looptrooprockers a {
-	@extend %clients;
-	@include sprite-sprite(looptrooprockers);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(looptrooprockers-hover);
-	}
-}
+// $height: sprite-sprite-height(looptrooprockers);
+// $width: sprite-sprite-width(looptrooprockers);
+// .looptrooprockers a {
+// 	@extend %clients;
+// 	@include sprite-sprite(looptrooprockers);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(looptrooprockers-hover);
+// 	}
+// }
 
-$height: sprite-sprite-height(malarenergi);
-$width: sprite-sprite-width(malarenergi);
-.malarenergi a {
-	@extend %clients;
-	@include sprite-sprite(malarenergi);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(malarenergi-hover);
-	}
-}
+// $height: sprite-sprite-height(malarenergi);
+// $width: sprite-sprite-width(malarenergi);
+// .malarenergi a {
+// 	@extend %clients;
+// 	@include sprite-sprite(malarenergi);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(malarenergi-hover);
+// 	}
+// }
 
-$height: sprite-sprite-height(vave);
-$width: sprite-sprite-width(vave);
-.vave a {
-	@extend %clients;
-	@include sprite-sprite(vave);
-	height: $height;
-	width: $width;
-	&:hover {
-		@include sprite-sprite(vave-hover);
-	}
-}
+// $height: sprite-sprite-height(vave);
+// $width: sprite-sprite-width(vave);
+// .vave a {
+// 	@extend %clients;
+// 	@include sprite-sprite(vave);
+// 	height: $height;
+// 	width: $width;
+// 	&:hover {
+// 		@include sprite-sprite(vave-hover);
+// 	}
+// }
