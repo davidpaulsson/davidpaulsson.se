@@ -6,6 +6,7 @@
 	@include padding-trailer(1/2);
 	background-color: red;
 	color: $white;
+	font-family: $font-stack;
 
 	a {
 		color: darken($white,10%);
@@ -16,6 +17,7 @@
 	@extend .hide-for-small;
 	background-color: $black;
 	color: $white;
+	font-family: $font-stack;
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -79,6 +81,7 @@ h1.title {
 	@include at-breakpoint($medium) {
 		@include leader();
 		@include span-columns(7 omega);
+		@include adjust-font-size-to(16px);
 		text-align: right;
 
 		li {
@@ -102,7 +105,9 @@ h1.title {
 .site-small-navigation {
 	@extend .show-for-small;
 	@include clearfix();
+	@include adjust-font-size-to(14px);
 	background-color: $black;
+	font-family: $font-stack;
 	width: 100%;
 
 	.show-small-navigation & {
@@ -176,15 +181,9 @@ h1.title {
 	background-image: url(../img/intro-bgr.jpg);
 	background-position: center;
 	background-size: cover;
-	height: 320px;
 
 	@include at-breakpoint($medium) {
 		background-attachment: fixed;
-		height: 420px;
-	}
-
-	@include at-breakpoint($large) {
-		height: 660px;
 	}
 }
 
@@ -219,7 +218,7 @@ h1.title {
 	}
 
 	@include at-breakpoint($large) {
-		@include padding-leader(20);
+		@include padding-leader(16);
 
 		p {
 			@include pre(2);

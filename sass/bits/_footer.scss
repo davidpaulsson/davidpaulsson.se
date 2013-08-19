@@ -3,10 +3,11 @@
 
 .contact-wrapper {
 	@include padding-leader(2);
-	@include padding-trailer(2);
+	@include padding-trailer();
 	background-color: $black;
 	color: $white;
 	text-align: center;
+	font-family: $font-stack;
 
 	h1,
 	a {
@@ -28,8 +29,10 @@
 .site-footer-wrapper {
 	@include padding-leader(2);
 	@include padding-trailer(2);
+	@include adjust-font-size-to(14px);
 	background-color: darken($black,10%);
 	color: darken($white,20%);
+	font-family: $font-stack;
 	text-align: center;
 
 	h4 {

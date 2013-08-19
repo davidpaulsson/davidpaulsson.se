@@ -20,7 +20,7 @@ html {
 body { 
 	background-color: $white;
 	color: $text;
-	font-family: $font-stack;
+	font-family: $font-stack-serif;
 	height: 100%;
 }
 
@@ -53,12 +53,13 @@ img {
 
 #{headings()} {
 	color: $black;
+	font-family: $font-stack;
+	font-weight: bold;
 	-moz-font-feature-settings: "liga=1, dlig=1";
 	-ms-font-feature-settings: "liga", "dlig";
 	-o-font-feature-settings: "liga", "dlig";
 	-webkit-font-feature-settings: "liga", "dlig";
 	font-feature-settings: "liga", "dlig";
-	font-weight: bold;
 }
 
 h1 { 
@@ -197,6 +198,7 @@ a {
 	background-color: $primary;
 	color: $white;
 	display: inline-block;
+	font-family: $font-stack;
 	padding: .5em 1em;
 
 	&:hover {

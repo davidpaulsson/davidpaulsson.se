@@ -80,6 +80,7 @@
 		@include transition-timing-function(linear);
 		background-color: $white;
 		color: $black;
+		font-family: $font-stack;
 		padding: 2px 4px;
 	}
 }

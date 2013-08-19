@@ -52,6 +52,7 @@ header.archive {
 }
 
 .single-post {
+	@include adjust-font-size-to(14px);
 	@include trailer(2);
 
 	.meta {
@@ -59,6 +60,7 @@ header.archive {
 	}
 
 	@include at-breakpoint($medium) {
+		@include adjust-font-size-to(18px);
 		@include padding-leader(4);
 
 		h1,
@@ -78,19 +80,21 @@ header.archive {
 	}
 
 	@include at-breakpoint($large) {
+		@include adjust-font-size-to(22px);
+
 		#{headings(2,6)},
 		ul,
 		ol,
 		blockquote,
 		p,
 		.caption {
-			@include post(2);
-			@include pre(2);
+			@include post(1);
+			@include pre(1);
 		}
 
 		.highlight {
-			@include pre(1);
-			@include post(1);
+			// @include pre(1);
+			// @include post(1);
 			background-color: darken($white,5);
 
 			pre {
