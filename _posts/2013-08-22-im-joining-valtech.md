@@ -18,7 +18,7 @@ I’ve been working at [byBrick Interface](http://www.bybrick.se/en/our-business
 
 [byBrick](http://bybrick.com) has been a fantastic work place for me. Almost everything I know I’ve been able to learn through my projects here and nothing seems to be impossible for this company.
 
-Because it’s not only IT but also design, 3D, management and infrastructure I’ve had the opportunity to be exposed to lots of people and technologies that I otherwise might not have. And this is really important when you’re in the beginning of your career (hey, I’m not even 30 yet).
+Because it’s not only IT but also design, 3D, management and infrastructure I’ve had the opportunity to meet lots of people and be exposed to technologies that I otherwise might not have. And this is really important when you’re in the beginning of your career (hey, I’m not even 30 yet).
 
-I’m walking away from byBrick ambivalent. Of course I’m very happy and glad to be joining Valtech (that seems to be a fantastic company with some amazingly talented people) and at the same time I’m sad that I won’t be working with my fantastic colleagues *and friends* here at byBrick any more.
+I’m walking away from byBrick ambivalent. Of course I’m very happy and glad to be joining Valtech (which seems to be a fantastic company with some amazingly talented people) and at the same time I’m sad that I won’t be working with my fantastic colleagues *and friends* here at byBrick any more.
 

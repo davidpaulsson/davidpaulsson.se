@@ -20,9 +20,9 @@
 
 &lt;p&gt;&lt;a href=&#39;http://bybrick.com&#39;&gt;byBrick&lt;/a&gt; has been a fantastic work place for me. Almost everything I know I’ve been able to learn through my projects here and nothing seems to be impossible for this company.&lt;/p&gt;
 
-&lt;p&gt;Because it’s not only IT but also design, 3D, management and infrastructure I’ve had the opportunity to be exposed to lots of people and technologies that I otherwise might not have. And this is really important when you’re in the beginning of your career (hey, I’m not even 30 yet).&lt;/p&gt;
+&lt;p&gt;Because it’s not only IT but also design, 3D, management and infrastructure I’ve had the opportunity to meet lots of people and be exposed to technologies that I otherwise might not have. And this is really important when you’re in the beginning of your career (hey, I’m not even 30 yet).&lt;/p&gt;
 
-&lt;p&gt;I’m walking away from byBrick ambivalent. Of course I’m very happy and glad to be joining Valtech (that seems to be a fantastic company with some amazingly talented people) and at the same time I’m sad that I won’t be working with my fantastic colleagues &lt;em&gt;and friends&lt;/em&gt; here at byBrick any more.&lt;/p&gt;</description>
+&lt;p&gt;I’m walking away from byBrick ambivalent. Of course I’m very happy and glad to be joining Valtech (which seems to be a fantastic company with some amazingly talented people) and at the same time I’m sad that I won’t be working with my fantastic colleagues &lt;em&gt;and friends&lt;/em&gt; here at byBrick any more.&lt;/p&gt;</description>
 				<pubDate>Thu, 22 Aug 2013 00:00:00 +0200</pubDate>
 				<link>http://davidpaulsson.se/im-joining-valtech</link>
 				<guid isPermaLink="true">http://davidpaulsson.se/im-joining-valtech</guid>
@@ -328,7 +328,7 @@
 
 &lt;p&gt;EM kan även användas som en generell måttenhet, så det går utmärkt att skriva t.ex. &lt;code&gt;margin: 2em 0;&lt;/code&gt;. För att enkelt komma ihåg textstorlekarna och kunna översätta Photoshop till CSS så brukar man ange &lt;code&gt;html { font-size: 62.5%; }&lt;/code&gt; i sin reset så att 1em = 10px. Då kan man enkelt skriva 1.6em för att få text som är 16px stor (t.ex.).&lt;/p&gt;
 
-&lt;h2 id=&#39;id1&#39;&gt;%&lt;/h2&gt;
+&lt;h2 id=&#39;id16&#39;&gt;%&lt;/h2&gt;
 
 &lt;p&gt;Procent beter sig ungefär som EM och skalar tillsammans med förälderns element. Jag har läst att procent skalar annorlunda när man använder font-size: smallest eller font-size: largest och liknande, men jag har själv inte lyckats återskapa problemet. Det kan vara ett Internet Explorer-problem (som så mycket annat ;)). Men använder du inte den typen av deklarationer kan du använda % eller EM, helt beroende på vad du själv tycker är enklast.&lt;/p&gt;
 
