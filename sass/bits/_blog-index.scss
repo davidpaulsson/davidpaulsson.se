@@ -87,6 +87,7 @@ header.archive {
 		ol,
 		blockquote,
 		p,
+		.alert,
 		.caption {
 			@include post(1);
 			@include pre(1);
@@ -123,6 +124,19 @@ header.archive {
 .fluid-width-video-wrapper {
 	@include trailer(2);
 	z-index: 1;
+}
+
+.alert {
+	@include trailer();
+	background-color: darken($white,5%);
+	color: lighten($text,20%);
+	font-style: italic;
+	padding: 2em;
+	text-align: center;
+
+	a {
+		color: lighten($text,20%);
+	}
 }
 
 /* =Comments

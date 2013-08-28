@@ -1,9 +1,13 @@
 /* =Syntax
 -------------------------------------------------------------- */
 
-.highlight  { background: #ffffff; }
+.highlight  { 
+	@include trailer();
+	background: #ffffff;
+	overflow: scroll;
+}
 .highlight .c { color: #999988; font-style: italic } /* Comment */
-.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .err { color: #a61717; } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
 .highlight .o { font-weight: bold } /* Operator */
 .highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */

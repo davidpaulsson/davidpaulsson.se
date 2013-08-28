@@ -7,6 +7,74 @@
 		<atom:link href="http://davidpaulsson.se/feed.xml" rel="self" type="application/rss+xml" />
 		
 			<item>
+				<title>How to: sensible default typography with a vertical rhythm</title>
+				<description>&lt;p&gt;In order to help your users to read and interpret your content there are a few tricks we can pull out when designing websites. First off, we have to make sure the &lt;strong&gt;font is large enough to read&lt;/strong&gt;, that there’s &lt;strong&gt;enough contrast&lt;/strong&gt; between the body text color and the background, that the lines of text in each row &lt;strong&gt;aren’t too long&lt;/strong&gt; (about 45-65 characters is optimal) and then there’s to set up a &lt;strong&gt;typographic rhythm&lt;/strong&gt; that helps your users to read.&lt;/p&gt;
+
+&lt;h2 id=&#39;lets_talk_about_the_rhythm_part_in_this_article&#39;&gt;Let’s talk about the rhythm part in this article&lt;/h2&gt;
+
+&lt;p&gt;If you’re designing for print you have it easy. Just enable the baseline grid in Quark or InDesign and set the increment based on your designs line-height. Sad for us web developers/designers, I’ve yet to see this option in my code editor.&lt;/p&gt;
+
+&lt;p&gt;When designing on the web, there’s only so much we can do. We can control font size, line height and margins or paddings. When we then write, or hand out the website to our client and watch them add content on their own, we must have calculate the above factors with care in order to maintain the rhythm indented.&lt;/p&gt;
+
+&lt;p&gt;Luckily there are tools to help us.&lt;/p&gt;
+
+&lt;h2 id=&#39;introducing_compass_vertical_rhythm&#39;&gt;Introducing Compass Vertical Rhythm&lt;/h2&gt;
+
+&lt;p&gt;If you’re reading this you’re probably already familiar with &lt;a href=&#39;http://sass-lang.com/&#39;&gt;SASS&lt;/a&gt; and &lt;a href=&#39;http://compass-style.org/&#39;&gt;Compass&lt;/a&gt;. SASS is a meta-language of CSS that’s used to describe the style of a document cleanly and structurally, with more power than flat CSS allows. Compass is a CSS framework that work together with SASS, full with reusable patterns and CSS3 mixins for your stylesheets.&lt;/p&gt;
+
+&lt;p&gt;Using SASS you set variables in your stylesheets and that will automagically update the math and help your designs vertical rhythm.&lt;/p&gt;
+
+&lt;h2 id=&#39;bytype&#39;&gt;byType&lt;/h2&gt;
+
+&lt;p&gt;In order to keep my code &lt;a href=&#39;http://en.wikipedia.org/wiki/Don&amp;apos;t_repeat_yourself&#39;&gt;DRY&lt;/a&gt; I’ve set up a base style sheet, that enables vertical rhythm, that anyone can use when setting up their projects. It’s like a small CSS typographic framework that’s not intended to use as-is, but rather to fork and make your own.&lt;/p&gt;
+
+&lt;p&gt;Here’s an example image of &lt;a href=&#39;https://github.com/byBrick/byType&#39;&gt;byType&lt;/a&gt; in action. Notice how the right sidebar align correctly with the text in the left main column area.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&#39;&#39; src=&#39;/img/posts/bytype.png&#39; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now: let’s look at some code.&lt;/p&gt;
+
+&lt;p&gt;To start things off, we need to make sure we include Compass in the beginning of our style sheet. Let&amp;#8217;s do that.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;sass&#39;&gt;&lt;span class=&#39;cm&#39;&gt;/* Make sure you have access to Compass. If you already have included Compass into your project, remove this line below. */&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;@import&lt;/span&gt; &lt;span class=&#39;s&#39;&gt;&amp;quot;compass&amp;quot;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now that that’s all taken care of, let’s define some variables that will help us throughout our project.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;sass&#39;&gt;&lt;span class=&#39;cm&#39;&gt;/* Fonts size and line height defaults */&lt;/span&gt;
+&lt;span class=&#39;na&#39;&gt;$base-font-size&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;16&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;px&lt;/span&gt;&lt;span class=&#39;err&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* Sets the browser default size. &lt;/span&gt;&lt;span class=&#39;c&#39;&gt;*/&lt;/span&gt;
+&lt;span class=&#39;na&#39;&gt;$base-line-height&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;24&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;px&lt;/span&gt;&lt;span class=&#39;err&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* Baseline grid. &lt;/span&gt;&lt;span class=&#39;c&#39;&gt;*/&lt;/span&gt;
+&lt;span class=&#39;k&#39;&gt;@include&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt; establish-baseline&lt;/span&gt;&lt;span class=&#39;err&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* &amp;quot;This is where the magic happens&amp;quot; —Everyone on MTV Cribs. &lt;/span&gt;&lt;span class=&#39;c&#39;&gt;*/&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;These lines above are editable and will be the base on witch the entire stylesheet calculates the margins and paddings. &lt;code&gt;$base-font-size&lt;/code&gt; and &lt;code&gt;$base-line-height&lt;/code&gt; are normal variables you can use in SASS. But &lt;code&gt;establish-baseline&lt;/code&gt; is a mixin available to us since we’ve included Compass at the top of our stylesheet. This will go to the Compass library installed on our computer and pull the code we want and add it into our stylesheet when we compile our final CSS file.&lt;/p&gt;
+
+&lt;p&gt;We go on and add more styles to our CSS and when we need to add something like margins or font sizes, we do it this way as I’ve done for our headings style.&lt;/p&gt;
+&lt;div class=&#39;highlight&#39;&gt;&lt;pre&gt;&lt;code class=&#39;sass&#39;&gt;&lt;span class=&#39;nt&#39;&gt;h1&lt;/span&gt; &lt;span class=&#39;err&#39;&gt;{&lt;/span&gt; 
+  &lt;span class=&#39;k&#39;&gt;@include&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt; adjust-font-size-to&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;36&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;px&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;&lt;span class=&#39;err&#39;&gt;;&lt;/span&gt; 
+  &lt;span class=&#39;na&#39;&gt;margin&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;rhythm&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;36&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;px&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;err&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* 1 line below &lt;/span&gt;&lt;span class=&#39;c&#39;&gt;*/&lt;/span&gt;
+&lt;span class=&#39;err&#39;&gt;}&lt;/span&gt; 
+
+&lt;span class=&#39;nt&#39;&gt;h2&lt;/span&gt; &lt;span class=&#39;err&#39;&gt;{&lt;/span&gt; 
+  &lt;span class=&#39;k&#39;&gt;@include&lt;/span&gt;&lt;span class=&#39;nd&#39;&gt; adjust-font-size-to&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;30&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;px&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt;&lt;span class=&#39;err&#39;&gt;;&lt;/span&gt; 
+  &lt;span class=&#39;na&#39;&gt;margin&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;:&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;rhythm&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;2&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;30&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;px&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt; &lt;span class=&#39;nf&#39;&gt;rhythm&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;(&lt;/span&gt;&lt;span class=&#39;mi&#39;&gt;1&lt;/span&gt;&lt;span class=&#39;o&#39;&gt;,&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;30&lt;/span&gt;&lt;span class=&#39;kt&#39;&gt;px&lt;/span&gt;&lt;span class=&#39;p&#39;&gt;)&lt;/span&gt; &lt;span class=&#39;mi&#39;&gt;0&lt;/span&gt;&lt;span class=&#39;err&#39;&gt;;&lt;/span&gt; &lt;span class=&#39;cm&#39;&gt;/* 2 line above, 1 line below &lt;/span&gt;&lt;span class=&#39;c&#39;&gt;*/&lt;/span&gt;
+&lt;span class=&#39;err&#39;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;This will keep the math at a minimum and make everything align correctly. But what if we where to add a border below an element, surerly that would mess up the vertical grid, right? Nope, thanks to Compass you’re covered.&lt;/p&gt;
+
+&lt;p&gt;Compass comes with lots of different mixin to handle this stuff for you, so for the border example you can just write &lt;code&gt;@include trailing-border(5px)&lt;/code&gt; and it will add a trailing border, five pixel thick without throwing your vertical rhythm off by five pixels. &lt;em&gt;Pretty neat, huh?&lt;/em&gt; To see what else Compass can help you with I suggest you go check out &lt;a href=&#39;http://compass-style.org/reference/compass/typography/vertical_rhythm/&#39;&gt;the official vertical rhythm section&lt;/a&gt; of the Compass documentation website.&lt;/p&gt;
+
+&lt;h2 id=&#39;have_a_look_around&#39;&gt;Have a look around&lt;/h2&gt;
+
+&lt;p&gt;There are lots of different tools to handle your web typography and I hope you’ll learn every little piece of it. If not, please consider using &lt;a href=&#39;https://github.com/byBrick/byType&#39;&gt;byType&lt;/a&gt; as a starting boilerplate for your next project.&lt;/p&gt;
+
+&lt;p&gt;Besides helping you with your vertical rhythm, I’ve also enabled some other goodies like antialiased font smoothing for webkit browsers, ligatures for headings (if you have fonts that support it) and hacks to stop certain devices scale text incorrectly.&lt;/p&gt;
+
+&lt;p&gt;Feel free &lt;a href=&#39;https://github.com/byBrick/byType&#39;&gt;download, fork or whatever, byType at our Github repository →&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#39;alert&#39;&gt;Note: This post was originally published on &lt;a href=&#39;http://bybrick.github.io/2013/08/23/bytype/&#39;&gt;byBrick Labs&lt;/a&gt;.&lt;/div&gt;</description>
+				<pubDate>Fri, 23 Aug 2013 00:00:00 +0200</pubDate>
+				<link>http://davidpaulsson.se/bytype</link>
+				<guid isPermaLink="true">http://davidpaulsson.se/bytype</guid>
+			</item>
+		
+			<item>
 				<title>I’m joining Valtech!</title>
 				<description>&lt;p&gt;As of September 2&lt;sup&gt;nd&lt;/sup&gt; I’ll be employed as a front end developer at &lt;a href=&#39;http://www.valtech.se&#39;&gt;Valtech&lt;/a&gt;, and I’m super excited.&lt;/p&gt;
 
@@ -328,7 +396,7 @@
 
 &lt;p&gt;EM kan även användas som en generell måttenhet, så det går utmärkt att skriva t.ex. &lt;code&gt;margin: 2em 0;&lt;/code&gt;. För att enkelt komma ihåg textstorlekarna och kunna översätta Photoshop till CSS så brukar man ange &lt;code&gt;html { font-size: 62.5%; }&lt;/code&gt; i sin reset så att 1em = 10px. Då kan man enkelt skriva 1.6em för att få text som är 16px stor (t.ex.).&lt;/p&gt;
 
-&lt;h2 id=&#39;id16&#39;&gt;%&lt;/h2&gt;
+&lt;h2 id=&#39;id1&#39;&gt;%&lt;/h2&gt;
 
 &lt;p&gt;Procent beter sig ungefär som EM och skalar tillsammans med förälderns element. Jag har läst att procent skalar annorlunda när man använder font-size: smallest eller font-size: largest och liknande, men jag har själv inte lyckats återskapa problemet. Det kan vara ett Internet Explorer-problem (som så mycket annat ;)). Men använder du inte den typen av deklarationer kan du använda % eller EM, helt beroende på vad du själv tycker är enklast.&lt;/p&gt;
 
