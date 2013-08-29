@@ -12,7 +12,9 @@
 	.post {
 		@include padding-leader(2);
 		@include padding-trailer();
-		border-bottom: 1px solid $gray;
+		@include trailing-border(1px);
+		border-color: $gray;
+		// border-bottom: 1px solid $gray;
 
 		&:last-child {
 			border-bottom: none;
@@ -20,19 +22,33 @@
 	}
 
 	@include at-breakpoint($medium) {
-		.post {
-			@include post(2);
-		}
+		@include span-columns(6);
 	}
 	@include at-breakpoint($large) {
-		.post {
-			@include post(5);
-		}
+		@include span-columns(7);
 	}
 }
 
 .meta + h2 {
 	margin-top: 0;
+}
+
+.latest-comments {
+	@include leader(8);
+
+	li {
+		@include trailing-border(1px);
+		border-color: $gray;
+		list-style-type: none;
+	}
+
+	@include at-breakpoint($medium) {
+		@include span-columns(2 omega);
+	}
+	@include at-breakpoint($large) {
+		@include span-columns(5 omega);
+		@include pad(1);
+	}
 }
 
 /* =Archive

@@ -331,6 +331,15 @@
       "initialSize" : 330073,
       "fileType" : 8192
     },
+    "\/app\/bower_components\/OwlCarousel\/assets\/css\/custom.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/css\/custom.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/img\/logos\/itrim.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -341,15 +350,6 @@
       "outputAbbreviatedPath" : "\/img\/logos\/itrim.png",
       "initialSize" : 3371,
       "fileType" : 8192
-    },
-    "\/app\/bower_components\/OwlCarousel\/assets\/css\/custom.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/css\/custom.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/sass\/animate\/_rotateOutUpRight.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -396,16 +396,16 @@
       "initialSize" : 3058,
       "fileType" : 8192
     },
-    "\/_site\/img\/davidpaulsson-logo.png" : {
+    "\/app\/bower_components\/OwlCarousel\/assets\/js\/bootstrap-tab.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/davidpaulsson-logo.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/davidpaulsson-logo.png",
-      "initialSize" : 340,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/js\/bootstrap-tab.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/js\/bootstrap-tab.min.js",
+      "fileType" : 64
     },
     "\/sass\/susy\/_units.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -419,16 +419,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/app\/bower_components\/OwlCarousel\/assets\/js\/bootstrap-tab.js" : {
+    "\/app\/bower_components\/OwlCarousel\/assets\/img\/demo-slides\/responsive.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/js\/bootstrap-tab.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 0,
-      "outputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/js\/bootstrap-tab.min.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/img\/demo-slides\/responsive.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/img\/demo-slides\/responsive.png",
+      "initialSize" : 2156,
+      "fileType" : 8192
     },
     "\/img\/posts\/sven-arne.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -452,15 +452,15 @@
       "initialSize" : 2589,
       "fileType" : 8192
     },
-    "\/app\/bower_components\/OwlCarousel\/assets\/img\/demo-slides\/responsive.png" : {
+    "\/_site\/img\/davidpaulsson-logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/img\/demo-slides\/responsive.png",
+      "inputAbbreviatedPath" : "\/_site\/img\/davidpaulsson-logo.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/assets\/img\/demo-slides\/responsive.png",
-      "initialSize" : 2156,
+      "outputAbbreviatedPath" : "\/_site\/img\/davidpaulsson-logo.png",
+      "initialSize" : 340,
       "fileType" : 8192
     },
     "\/img\/logos\/looptrooprockers.png" : {
@@ -1062,16 +1062,16 @@
       "initialSize" : 5280,
       "fileType" : 8192
     },
-    "\/_site\/img\/sprite\/margareta-50x50.jpg" : {
+    "\/img\/logos\/malarenergi.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/margareta-50x50.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/margareta-50x50.jpg",
-      "initialSize" : 1247,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/img\/logos\/malarenergi.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/logos\/malarenergi.png",
+      "initialSize" : 3197,
+      "fileType" : 8192
     },
     "\/app\/bower_components\/OwlCarousel\/assets\/img\/demo-slides\/zombie.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1084,16 +1084,16 @@
       "initialSize" : 5840,
       "fileType" : 8192
     },
-    "\/img\/logos\/malarenergi.png" : {
+    "\/_site\/img\/sprite\/margareta-50x50.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/logos\/malarenergi.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/logos\/malarenergi.png",
-      "initialSize" : 3197,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/_site\/img\/sprite\/margareta-50x50.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/_site\/img\/sprite\/margareta-50x50.jpg",
+      "initialSize" : 1247,
+      "fileType" : 4096
     },
     "\/app\/bower_components\/OwlCarousel\/demos\/assets\/owl1.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -1173,15 +1173,6 @@
       "initialSize" : 717025,
       "fileType" : 4096
     },
-    "\/_includes\/footer.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_includes\/footer.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/sass\/animate\/_swing.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1193,6 +1184,15 @@
       "outputAbbreviatedPath" : "\/css\/_swing.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/_includes\/footer.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_includes\/footer.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/app\/bower_components\/jquery\/jquery-migrate.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1324,15 +1324,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_site\/404.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_site\/404.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/_site\/img\/posts\/wywallet-2.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1343,6 +1334,15 @@
       "outputAbbreviatedPath" : "\/_site\/img\/posts\/wywallet-2.png",
       "initialSize" : 56254,
       "fileType" : 8192
+    },
+    "\/_site\/404.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/_site\/404.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/app\/bower_components\/OwlCarousel\/assets\/img\/demo-slides\/grab.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1513,6 +1513,18 @@
       "initialSize" : 8874,
       "fileType" : 8192
     },
+    "\/sass\/animate\/_flipInY.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/animate\/_flipInY.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_flipInY.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/img\/sprite-sa2008e44b7.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1523,17 +1535,6 @@
       "outputAbbreviatedPath" : "\/img\/sprite-sa2008e44b7.png",
       "initialSize" : 35830,
       "fileType" : 8192
-    },
-    "\/img\/sprite\/walshy-50x50.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/sprite\/walshy-50x50.jpg",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/sprite\/walshy-50x50.jpg",
-      "initialSize" : 1675,
-      "fileType" : 4096
     },
     "\/_site\/img\/davidpaulsson.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1546,17 +1547,16 @@
       "initialSize" : 28234,
       "fileType" : 8192
     },
-    "\/sass\/animate\/_flipInY.scss" : {
+    "\/img\/sprite\/walshy-50x50.jpg" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_flipInY.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_flipInY.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/img\/sprite\/walshy-50x50.jpg",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/sprite\/walshy-50x50.jpg",
+      "initialSize" : 1675,
+      "fileType" : 4096
     },
     "\/app\/bower_components\/OwlCarousel\/assets\/ico\/favicon.png" : {
       "ignoreWasSetByUser" : 0,
@@ -1620,6 +1620,15 @@
       "initialSize" : 3916,
       "fileType" : 8192
     },
+    "\/css\/screen.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/screen.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/sass\/animate\/_rotateInDownRight.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -1631,15 +1640,6 @@
       "outputAbbreviatedPath" : "\/css\/_rotateInDownRight.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/css\/screen.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/screen.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/sass\/bits\/_header.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -1897,17 +1897,16 @@
       "outputAbbreviatedPath" : "\/_site\/js\/main.min.js",
       "fileType" : 64
     },
-    "\/sass\/animate\/_flash.scss" : {
+    "\/img\/logos\/vave-hover.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/animate\/_flash.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_flash.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/img\/logos\/vave-hover.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/logos\/vave-hover.png",
+      "initialSize" : 5113,
+      "fileType" : 8192
     },
     "\/app\/bower_components\/jquery\/jquery.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -1931,16 +1930,17 @@
       "initialSize" : 152109,
       "fileType" : 8192
     },
-    "\/img\/logos\/vave-hover.png" : {
+    "\/sass\/animate\/_flash.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/logos\/vave-hover.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/logos\/vave-hover.png",
-      "initialSize" : 5113,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/sass\/animate\/_flash.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_flash.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/img\/posts\/sublimetext.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2042,18 +2042,6 @@
       "initialSize" : 163675,
       "fileType" : 4096
     },
-    "\/sass\/susy\/_margin.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/susy\/_margin.scss",
-      "outputStyle" : 3,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/css\/_margin.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/img\/case\/itrim.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2084,6 +2072,18 @@
       "outputAbbreviatedPath" : "\/img\/sprite\/walshy.png",
       "initialSize" : 3663,
       "fileType" : 8192
+    },
+    "\/sass\/susy\/_margin.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/susy\/_margin.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/css\/_margin.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/app\/bower_components\/OwlCarousel\/assets\/js\/jquery-1.9.1.min.js" : {
       "ignoreWasSetByUser" : 0,
@@ -2126,6 +2126,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/img\/posts\/dp-logo-4.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/posts\/dp-logo-4.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/posts\/dp-logo-4.png",
+      "initialSize" : 4351,
+      "fileType" : 8192
+    },
     "\/sass\/susy\/_settings.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2137,17 +2148,6 @@
       "outputAbbreviatedPath" : "\/css\/_settings.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/img\/posts\/dp-logo-4.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/posts\/dp-logo-4.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/posts\/dp-logo-4.png",
-      "initialSize" : 4351,
-      "fileType" : 8192
     },
     "\/app\/bower_components\/OwlCarousel\/assets\/img\/demo-slides\/multi.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2276,17 +2276,6 @@
       "outputAbbreviatedPath" : "\/js\/main.min.min.js",
       "fileType" : 64
     },
-    "\/img\/logos\/ikea-hover.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/logos\/ikea-hover.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/img\/logos\/ikea-hover.png",
-      "initialSize" : 1796,
-      "fileType" : 8192
-    },
     "\/sass\/susy\/_isolation.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -2298,6 +2287,17 @@
       "outputAbbreviatedPath" : "\/css\/_isolation.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/img\/logos\/ikea-hover.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/logos\/ikea-hover.png",
+      "processed" : 1,
+      "outputAbbreviatedPath" : "\/img\/logos\/ikea-hover.png",
+      "initialSize" : 1796,
+      "fileType" : 8192
     },
     "\/img\/case\/nyafilmstaden.png" : {
       "ignoreWasSetByUser" : 0,
@@ -2461,6 +2461,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/app\/bower_components\/OwlCarousel\/demos\/one.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/demos\/one.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/app\/bower_components\/OwlCarousel\/demos\/assets\/fullimage2.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -2471,15 +2480,6 @@
       "outputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/demos\/assets\/fullimage2.jpg",
       "initialSize" : 149197,
       "fileType" : 4096
-    },
-    "\/app\/bower_components\/OwlCarousel\/demos\/one.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/app\/bower_components\/OwlCarousel\/demos\/one.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/img\/posts\/valtech.jpg" : {
       "ignoreWasSetByUser" : 0,
@@ -2814,6 +2814,17 @@
       "outputAbbreviatedPath" : "\/css\/_bounceInDown.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/js\/jquery.zrssfeed.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/jquery.zrssfeed.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 0,
+      "outputAbbreviatedPath" : "\/js\/jquery.zrssfeed.min.js",
+      "fileType" : 64
     },
     "\/sass\/animate\/_shake.scss" : {
       "ignoreWasSetByUser" : 0,
