@@ -396,7 +396,7 @@
 
 &lt;p&gt;EM kan även användas som en generell måttenhet, så det går utmärkt att skriva t.ex. &lt;code&gt;margin: 2em 0;&lt;/code&gt;. För att enkelt komma ihåg textstorlekarna och kunna översätta Photoshop till CSS så brukar man ange &lt;code&gt;html { font-size: 62.5%; }&lt;/code&gt; i sin reset så att 1em = 10px. Då kan man enkelt skriva 1.6em för att få text som är 16px stor (t.ex.).&lt;/p&gt;
 
-&lt;h2 id=&#39;id31&#39;&gt;%&lt;/h2&gt;
+&lt;h2 id=&#39;id8&#39;&gt;%&lt;/h2&gt;
 
 &lt;p&gt;Procent beter sig ungefär som EM och skalar tillsammans med förälderns element. Jag har läst att procent skalar annorlunda när man använder font-size: smallest eller font-size: largest och liknande, men jag har själv inte lyckats återskapa problemet. Det kan vara ett Internet Explorer-problem (som så mycket annat ;)). Men använder du inte den typen av deklarationer kan du använda % eller EM, helt beroende på vad du själv tycker är enklast.&lt;/p&gt;
 
