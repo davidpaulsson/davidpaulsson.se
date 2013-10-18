@@ -2,10 +2,10 @@
 -------------------------------------------------------------- */
 
 html {
+	height: 100%;
 	-webkit-font-smoothing: antialiased; // Improve (or in some cases screw with) safari's legibility somewhat
 	font-kerning: normal; // Set the default for kerning
 	font-synthesis: none; // Don't allow the font to create sythetic bold/italic
-	height: 100%;
 	text-rendering: optimizeLegibility; // Improve kerning pairs. Caution: Webkit gets funny with this sometimes
 
 	/* =Stop iPhone/iPad from scaling text
@@ -17,11 +17,11 @@ html {
 
 }
 
-body { 
+body {
+	height: 100%; 
 	background-color: $white;
 	color: $text;
 	font-family: $font-stack-serif;
-	height: 100%;
 }
 
 /* Remove the stupid gap beneath images */
@@ -33,19 +33,19 @@ img {
 -------------------------------------------------------------- */
 
 .hide-for-small {
-	display: none;
 
 	@include at-breakpoint($medium) {
 		display: block;
 	}
+	display: none;
 }
 
 .show-for-small {
-	display: block;
 
 	@include at-breakpoint($medium) {
 		display: none;
 	}
+	display: block;
 }
 
 /* =Default Sizing and spacing
@@ -53,8 +53,8 @@ img {
 
 #{headings()} {
 	color: $black;
-	font-family: $font-stack;
 	font-weight: bold;
+	font-family: $font-stack;
 	-moz-font-feature-settings: "liga=1, dlig=1";
 	-ms-font-feature-settings: "liga", "dlig";
 	-o-font-feature-settings: "liga", "dlig";
@@ -97,9 +97,9 @@ h6 {
 		margin-bottom: 0;
 	}
 	h2 {
+		margin-top: 0;
 		color: $gray;
 		font-weight: normal;
-		margin-top: 0;
 	}
 }
 
@@ -150,10 +150,10 @@ p code {
 }
 
 blockquote {
+	margin: 0 0 rhythm(3, $base-font-size) 0;
 	// padding-left: 1em;
 	// padding-right: 1em;
-	line-height: normal;
-	margin: 0 0 rhythm(3, $base-font-size) 0; // 3 lines below
+	line-height: normal; // 3 lines below
 
 	p {
 		@include adjust-font-size-to($base-font-size); 
@@ -190,8 +190,8 @@ a {
 	@include transition-property(all);
 	@include transition-timing-function(ease-in-out);
 	color: $primary;
-	font-weight: bold;
 	text-decoration: none;
+	font-weight: bold;
 
 	&:hover,
 	&:focus,
@@ -206,11 +206,11 @@ a {
 .btn {
 	@include border-radius();
 	@include leader();
+	display: inline-block;
+	padding: .5em 1em;
 	background-color: $primary;
 	color: $white;
-	display: inline-block;
 	font-family: $font-stack;
-	padding: .5em 1em;
 
 	&:hover {
 		background-color: lighten($primary,10%);
@@ -221,13 +221,13 @@ a {
 /* =Screen readers
 -------------------------------------------------------------- */
 
-.screen-reader-text {
-	border: 0; 
-	clip: rect(0 0 0 0); 
-	height: 1px; 
-	margin: -1px; 
-	overflow: hidden; 
-	padding: 0; 
+.screen-reader-text { 
 	position: absolute; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	margin: -1px; 
+	padding: 0; 
 	width: 1px; 
+	height: 1px;
+	border: 0; 
 }

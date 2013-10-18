@@ -1,5 +1,6 @@
 // @codekit-prepend "../app/bower_components/jquery/jquery.js"
 // @codekit-prepend "../app/bower_components/fitvids/jquery.fitvids.js"
+// @codekit-prepend "../app/bower_components/FlowTypeJS/flowtype.js"
 // @codekit-prepend "../app/bower_components/OwlCarousel/owl-carousel/owl.carousel.js"
 
 jQuery(document).ready(function($) {
@@ -64,41 +65,18 @@ jQuery(document).ready(function($) {
 		owl.next();
 	});
 
-	//  Slideshow
-	// var slideShow = $('.work ul');
-	// slideShow.cycle({
-	// 	autoHeight: 0,
-	// 	fx: 'sparksHorz',
-	// 	slides: '> li',
-	// 	speed: 500,
-	// 	timeout: 0,
-	// 	centerHorz: true,
-	// 	next: '.slide-next',
-	// 	prev: '.slide-prev'
-	// });
-	// slideShow.on('cycle-update-view', function(e,o,sh,cs) {
-	// 	var $this = $(this),
-	// 	$currentSlide = $(cs);
-
-	// 	$this.animate({
-	// 		height: $currentSlide.height()
-	// 	}, 300); // adjust height on slide transition
-
-	// 	$(window).resize(function() {
-	// 		$this.stop().animate({
-	// 			height: $currentSlide.height()
-	// 		}, 500);
-	// 	});
-	// });
-
 	//  Fitvids
 	$('.single-post').fitVids();
 
-	//  Toggle clients
-	// $('.clients h3').click(function() {
-	// 	$(this).parent().toggleClass('active');
-	// 	$('.logos').slideToggle();
-	// });
+	//  Flowtype
+	$('body').flowtype({
+		minimum   : 500,
+		maximum   : 1200,
+		minFont   : 10,
+		maxFont   : 22,
+		fontRatio : 30,
+		lineRatio : 1.45
+	});
 
 	//  The most important feature on this site
 	var kkeys = [], konami = '38,38,40,40,37,39,37,39,66,65';

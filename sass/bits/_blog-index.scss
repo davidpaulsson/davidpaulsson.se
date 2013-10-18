@@ -9,16 +9,6 @@
 	@include leader(3);
 	@include trailer(3);
 
-	.post {
-		@include padding-leader(2);
-		@include padding-trailer();
-		border-bottom: 1px solid $gray;
-
-		&:last-child {
-			border-bottom: none;
-		}
-	}
-
 	@include at-breakpoint($medium) {
 		.post {
 			@include post(2);
@@ -27,6 +17,16 @@
 	@include at-breakpoint($large) {
 		.post {
 			@include post(5);
+		}
+	}
+
+	.post {
+		@include padding-leader(2);
+		@include padding-trailer();
+		border-bottom: 1px solid $gray;
+
+		&:last-child {
+			border-bottom: none;
 		}
 	}
 }
@@ -52,15 +52,11 @@ header.archive {
 }
 
 .single-post {
-	@include adjust-font-size-to(14px);
+	// @include adjust-font-size-to(14px);
 	@include trailer(2);
 
-	.meta {
-		@include trailer(2);
-	}
-
 	@include at-breakpoint($medium) {
-		@include adjust-font-size-to(18px);
+		// @include adjust-font-size-to(18px);
 		@include padding-leader(4);
 
 		h1,
@@ -80,7 +76,7 @@ header.archive {
 	}
 
 	@include at-breakpoint($large) {
-		@include adjust-font-size-to(22px);
+		// @include adjust-font-size-to(22px);
 
 		#{headings(2,6)},
 		ul,
@@ -94,8 +90,6 @@ header.archive {
 		}
 
 		.highlight {
-			// @include pre(1);
-			// @include post(1);
 			background-color: darken($white,5);
 
 			pre {
@@ -107,10 +101,14 @@ header.archive {
 		}
 	}
 
+	.meta {
+		@include trailer(2);
+	}
+
 	img {
-		height: auto;
 		margin: 0 auto;
 		max-width: 100%;
+		height: auto;
 	}
 
 	.caption {
@@ -128,11 +126,11 @@ header.archive {
 
 .alert {
 	@include trailer();
+	padding: 2em;
 	background-color: darken($white,5%);
 	color: lighten($text,20%);
-	font-style: italic;
-	padding: 2em;
 	text-align: center;
+	font-style: italic;
 
 	a {
 		color: lighten($text,20%);
