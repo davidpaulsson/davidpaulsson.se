@@ -148,6 +148,13 @@ module.exports = function(grunt) {
             }
         },
 
+        // run shell commands from grunt
+        shell: {
+            buildjekyll: {
+                command: 'jekyll build'
+            }
+        }
+
     });
 
     // load all tasks
@@ -158,13 +165,14 @@ module.exports = function(grunt) {
         'jshint'
     ]);
     grunt.registerTask('deploy', [
+        'shell',
         'compass',
         'htmlmin',
         'uglify',
         'imagemin',
         'svgmin',
         'copy',
-        // 'ftp-deploy',
+        'ftp-deploy',
         'clean'
     ]);
 

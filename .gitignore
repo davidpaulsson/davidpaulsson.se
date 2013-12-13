@@ -3,5 +3,10 @@ mockup/
 *.scssc
 bower_components/
 node_modules/
+*.css
+js/main.min.js
+js/modernizr.js
 .ftppass
 /_site/
+
+*.css
