@@ -1,2 +1,6 @@
 mockup/
 *.pngc
+bower_components/
+node_modules/
+.ftppass
+_site/
