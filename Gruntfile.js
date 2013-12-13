@@ -164,7 +164,7 @@ module.exports = function(grunt) {
         'imagemin',
         'svgmin',
         'copy',
-        'ftp-deploy',
+        // 'ftp-deploy',
         'clean'
     ]);
 
