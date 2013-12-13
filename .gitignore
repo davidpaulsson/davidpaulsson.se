@@ -1,2 +1,8 @@
+.sass-cache/
 mockup/
+_site/
+bower_components/
+node_modules/
+.ftppass
 *.pngc
+*.scssc

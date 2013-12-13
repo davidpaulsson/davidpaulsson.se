@@ -1,8 +1,3 @@
-// @codekit-prepend "../app/bower_components/jquery/jquery.js"
-// @codekit-prepend "../app/bower_components/fitvids/jquery.fitvids.js"
-// @codekit-prepend "../app/bower_components/FlowTypeJS/flowtype.js"
-// @codekit-prepend "../app/bower_components/OwlCarousel/owl-carousel/owl.carousel.js"
-
 jQuery(document).ready(function($) {
 
 	//  Find any element starting with a # in the URL
