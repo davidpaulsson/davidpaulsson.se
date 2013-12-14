@@ -63,16 +63,6 @@ jQuery(document).ready(function($) {
 	//  Fitvids
 	$('.single-post').fitVids();
 
-	//  Flowtype
-	$('body').flowtype({
-		minimum   : 500,
-		maximum   : 1200,
-		minFont   : 10,
-		maxFont   : 22,
-		fontRatio : 30,
-		lineRatio : 1.45
-	});
-
 	//  The most important feature on this site
 	var kkeys = [], konami = '38,38,40,40,37,39,37,39,66,65';
 	$(document).keydown(function(e) {

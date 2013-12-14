@@ -55,6 +55,18 @@ module.exports = function(grunt) {
             }
         },
 
+        // watch, poll for changes
+        watch: {
+            scripts: {
+                files: ['js/main.js'],
+                tasks: ['jshint'],
+            },
+            styles: {
+                files: ['**/*.scss'],
+                tasks: ['compass'],
+            },
+        },
+
         // copy files
         copy: {
             dist: {
@@ -95,7 +107,6 @@ module.exports = function(grunt) {
                         'js/modernizr.js',
                         'bower_components/jquery/jquery.js',
                         'bower_components/fitvids/jquery.fitvids.js', 
-                        'bower_components/FlowTypeJS/flowtype.js',
                         'bower_components/OwlCarousel/owl-carousel/owl.carousel.js',
                         'js/main.js'
                     ]
