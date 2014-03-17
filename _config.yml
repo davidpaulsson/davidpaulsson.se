@@ -1,6 +1,0 @@
-name: David Paulsson
-description: Design and front end development
-url: http://davidpaulsson.se
-pygments: true
-permalink: /:title
-exclude: [sass, mockup, app, config.rb, img_original, node_modules, bower_components]
