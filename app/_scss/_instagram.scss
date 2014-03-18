@@ -1,0 +1,29 @@
+/* =Instagram
+-------------------------------------------------------------- */
+
+/* ul */.instagram__items {
+  padding-left: 0;
+}
+
+/* li */.instagram__item {
+  @include span-columns(2,4);
+  @include nth-omega(2n);
+
+  margin-bottom: $gutter-width;
+
+  @include at-breakpoint($medium) {
+    @include span-columns(4,8);
+    @include nth-omega(2n);
+  }
+
+  @include at-breakpoint($large) {
+    @include span-columns(2,12);
+    @include remove-nth-omega(2n);
+    @include nth-omega(6n);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

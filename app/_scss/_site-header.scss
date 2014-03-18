@@ -1,0 +1,54 @@
+/* =Site header
+-------------------------------------------------------------- */
+
+/*
+ * Layout
+ */
+
+.site-title {
+  @include span-columns(2,4);
+
+  @include at-breakpoint($medium) {
+    @include span-columns(4,8);
+  }
+
+  @include at-breakpoint($large) {
+    @include span-columns(4,12);
+  }
+}
+
+.main-nav {
+  @include span-columns(2 omega,4);
+
+  @include at-breakpoint($medium) {
+    @include span-columns(4 omega,8);
+  }
+
+  @include at-breakpoint($large) {
+    @include span-columns(8 omega,12);
+  }
+}
+
+/*
+ * Navigation
+ */
+
+/* ul */.main-nav__items {
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+/* li */.main-nav__item {
+  display: inline-block;
+
+  a {
+    padding: $gutter-width;
+    margin-left: $gutter-width;
+
+    &:hover,
+    &.active {
+      border-bottom: 4px solid black;
+    }
+  }
+}

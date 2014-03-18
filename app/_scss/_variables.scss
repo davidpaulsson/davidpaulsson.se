@@ -1,0 +1,25 @@
+/* =Variables
+-------------------------------------------------------------- */
+
+/*
+ * Susy
+ */
+
+$total-columns: 4;
+$column-width: 4em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+$container-style: fluid;
+
+$medium: 8;
+$large: 12;
+
+@include border-box-sizing;
+
+// Show grid helpers?
+
+$show-grid: true;
+
+/*
+ * Colors
+ */

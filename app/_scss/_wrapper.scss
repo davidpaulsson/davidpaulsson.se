@@ -1,0 +1,19 @@
+/* =Wrapper
+-------------------------------------------------------------- */
+
+.wrapper {
+  @include container();
+  @if $show-grid == true { @include susy-grid-background; }
+
+  max-width: 1024px;
+
+  @include at-breakpoint($medium) {
+    @include container();
+    @if $show-grid == true { @include susy-grid-background; }
+  }
+
+  @include at-breakpoint($large) {
+    @include container();
+    @if $show-grid == true { @include susy-grid-background; }
+  }
+}
