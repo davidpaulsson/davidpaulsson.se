@@ -98,18 +98,15 @@ textarea {
    davidpaulsson.se custom styles
    ========================================================================== */
 
+@import "compass";
 @import "../_bower_components/susy/sass/susy";
 @import "variables";
 @import "defaults";
-
+@import "animate";
 @import "links";
-
 @import "wrapper";
 @import "site-header";
 @import "instagram";
-
-
-
 
 
 

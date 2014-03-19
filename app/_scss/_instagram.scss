@@ -1,25 +1,30 @@
 /* =Instagram
 -------------------------------------------------------------- */
 
+.instagram {
+  @extend .clearfix;
+}
+
 /* ul */.instagram__items {
+  @extend .clearfix;
   padding-left: 0;
+  list-style: none;
 }
 
 /* li */.instagram__item {
-  @include span-columns(2,4);
-  @include nth-omega(2n);
-
-  margin-bottom: $gutter-width;
+  position: relative;
+  float: left;
+  width: (100 / 2) * 1%;
 
   @include at-breakpoint($medium) {
-    @include span-columns(4,8);
-    @include nth-omega(2n);
+    width: (100 / 4) * 1%;
   }
 
   @include at-breakpoint($large) {
-    @include span-columns(2,12);
-    @include remove-nth-omega(2n);
-    @include nth-omega(6n);
+    width: (100 / 6) * 1%;
+  }
+
+  &:hover {
   }
 
   img {

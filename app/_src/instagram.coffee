@@ -1,5 +1,6 @@
 #
-# Instagram stream.
+# Instagram
+# Load the images
 #
 
 userFeed = new Instafeed(
@@ -8,6 +9,6 @@ userFeed = new Instafeed(
   accessToken: "13217349.ab103e5.6de31478a5b74ef0902f464816836942"
   target: "instagram"
   limit: 18
-  template: "<li class=\"instagram__item\"><a href=\"{{link}}\"><img src=\"{{image}}\" /></a></li>"
+  template: "<li class=\"instagram__item\"><div class=\"instagram__likes\">{{likes}} people like this</div><img class=\"lazy-hidden\" data-src=\"{{image}}\" /></li>"
 )
 userFeed.run()
