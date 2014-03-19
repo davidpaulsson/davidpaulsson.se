@@ -354,6 +354,23 @@ module.exports = function (grunt) {
         ]
       }
     },
+    modernizr: {
+      dist: {
+        "devFile" : "<%= yeoman.app %>/_bower_components/modernizr/modernizr.js",
+        "outputFile" : "<%= yeoman.app %>/js/modernizr-custom.js",
+        "extra" : {
+          "load" : false,
+        },
+        "files" : {
+          "src": [
+            '<%= yeoman.app %>/_scss/**/*.scss',
+            '<%= yeoman.app %>/_src/**/*.coffee',
+            '<%= yeoman.app %>/_layouts/**/*.html',
+            '<%= yeoman.app %>/*.html'
+          ]
+        },
+      }
+    },
     concurrent: {
       server: [
         'compass:server',
@@ -409,6 +426,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean',
     // Jekyll cleans files from the target directory, so must run first
+    'modernizr:dist',
     'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
