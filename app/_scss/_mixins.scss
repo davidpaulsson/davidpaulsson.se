@@ -17,7 +17,25 @@
 
 @mixin full-width-bgr($color) {
   background-color: $color;
-  box-shadow: -25rem 0 0 $color, 25rem 0 0 $color;
+  position: relative;
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 9999px;
+    background: $color;
+    content: "";
+  }
+
+  &:before {
+    right: 100%;
+  }
+
+  &:after {
+    left: 100%;
+  }
 }
 
 /*

@@ -2,7 +2,6 @@
 -------------------------------------------------------------- */
 
 .intro {
-  @include pie-clearfix;
   @include full-width-bgr($black);
   @include padding-trailer(3);
   color: $white;
