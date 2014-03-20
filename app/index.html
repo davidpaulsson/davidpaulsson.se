@@ -4,7 +4,10 @@ title: David Paulsson | Front end developer
 ---
 
 <div class="wrapper">
-  <section class="home posts">
+
+  {% include intro.html %}
+
+  <section class="posts">
     <h1>Blog Posts</h1>
     {% for post in site.posts %}
       <article class="post">
@@ -13,8 +16,8 @@ title: David Paulsson | Front end developer
     {% endfor %}
   </section>
 </div>
-<button id="animate" class="livedemo">Animate</button>
+
 <section class="instagram">
-  <h2>Instagram (i.e. what i'm eating)</h2>
+  <h2>My Instagram <em>(i.e. what i’m eating)</em></h2>
   <ul id="instagram" class="instagram__items"></ul>
 </section>

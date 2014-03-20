@@ -2,11 +2,11 @@
 -------------------------------------------------------------- */
 
 .instagram {
-  @extend .clearfix;
+  @include pie-clearfix;
 }
 
 /* ul */.instagram__items {
-  @extend .clearfix;
+  @include pie-clearfix;
   padding-left: 0;
   list-style: none;
 }
@@ -31,4 +31,12 @@
     width: 100%;
     height: auto;
   }
+}
+
+.instagram__likes {
+  @include vertical-align;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
 }
