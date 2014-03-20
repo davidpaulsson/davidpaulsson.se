@@ -340,7 +340,9 @@ module.exports = function (grunt) {
       all: [
         'Gruntfile.js',
         '<%= yeoman.app %>/js/**/*.js',
-        'test/spec/**/*.js'
+        'test/spec/**/*.js',
+        '!app/js/modernizr-custom.js',
+        '!app/js/typekit.js'
       ]
     },
     csslint: {
@@ -356,19 +358,30 @@ module.exports = function (grunt) {
     },
     modernizr: {
       dist: {
-        "devFile" : "<%= yeoman.app %>/_bower_components/modernizr/modernizr.js",
-        "outputFile" : "<%= yeoman.app %>/js/modernizr-custom.js",
-        "extra" : {
-          "load" : false,
+        'devFile' : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
+        'outputFile' : '<%= yeoman.app %>/js/modernizr-custom.js',
+        'extra' : {
+          'load' : false,
         },
-        "files" : {
-          "src": [
+        'files' : {
+          'src': [
             '<%= yeoman.app %>/_scss/**/*.scss',
             '<%= yeoman.app %>/_src/**/*.coffee',
             '<%= yeoman.app %>/_layouts/**/*.html',
             '<%= yeoman.app %>/*.html'
           ]
         },
+      }
+    },
+    ftpush: {
+      upload: {
+        auth: {
+          host: 'ftp.davidpaulsson.se',
+          port: 21,
+          authKey: 'key1',
+        },
+        src: '<%= yeoman.dist %>',
+        dest: '/www/new',
       }
     },
     concurrent: {
@@ -383,6 +396,37 @@ module.exports = function (grunt) {
         'coffee:dist',
         'copy:dist'
       ]
+    },
+    devUpdate: {
+      main: {
+        options: {
+          // should task report already updated dependencies
+          // reportUpdated: false,
+          // can be 'force'|'report'|'prompt'
+          updateType: 'report',
+          semver: false
+        }
+      }
+    },
+    replace: {
+      test: {
+        src: [
+          '<%= yeoman.dist %>/**/*.html',
+          '<%= yeoman.dist %>/**/*.js',
+          '<%= yeoman.dist %>/**/*.css'
+        ],
+        overwrite: true,
+        replacements: [{
+          from: '/js/',
+          to: '/new/js/'
+        }, {
+          from: '/img/',
+          to: '/new/img/'
+        },{
+          from: '/css/',
+          to: '/new/css/'
+        }]
+      }
     }
   });
 
@@ -419,8 +463,8 @@ module.exports = function (grunt) {
     'compass:server',
     'coffeelint:check',
     'coffee:dist',
-    'jshint:all',
-    'csslint:check'
+    'jshint:all'
+    // 'csslint:check'
   ]);
 
   grunt.registerTask('build', [
@@ -445,7 +489,9 @@ module.exports = function (grunt) {
     'check',
     'test',
     'build',
-    'buildcontrol'
+    'replace',
+    'ftpush'
+    // 'buildcontrol'
     ]);
 
   grunt.registerTask('default', [

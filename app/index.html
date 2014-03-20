@@ -3,10 +3,13 @@ layout: default
 title: David Paulsson | Front end developer
 ---
 
+<div class="intro-wrapper">
+  <div class="wrapper">
+    {% include intro.html %}
+  </div>
+</div>
+
 <div class="wrapper">
-
-  {% include intro.html %}
-
   <section class="posts">
     <h1>Blog Posts</h1>
     {% for post in site.posts %}

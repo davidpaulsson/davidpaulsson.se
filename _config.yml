@@ -4,10 +4,11 @@
 # 3. config.yml
 
 name: davidpaulsson.se
-description:
+description: Design and front end development
 author:
   name: David Paulsson
   email: david@davidpaulsson.se
+url: http://davidpaulsson.se
 
 # Grunt handles images and assets.
 exclude: ['img', 'css', 'js', 'fonts',
@@ -19,7 +20,7 @@ include: ['.htaccess']
 future: true
 show_drafts: true
 
-permalink: pretty
+permalink: /:title
 paginate: 10
 paginate_path: 'page:num'
 

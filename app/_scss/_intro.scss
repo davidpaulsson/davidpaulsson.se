@@ -1,8 +1,12 @@
 /* =Intro
 -------------------------------------------------------------- */
 
+.intro-wrapper {
+  background: $black url("/img/intro-bgr.png") top center no-repeat;
+}
+
 .intro {
-  @include full-width-bgr($black);
+  @include pie-clearfix;
   @include padding-trailer(3);
   color: $white;
   text-align: center;
@@ -20,6 +24,10 @@
   .col1 {
     text-align: left;
 
+    @include at-breakpoint($medium) {
+      @include span-columns(4,8);
+    }
+
     @include at-breakpoint($large) {
       @include span-columns(4,12);
     }
@@ -27,6 +35,10 @@
 
   .col2 {
     text-align: left;
+
+    @include at-breakpoint($medium) {
+      @include span-columns(4 omega,8);
+    }
 
     @include at-breakpoint($large) {
       @include span-columns(4,12);
@@ -36,7 +48,25 @@
   .col3 {
     text-align: left;
 
+    @include at-breakpoint($medium) {
+      .intro__section {
+        &:first-child {
+          @include span-columns(4,8);
+        }
+        &:last-child {
+          @include span-columns(4 omega,8);
+        }
+      }
+    }
+
     @include at-breakpoint($large) {
+      .intro__section {
+        &:first-child,
+        &:last-child {
+          width: 100%;
+        }
+      }
+
       @include span-columns(4 omega,12);
     }
   }
@@ -59,11 +89,18 @@
 
 .intro__headline {
   @include padding-leader;
-  font-weight: normal;
-  font-family: $serif-font-stack;
   text-align: left;
+  font-weight: normal;
+  font-size: 1.375em;
+  font-family: $serif-font-stack;
+  line-height: 1.3em;
+
+  @include at-breakpoint($medium) {
+    @include adjust-font-size-to(32px);
+  }
 
   @include at-breakpoint($large) {
+    @include adjust-font-size-to(48px);
     text-align: center;
   }
 }
