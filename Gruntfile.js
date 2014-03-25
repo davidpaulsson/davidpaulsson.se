@@ -242,6 +242,7 @@ module.exports = function (grunt) {
     cssmin: {
       dist: {
         options: {
+          keepSpecialComments: 0,
           check: 'gzip'
         }
       }
