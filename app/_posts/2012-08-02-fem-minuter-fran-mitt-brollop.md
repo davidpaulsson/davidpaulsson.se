@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fem minuter från mitt bröllop"
+title: "Fem minuter från mitt&nbsp;bröllop"
 comments: true
 date: 2012-08-02
 description: Fem minuter från mitt och Yatys bröllop.

@@ -1,0 +1,98 @@
+/* =Base styles: opinionated defaults
+-------------------------------------------------------------- */
+
+html,
+button,
+input,
+select,
+textarea {
+  color: $black;
+  font-family: $serif-font-stack;
+}
+
+#{headings(2,6)} {
+  font-family: $sans-serif-font-stack;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: $white;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: $yellow;
+  text-shadow: none;
+}
+
+::selection {
+  background: $yellow;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  margin: 1em 0;
+  padding: 0;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $black;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/*
+ * Callouts, alerts etc
+ */
+
+.alert {
+  @include trailer;
+  @include padding-trailer;
+  @include padding-leader;
+  background: $red;
+  color: $white;
+  text-align: center;
+
+  a {
+    color: $white;
+  }
+}

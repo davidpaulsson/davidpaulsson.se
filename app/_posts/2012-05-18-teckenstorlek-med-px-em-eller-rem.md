@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Teckenstorlek med px, %, em eller rem?"
+title: "Teckenstorlek med px, %, em eller&nbsp;rem?"
 comments: true
 date: 2012-05-18
 description: Jag tänkte i det här inlägget försöka gå igenom skillnaderna, styrkorna och nackdelarna med de olika sätt man kan sätta teckenstorlek på webben med.
@@ -16,7 +16,10 @@ Den lättaste lösningen är att kopiera samma teckenstorlek som förlagan i Pho
 
 Att skriva teckenstorleken i px är det absolut bästa sättet om man vill vara riktigt pixelexakt med sin design utifrån förlagan. 12 px är helt enkelt 12 pixlar.
 
-![Text som är satt till 12px med CSS är 12 pixlar hög.]({{ site.url }}/img//12px.png)
+<figure class="caption caption--right">
+  <img data-src="/img/12px.png" alt="Text som är satt till 12px med CSS är 12 pixlar hög.">
+  <figcaption>Text som är satt till 12px med CSS är 12 pixlar hög.</figcaption>
+</figure>
 
 Att sätta text med pixlar har som sagt ett rätt dåligt rykte bland webbutvecklare och tillgänglighetsexperter då text som angetts i pixlar inte kan skalas upp/zoomas av besökare som använder IE6 eller tidigare. Inte ens i nyare versioner av Internet Explorer fungerar detta, men då finns det i alla fall en zoom-funktion i Internet Explorer som tillåter att användaren zoomar in ALLT innehåll på sidan. Det kan vara värt att tänka på, även om dina 20-någonting-ögon kan läsa text satt till 12px så är det inte alls säkert att dina besökare kan det.
 

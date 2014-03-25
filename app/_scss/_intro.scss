@@ -2,7 +2,9 @@
 -------------------------------------------------------------- */
 
 .intro-wrapper {
+  @include arrow(bottom, center, $black);
   background: $black url("/img/intro-bgr.png") top center no-repeat;
+  @include background-size(contain);
 }
 
 .intro {
@@ -88,15 +90,15 @@
 }
 
 .intro__headline {
-  @include padding-leader;
+  @include padding-leader(3);
   text-align: left;
   font-weight: normal;
   font-size: 1.375em;
-  font-family: $serif-font-stack;
   line-height: 1.3em;
 
   @include at-breakpoint($medium) {
     @include adjust-font-size-to(32px);
+    @include padding-leader;
   }
 
   @include at-breakpoint($large) {

@@ -8,7 +8,7 @@ description: Det här är min nya identitet.
 
 Jag har länge arbetat utan en logotyp, dels för att jag inte behövt en och dels därför att jag aldrig kommit till skott att skapa mig en egen logotyp (skomakarens barn och allt det där). Men nu har jag haft en idé länge som jag förverkligat. Det här är min nya identitet.
 
-![David Paulsson]({{ site.url }}/img//dp-logo-1.png)
+![David Paulsson](/img/dp-logo-1.png)
 
 Min tanke med en logotyp är att det är en rätt generisk symbol man kan stämpla på nästan vilken yta som helst. Som en fast form eller som ett hål som visar det som finns under. Men den måste också förmedla någonting. För mig personligen gör det ingenting om det inte är helt tydligt vad dock.
 
@@ -16,8 +16,8 @@ Men min identitet kommer att uppdateras med jämna mellanrum efterhand som jag u
 
 Ungefär så här ser jag mig själv just nu under våren 2013.
 
-![David Paulsson 2013]({{ site.url }}/img//dp-logo-4.png)
+![David Paulsson 2013](/img/dp-logo-4.png)
 
 Det ultimata målet är att ha en logotyp som är en sexkantig polygon. Så, välkommen till mig själv 2013. Jag hoppas jag byter logotyp snart. Det är målet; att uppdateras.
 
-![David Paulsson]({{ site.url }}/img//dp-logo-3.png)
+![David Paulsson](/img/dp-logo-3.png)

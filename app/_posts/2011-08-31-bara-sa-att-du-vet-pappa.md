@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bara så att du vet pappa"
+title: "Bara så att du vet&nbsp;pappa"
 comments: true
 date: 2011-08-31
 description: Nu har det gått precis ett år sedan du gick bort i cancer.
@@ -8,7 +8,11 @@ description: Nu har det gått precis ett år sedan du gick bort i cancer.
 
 Nu har det gått precis ett år sedan du gick bort i cancer. Det var strax efter din 60 årsfest som vi upptäckte din hjärntumör och sedan gick det ett halvår innan du var borta. Det var det snabbaste halvåret jag upplevt.
 
-![Sven-Arne Paulsson]({{site.url}}/img//sven-arne.jpg)
+<figure class="caption">
+  <img data-src="/img/sven-arne.jpg" alt="Sven-Arne Paulsson">
+  <figcaption>Sven-Arne Paulsson</figcaption>
+</figure>
+
 
 Det gick fort, men ändå inte så fort som det skulle kunnat ha gått. Du skulle till exempel ha kunnat gått bort av någon helt annan orsak, en trafikolycka kanske. Jag är glad över att vi fick det sista halvåret tillsammans och fick prata med varandra och inom familjen. Det kändes fint.
 

@@ -1,0 +1,66 @@
+/* =Site footer
+-------------------------------------------------------------- */
+
+/*
+ * Contact
+ */
+
+.contact {
+  @include pie-clearfix;
+
+  a {
+    @extend .gamma;
+    @include padding-trailer(2);
+    @include padding-leader(2);
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: lighten($black,20%);
+    color: $white;
+    text-align: center;
+    font-weight: normal;
+    font-family: $sans-serif-font-stack;
+
+    &:hover {
+      border-bottom: 0;
+      background-color: lighten($black,30%);
+    }
+
+    @include at-breakpoint($medium) {
+      @extend .beta;
+      float: left;
+      margin-top: 0;
+      margin-bottom: 0;
+      width: 50%;
+    }
+
+    @include at-breakpoint($large) {
+      @extend .alpha;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+/*
+ * Footer
+ */
+
+.site-footer {
+  @include padding-trailer(4);
+  @include padding-leader(3);
+  background: $black;
+  color: $white;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  a {
+    color: $white;
+  }
+
+  span {
+    color: $red;
+  }
+}

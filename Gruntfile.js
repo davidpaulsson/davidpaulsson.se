@@ -218,10 +218,13 @@ module.exports = function (grunt) {
     htmlmin: {
       dist: {
         options: {
+          removeComments: true,
           collapseWhitespace: true,
           collapseBooleanAttributes: true,
           removeAttributeQuotes: true,
-          removeRedundantAttributes: true
+          removeRedundantAttributes: true,
+          removeEmptyAttributes: true,
+          removeOptionalTags: true
         },
         files: [{
           expand: true,
@@ -408,26 +411,26 @@ module.exports = function (grunt) {
         }
       }
     },
-    replace: {
-      test: {
-        src: [
-          '<%= yeoman.dist %>/**/*.html',
-          '<%= yeoman.dist %>/**/*.js',
-          '<%= yeoman.dist %>/**/*.css'
-        ],
-        overwrite: true,
-        replacements: [{
-          from: '/js/',
-          to: '/new/js/'
-        }, {
-          from: '/img/',
-          to: '/new/img/'
-        },{
-          from: '/css/',
-          to: '/new/css/'
-        }]
-      }
-    }
+    // replace: {
+    //   test: {
+    //     src: [
+    //       '<%= yeoman.dist %>/**/*.html',
+    //       '<%= yeoman.dist %>/**/*.js',
+    //       '<%= yeoman.dist %>/**/*.css'
+    //     ],
+    //     overwrite: true,
+    //     replacements: [{
+    //       from: '/js/',
+    //       to: '/new/js/'
+    //     }, {
+    //       from: '/img/',
+    //       to: '/new/img/'
+    //     },{
+    //       from: '/css/',
+    //       to: '/new/css/'
+    //     }]
+    //   }
+    // }
   });
 
   // Define Tasks
@@ -489,7 +492,7 @@ module.exports = function (grunt) {
     'check',
     'test',
     'build',
-    'replace',
+    // 'replace',
     'ftpush'
     // 'buildcontrol'
     ]);

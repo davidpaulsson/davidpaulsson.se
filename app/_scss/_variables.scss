@@ -36,8 +36,10 @@ $yellow: #f1c40f; // sun flower
  */
 
 $base-font-size: 16px;
-$base-line-height: 24px;
+$base-line-height: 28px;
 $serif-font-stack: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif;
 $sans-serif-font-stack: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$monospace-font-stack: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+$round-to-nearest-half-line: true;
 
 @include establish-baseline;

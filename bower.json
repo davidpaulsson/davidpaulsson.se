@@ -7,8 +7,9 @@
   "devDependencies": {
     "modernizr": "~2.7",
     "susy": "1.0.9",
-    "instafeed.js": "~1.2.1",
+    "instafeed.js": "~1.3.0",
     "lazyloadxt": "~1.0.2",
-    "animated.sass": "https://github.com/simko-io/animated.sass.git"
+    "animated.sass": "https://github.com/simko-io/animated.sass.git",
+    "font-awesome": "~4.0.3"
   }
 }

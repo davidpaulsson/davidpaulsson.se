@@ -1,13 +1,8 @@
-/* =Site header
+/* =Navigation
 -------------------------------------------------------------- */
-
-/*
- * Navigation
- */
 
 .main-nav {
   position: fixed;
-  top: $gutter-width;
   right: $gutter-width;
   z-index: 1;
 
@@ -18,24 +13,23 @@
 }
 
 .main-nav__trigger {
-  @include hide-text;
-  @include size($gutter-width*1);
-  position: absolute;
-  right: 0;
   z-index: 3;
-  background: $black inline-image("icon-menu.svg") center no-repeat;
-  background-size: $gutter-width*.5 auto;
-
-  &:hover {
-    background-color: lighten($black, 20%);
-  }
+  float: right;
+  width: $gutter-width;
+  height: $gutter-width;
+  background: $black;
+  color: $white;
+  position: relative;
+  text-align: center;
+  line-height: $gutter-width - .1;
 
   .no-js & {
     display: none;
   }
 
-  .no-svg & {
-    background: $black url("icon-menu.gif") center no-repeat;
+  &:hover {
+    border-bottom: none;
+    background: lighten($black, 20%);
   }
 }
 

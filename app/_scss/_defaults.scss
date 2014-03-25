@@ -64,6 +64,7 @@ h1,
 .alpha {
   @include adjust-font-size-to(32px);
   @include trailer;
+  font-family: $serif-font-stack;
 
   @include at-breakpoint($medium) {
     @include adjust-font-size-to(40px);
@@ -154,6 +155,18 @@ em,
 i,
 q {
   font-style: italic;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+pre {
+  @include padding-leader;
+  @include padding-trailer;
+  @include trailer;
+  font-family: $monospace-font-stack;
 }
 
 /*

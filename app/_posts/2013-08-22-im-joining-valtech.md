@@ -10,7 +10,10 @@ As of September 2<sup>nd</sup> I’ll be employed as a front end developer at [V
 
 Valtech is a technology and marketing digital agency with offices in all four corners of the world, from Seoul to New York. Personally I’ll be working from Stockholm.
 
-![It’s time for a change of scenery](/img//valtech.jpg)
+<figure class="caption">
+  <img data-src="/img/valtech.jpg" alt="">
+  <figcaption>It’s time for a change of scenery</figcaption>
+</figure>
 
 I’ve been working at [byBrick Interface](http://www.bybrick.se/en/our-business-areas/interface) for three and a half years now, and even if I’m still enjoying every minute of it …
 

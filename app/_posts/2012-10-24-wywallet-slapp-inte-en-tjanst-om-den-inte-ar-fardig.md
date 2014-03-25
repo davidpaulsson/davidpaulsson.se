@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "WyWallet: Släpp inte en tjänst om den inte är färdig"
+title: "WyWallet: Släpp inte en tjänst om den inte är&nbsp;färdig"
 comments: true
 date: 2012-10-24
 description: Hur WyWallet fungerar och varför det inte är en färdig tjänst (än).
@@ -18,7 +18,10 @@ I den bästa av alla världar kan jag fortsätta att betala via SMS och kostnade
 
 WyWallet hanterar nu alla mina köp. Utan möjlighet för mig att kunna välja själv. Går jag in i min WyWallet-app så finns det under Inställningar ett val där jag ska kunna ändra ”Betalsätt för SMS-köp”.
 
-![WyWallet ger mig inte så många valmöjligheter.]({{ site.url }}/img//wywallet-1.png)
+<figure class="caption caption--left">
+  <img data-src="/img/wywallet-1.png" alt="WyWallet ger mig inte så många valmöjligheter">
+  <figcaption>WyWallet ger mig inte så många valmöjligheter.</figcaption>
+</figure>
 
 Jahapp, tänker jag. När jag kollar det här sitter jag på tåget på väg till Stockholm och jag vet att jag kommer att behöva köpa en biljett till tunnelbanan som jag brukar göra. Eftersom jag bara precis registrerat mig på WyWallet så har jag inte laddat på några pengar i min digitala plånbok ännu, och känner inte riktigt för att sitta och krångla med det samtidigt som jag ska gå igenom spärrarna på T-centralen. Plus att jag vill ju inte betala det här privat, som jag berättade tidigare, jag vill att det här SMS-köpet ska hamna på mitt telefonabonnemang.
 
@@ -27,7 +30,10 @@ Jag testar väl att beställa min SL-biljett via SMS som jag alltid gjort. Och s
 1. Det fungerar som vanligt eller
 2. det funkar inte, men jag får någon slags möjlighet att betala via mitt abonnemang ändå.
 
-![Nehe? Vad gör jag nu då?]({{ site.url }}/img//wywallet-2.png)
+<figure class="caption caption--right">
+  <img data-src="/img/wywallet-2.png" alt="Nehe? Vad gör jag nu då?">
+  <figcaption>Nehe? Vad gör jag nu då?</figcaption>
+</figure>
 
 Nu är jag lite irriterad och får gå in på Pressbyrån och köpa en remsa för att kunna ta mig till jobbet (det går öven att betala enkelresa direkt i spärren, men det är pissdyrt + dom accepterar bara kontanter. Ha! ”Kontanter”, tänker du. Precis så. Vem har egentligen typ 80+ kronor i kontanter att åka tunnelbana på sig??).
 
