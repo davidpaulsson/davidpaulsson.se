@@ -13,6 +13,30 @@
       <hr class="post__hr">
     </header>
 
+    <aside class="post__aside">
+      <ul>
+        <li>
+          <span class="aside__name">Last updated:</span>
+          <span class="aside__value">{% render_time %}</span>
+        </li>
+        <li>
+          <span class="aside__name">Est. Read Time:</span>
+          <span class="aside__value">{{ page.content | reading_time }}</span>
+        </li>
+        <li>
+          <span class="aside__name">Share this:</span>
+          <span class="aside__value">Twitter</span>
+          <span class="aside__value">Facebook</span>
+        </li>
+        <li>
+          <span class="aside__name">Tagged</span>
+          {% for tag in post.tags %}
+            <span class="aside__value aside__value--tag">{{ tag }}</span>
+          {% endfor %}
+        </li>
+      </ul>
+    </aside>
+
     {% if page.vimeo %}
       <iframe src="http://player.vimeo.com/video/{{ page.vimeo }}?title=0&amp;byline=0&amp;portrait=0" width="620" height="349" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
     {% endif %}

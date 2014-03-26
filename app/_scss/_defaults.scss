@@ -22,6 +22,7 @@
  */
 
 html {
+  height: 100%;
   font-size: 100%;
   font-kerning: normal; // Set the default for kerning
   font-synthesis: none; // Don't allow the font to create sythetic bold/italic
@@ -56,6 +57,15 @@ p {
   -webkit-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig";
+}
+
+// Prevent font loading flicker
+
+.wf-loading {
+  #{headings()},
+  p {
+    @extend .invisible;
+  }
 }
 
 // Sizes

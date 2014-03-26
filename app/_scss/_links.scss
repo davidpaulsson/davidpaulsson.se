@@ -20,7 +20,6 @@ a {
  */
 
 .go:after {
-  @extend .#{$fa-css-prefix};
-  content: $fa-var-long-arrow-right;
+  content: "→";
   margin-left: .5em;
 }

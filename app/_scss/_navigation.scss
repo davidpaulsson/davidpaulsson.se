@@ -13,15 +13,20 @@
 }
 
 .main-nav__trigger {
+  position: relative;
+  top: $gutter-width;
   z-index: 3;
   float: right;
   width: $gutter-width;
   height: $gutter-width;
   background: $black;
   color: $white;
-  position: relative;
   text-align: center;
   line-height: $gutter-width;
+
+  @include at-breakpoint($large) {
+    top: 0;
+  }
 
   .no-js & {
     display: none;
@@ -38,9 +43,13 @@
   @include arrow(top, right, lighten($black, 20%));
   z-index: 2;
   display: none;
-  margin-top: $gutter-width*2;
+  margin-top: $gutter-width*3;
   background-color: lighten($black, 20%);
   list-style-type: none;
+
+  @include at-breakpoint($large) {
+    margin-top: $gutter-width*2;
+  }
 
   &.main-nav__items--show {
     @extend .fade--in-down;
@@ -65,9 +74,9 @@
   a {
     display: block;
     padding: .5em 4em .5em 1em;
+    border-bottom: 1px solid lighten($black, 30%);
     color: $white;
     font-weight: normal;
-    border-bottom: 1px solid lighten($black, 30%);
 
     &:hover {
       background-color: lighten($black, 30%);

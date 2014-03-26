@@ -124,7 +124,6 @@
 .post__header {
   @include full-width-bgr($black);
   @include padding-trailer(3);
-  @include trailer(3);
   color: $white;
 }
 
@@ -219,6 +218,75 @@ $post-hr-color: lighten($black,30%);
     }
   }
 }
+
+/*
+ * Aside box
+ */
+
+.post__aside {
+  @include border-radius;
+  @include trailer;
+  @include padding-trailer;
+  @include padding-leader;
+  position: relative;
+  margin-top: -2em;
+  padding-right: 1em;
+  padding-left: 1em;
+  background: darken($black,10%);
+  color: $white;
+  font-family: $sans-serif-font-stack;
+  @include adjust-font-size-to(14px);
+
+  @include at-breakpoint($large) {
+    @include squish(1,1);
+    margin-top: -1em;
+  }
+
+  ul {
+    margin-left: 0;
+    list-style-type: none;
+
+    @include at-breakpoint($large) {
+      @include pie-clearfix;
+    }
+  }
+
+  li {
+    @include trailer(1/2);
+
+    @include at-breakpoint($large) {
+      width: 25%;
+      float: left;
+      text-align: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.aside__name {
+  text-transform: uppercase;
+  color: #919191;
+  display: block;
+}
+
+.aside__value {
+  color: white;
+}
+
+.aside__value--tag {
+  text-transform: lowercase;
+
+  &:before {
+    content: "#";
+  }
+}
+
+/*
+ * Misc post stuff
+ */
 
 .highlight {
   @include full-width-bgr(lighten($white,2%));
