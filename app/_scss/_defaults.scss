@@ -59,15 +59,6 @@ p {
   font-feature-settings: "liga", "dlig";
 }
 
-// Prevent font loading flicker
-
-.wf-loading {
-  #{headings()},
-  p {
-    @extend .invisible;
-  }
-}
-
 // Sizes
 
 h1,

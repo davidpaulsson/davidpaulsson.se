@@ -15,6 +15,7 @@
   font-family: $sans-serif-font-stack;
 
   &:hover {
+    border-bottom: none;
     background-color: lighten($black,10%);
     cursor: pointer;
   }

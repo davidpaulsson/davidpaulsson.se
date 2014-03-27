@@ -25,12 +25,12 @@
         </li>
         <li>
           <span class="aside__name">Share this:</span>
-          <span class="aside__value">Twitter</span>
-          <span class="aside__value">Facebook</span>
+          <span class="aside__value"><a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;via=davidpaulsson&amp;text=Reading →" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=700,width=700');return false;">Twitter</a></span>
+          <span class="aside__value"><a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=700,width=700');return false;">Facebook</a></span>
         </li>
         <li>
           <span class="aside__name">Tagged</span>
-          {% for tag in post.tags %}
+          {% for tag in page.tags %}
             <span class="aside__value aside__value--tag">{{ tag }}</span>
           {% endfor %}
         </li>

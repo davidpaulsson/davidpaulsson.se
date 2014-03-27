@@ -7,8 +7,7 @@
 
 .posts {
   @include padding-leader(3);
-  @include padding-trailer(3);
-  @include arrow(bottom, center, $white);
+  @include arrow(bottom, center, $black);
 }
 
 .posts__post {
@@ -17,11 +16,11 @@
 }
 
 .posts__post--one {
-  @include full-width-bgr(lighten($black,30%));
+  @include full-width-bgr(lighten($black,70%));
 }
 
 .posts__post--two {
-  @include full-width-bgr(lighten($black,40%));
+  @include full-width-bgr(lighten($black,60%));
 }
 
 .posts__post--three {
@@ -29,11 +28,11 @@
 }
 
 .posts__post--four {
-  @include full-width-bgr(lighten($black,60%));
+  @include full-width-bgr(lighten($black,40%));
 }
 
 .posts__post--five {
-  @include full-width-bgr(lighten($black,70%));
+  @include full-width-bgr(lighten($black,30%));
 }
 
 /*
@@ -272,8 +271,10 @@ $post-hr-color: lighten($black,30%);
   display: block;
 }
 
-.aside__value {
+.aside__value,
+.aside__value a {
   color: white;
+  font-weight: normal;
 }
 
 .aside__value--tag {
