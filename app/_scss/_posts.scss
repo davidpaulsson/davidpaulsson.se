@@ -77,8 +77,8 @@
     &.caption {
       figcaption {
         @include padding-leader(1/2);
-        font-style: italic;
         color: lighten($black,20%);
+        font-style: italic;
 
         @include at-breakpoint($medium) {
           @include padding-leader;
@@ -225,8 +225,9 @@ $post-hr-color: lighten($black,30%);
 .post__aside {
   @include border-radius;
   @include trailer;
-  @include padding-trailer;
+  @include padding-trailer(1/2);
   @include padding-leader;
+  @include adjust-font-size-to(14px);
   position: relative;
   margin-top: -2em;
   padding-right: 1em;
@@ -234,7 +235,6 @@ $post-hr-color: lighten($black,30%);
   background: darken($black,10%);
   color: $white;
   font-family: $sans-serif-font-stack;
-  @include adjust-font-size-to(14px);
 
   @include at-breakpoint($large) {
     @include squish(1,1);
@@ -245,7 +245,7 @@ $post-hr-color: lighten($black,30%);
     margin-left: 0;
     list-style-type: none;
 
-    @include at-breakpoint($large) {
+    @include at-breakpoint($medium) {
       @include pie-clearfix;
     }
   }
@@ -253,9 +253,9 @@ $post-hr-color: lighten($black,30%);
   li {
     @include trailer(1/2);
 
-    @include at-breakpoint($large) {
-      width: 25%;
+    @include at-breakpoint($medium) {
       float: left;
+      width: 25%;
       text-align: center;
     }
 
@@ -266,21 +266,39 @@ $post-hr-color: lighten($black,30%);
 }
 
 .aside__name {
-  text-transform: uppercase;
-  color: #919191;
   display: block;
+  color: #919191;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .aside__value,
 .aside__value a {
   color: white;
   font-weight: normal;
+
+  .fa {
+    padding-right: .25em;
+    color: #919191;
+  }
+}
+.aside__value a {
+  &:hover {
+    border-bottom: none;
+    color: #919191;
+  }
+}
+
+.aside__value--share {
+  margin-right: .5em;
 }
 
 .aside__value--tag {
   text-transform: lowercase;
 
   &:before {
+    margin-left: .5em;
+    color: #919191;
     content: "#";
   }
 }

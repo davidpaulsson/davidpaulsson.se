@@ -2,6 +2,9 @@
 layout: post
 title: "Webbdesign och retinaskärmar"
 comments: true
+tags:
+- Design
+- Retina
 date: 2012-06-12
 description: Ska vi fortsätta hysterin och göra separata bilder för alla olika enheter eller ska webbutvecklare äntligen börja arbeta med CSS3 och skalbar grafik på webben?
 ---

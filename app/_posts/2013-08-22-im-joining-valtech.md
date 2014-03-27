@@ -2,6 +2,8 @@
 layout: post
 title: I’m joining Valtech!
 comments: true
+tags:
+- Personal
 date: 2013-08-22
 description: As of September 2nd I’ll be employed as a front end developer at Valtech.
 ---

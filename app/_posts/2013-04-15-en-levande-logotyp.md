@@ -2,6 +2,9 @@
 layout: post
 title: "En levande logotyp"
 comments: true
+tags:
+- Logo
+- Design
 date: 2013-04-15
 description: Det här är min nya identitet.
 ---

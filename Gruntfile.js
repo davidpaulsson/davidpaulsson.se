@@ -482,7 +482,7 @@ module.exports = function (grunt) {
     'autoprefixer:dist',
     'cssmin',
     'uglify',
-    'imagemin',
+    // 'imagemin',
     'svgmin',
     'filerev',
     'usemin',
@@ -494,7 +494,7 @@ module.exports = function (grunt) {
     'test',
     'build',
     // 'replace',
-    'ftpush'
+    // 'ftpush'
     // 'buildcontrol'
     ]);
 

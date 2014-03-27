@@ -3,6 +3,9 @@ layout: post
 title: Look, ma! No database!
 image: jekyllrb.com.png
 comments: true
+tags:
+- Jekyll
+- Design
 date: 2013-07-30
 description: It’s portfolio redesign season and I’ve gone static.
 ---

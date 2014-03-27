@@ -2,6 +2,8 @@
 layout: post
 title: "WyWallet: Släpp inte en tjänst om den inte är&nbsp;färdig"
 comments: true
+tags:
+- WyWallet
 date: 2012-10-24
 description: Hur WyWallet fungerar och varför det inte är en färdig tjänst (än).
 ---

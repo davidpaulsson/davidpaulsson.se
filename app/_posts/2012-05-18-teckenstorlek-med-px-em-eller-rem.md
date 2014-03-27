@@ -2,6 +2,9 @@
 layout: post
 title: "Teckenstorlek med px, %, em eller&nbsp;rem?"
 comments: true
+tags:
+- Type
+- REM
 date: 2012-05-18
 description: Jag tänkte i det här inlägget försöka gå igenom skillnaderna, styrkorna och nackdelarna med de olika sätt man kan sätta teckenstorlek på webben med.
 ---

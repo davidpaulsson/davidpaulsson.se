@@ -2,47 +2,6 @@
 -------------------------------------------------------------- */
 
 /*
- * Contact
- */
-
-// .contact {
-//   @include pie-clearfix;
-
-//   a {
-//     @extend .gamma;
-//     @include padding-trailer(2);
-//     @include padding-leader(2);
-//     display: block;
-//     margin-top: 0;
-//     margin-bottom: 0;
-//     background-color: #55acee;
-//     color: $white;
-//     text-align: center;
-//     font-weight: normal;
-//     font-family: $sans-serif-font-stack;
-
-//     &:hover {
-//       border-bottom: 0;
-//       background-color: lighten($black,30%);
-//     }
-
-//     @include at-breakpoint($medium) {
-//       @extend .beta;
-//       float: left;
-//       margin-top: 0;
-//       margin-bottom: 0;
-//       width: 50%;
-//     }
-
-//     @include at-breakpoint($large) {
-//       @extend .alpha;
-//       margin-top: 0;
-//       margin-bottom: 0;
-//     }
-//   }
-// }
-
-/*
  * Footer
  */
 
@@ -51,6 +10,7 @@
   @include padding-leader(3);
   background: $black;
   color: $white;
+  font-family: $sans-serif-font-stack;
 
   h3 {
     margin-top: 0;
@@ -59,12 +19,15 @@
   a {
     color: $white;
   }
+
+  .fa-heart {
+    padding: 0 .1em 0 .25em;
+  }
 }
 
 .site-footer__colophon {
-
   @include at-breakpoint($large) {
-    @include span-columns(6, 12);
+    @include span-columns(8, 12);
   }
 
   i {
@@ -74,6 +37,6 @@
 
 .site-footer__contact {
   @include at-breakpoint($large) {
-    @include span-columns(6 omega, 12);
+    @include span-columns(4 omega, 12);
   }
 }

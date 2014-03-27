@@ -2,6 +2,8 @@
 layout: post
 title: "Bara så att du vet&nbsp;pappa"
 comments: true
+tags:
+- Personal
 date: 2011-08-31
 description: Nu har det gått precis ett år sedan du gick bort i cancer.
 ---

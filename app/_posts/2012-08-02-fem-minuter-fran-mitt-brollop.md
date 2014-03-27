@@ -2,6 +2,9 @@
 layout: post
 title: "Fem minuter från mitt&nbsp;bröllop"
 comments: true
+tags:
+- Wedding
+- WanBilly
 date: 2012-08-02
 description: Fem minuter från mitt och Yatys bröllop.
 vimeo: 45897056
