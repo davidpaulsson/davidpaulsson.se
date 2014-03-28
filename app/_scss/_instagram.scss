@@ -1,0 +1,68 @@
+/* =Instagram
+-------------------------------------------------------------- */
+
+.instagram {
+  @include pie-clearfix;
+  @include padding-leader(3);
+  background: $red;
+  color: $white;
+
+  #{headings()} {
+    color: $white;
+  }
+}
+
+/* ul */.instagram__items {
+  @include pie-clearfix;
+  @include leader(2);
+  padding-left: 0;
+  list-style: none;
+}
+
+/* li */.instagram__item {
+  position: relative;
+  float: left;
+  width: (100 / 2) * 1%;
+
+  @include at-breakpoint($medium) {
+    width: (100 / 3) * 1%;
+  }
+
+  @include at-breakpoint($large) {
+    width: (100 / 4) * 1%;
+  }
+
+  &:hover {
+    .instagram__likes {
+      @include opacity(1);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.instagram__likes {
+  @include vertical-align;
+  @extend .beta;
+  @include transparent;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  color: $red;
+  text-align: center;
+  font-weight: bold;
+  font-family: $sans-serif-font-stack;
+
+  &:before {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    // background: inline-image("icon-heart.svg") 0 5px no-repeat;
+    background-size: 1em;
+    content: "";
+  }
+}

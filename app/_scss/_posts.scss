@@ -1,0 +1,320 @@
+/* =Posts
+-------------------------------------------------------------- */
+
+/*
+ * Front page container
+ */
+
+.posts {
+  @include padding-leader(3);
+  @include arrow(bottom, center, $black);
+}
+
+.posts__post {
+  @include padding-leader;
+  @include padding-trailer;
+}
+
+.posts__post--one {
+  @include full-width-bgr(lighten($black,70%));
+}
+
+.posts__post--two {
+  @include full-width-bgr(lighten($black,60%));
+}
+
+.posts__post--three {
+  @include full-width-bgr(lighten($black,50%));
+}
+
+.posts__post--four {
+  @include full-width-bgr(lighten($black,40%));
+}
+
+.posts__post--five {
+  @include full-width-bgr(lighten($black,30%));
+}
+
+/*
+ * Single post
+ */
+
+.post {
+  #{headings()},
+  pre,
+  p {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    @include at-breakpoint($medium) {
+      @include squish(1,1);
+    }
+
+    @include at-breakpoint($large) {
+      @include squish(2,2);
+    }
+  }
+
+  h2 {
+    @include leader;
+  }
+
+  /*
+   * Figure
+   */
+
+  figure {
+    @include trailer;
+    @include pie-clearfix;
+    @include adjust-font-size-to(14px);
+
+    @include at-breakpoint($large) {
+      @include adjust-font-size-to(16px);
+    }
+
+    &.caption {
+      figcaption {
+        @include padding-leader(1/2);
+        color: lighten($black,20%);
+        font-style: italic;
+
+        @include at-breakpoint($medium) {
+          @include padding-leader;
+          border-top: 1px solid lighten($black,20%);
+        }
+      }
+    }
+
+    &.caption--right {
+      figcaption {
+        @include at-breakpoint($medium) {
+          @include span-columns(3 omega,12);
+        }
+      }
+
+      img {
+        @include at-breakpoint($medium) {
+          @include span-columns(9,12);
+        }
+      }
+    }
+
+    &.caption--left {
+      figcaption {
+        @include padding-leader(1/2);
+        text-align: right;
+
+        @include at-breakpoint($medium) {
+          @include span-columns(3,12);
+        }
+      }
+
+      img {
+        @include at-breakpoint($medium) {
+          @include span-columns(9 omega,12);
+        }
+      }
+    }
+  }
+}
+
+.post__header {
+  @include full-width-bgr($black);
+  @include padding-trailer(3);
+  color: $white;
+}
+
+.post__title {
+  @include padding-leader(3);
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  font-weight: normal;
+  font-size: 1.375em;
+  line-height: 1.3em;
+
+  @include at-breakpoint($medium) {
+    @include adjust-font-size-to(32px);
+    @include padding-leader;
+    text-align: center;
+  }
+
+  @include at-breakpoint($large) {
+    @include adjust-font-size-to(48px);
+  }
+}
+
+$post-hr-width: .75em;
+$post-hr-color: lighten($black,30%);
+
+.post__meta {
+  @include adjust-font-size-to(14px);
+  @include padding-trailer;
+  margin-bottom: 0;
+  color: $post-hr-color;
+  text-align: left;
+  font-family: $sans-serif-font-stack;
+
+  @include at-breakpoint($medium) {
+    text-align: center;
+    border-bottom: 1px solid $post-hr-color;
+  }
+
+  img {
+    float: left;
+    margin-right: .5em;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+  }
+
+  i {
+    margin-right: .5em;
+  }
+
+  a {
+    color: $post-hr-color;
+    font-weight: normal;
+
+    &:hover {
+      border-bottom: 1px solid $post-hr-color;;
+    }
+  }
+
+  span {
+    margin-right: $gutter-width;
+
+    &:first-child {
+      display: none;
+
+      @include at-breakpoint($medium) {
+        display: inline-block;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.post__hr {
+  display: none;
+
+  @include at-breakpoint($medium) {
+    display: block;
+    margin: 0 auto;
+    width: $post-hr-width * 2;
+    border-top: 0;
+
+    &:after {
+      display: inline-block;
+      border: $post-hr-width solid;
+      border-color: $post-hr-color;
+      border-bottom-color: transparent;
+      content: "";
+    }
+  }
+}
+
+/*
+ * Aside box
+ */
+
+.post__aside {
+  @include border-radius;
+  @include trailer;
+  @include padding-trailer(1/2);
+  @include padding-leader;
+  @include adjust-font-size-to(14px);
+  position: relative;
+  margin-top: -2em;
+  padding-right: 1em;
+  padding-left: 1em;
+  background: darken($black,10%);
+  color: $white;
+  font-family: $sans-serif-font-stack;
+
+  @include at-breakpoint($large) {
+    @include squish(1,1);
+    margin-top: -1em;
+  }
+
+  ul {
+    margin-left: 0;
+    list-style-type: none;
+
+    @include at-breakpoint($medium) {
+      @include pie-clearfix;
+    }
+  }
+
+  li {
+    @include trailer(1/2);
+
+    @include at-breakpoint($medium) {
+      float: left;
+      width: 25%;
+      text-align: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.aside__name {
+  display: block;
+  color: #919191;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.aside__value,
+.aside__value a {
+  color: white;
+  font-weight: normal;
+
+  .fa {
+    padding-right: .25em;
+    color: #919191;
+  }
+}
+.aside__value a {
+  &:hover {
+    border-bottom: none;
+    color: #919191;
+  }
+}
+
+.aside__value--share {
+  margin-right: .5em;
+}
+
+.aside__value--tag {
+  text-transform: lowercase;
+
+  &:before {
+    margin-left: .5em;
+    color: #919191;
+    content: "#";
+  }
+}
+
+/*
+ * Misc post stuff
+ */
+
+.highlight {
+  @include full-width-bgr(lighten($white,2%));
+}
+
+/*
+ * Comments
+ */
+
+.comments {
+  @include trailer(3);
+}

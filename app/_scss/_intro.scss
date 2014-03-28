@@ -1,0 +1,132 @@
+/* =Intro
+-------------------------------------------------------------- */
+
+.intro-wrapper {
+  @include arrow(bottom, center, $black);
+  background: $black url("/img/intro-bgr.png") top center no-repeat;
+  @include background-size(contain);
+}
+
+.intro {
+  @include pie-clearfix;
+  @include padding-trailer(3);
+  color: $white;
+
+  a {
+    border-bottom: 1px solid;
+    color: $white;
+    font-weight: normal;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+
+  .col1 {
+    text-align: left;
+
+    @include at-breakpoint($medium) {
+      @include span-columns(4,8);
+    }
+
+    @include at-breakpoint($large) {
+      @include span-columns(4,12);
+    }
+  }
+
+  .col2 {
+    text-align: left;
+
+    @include at-breakpoint($medium) {
+      @include span-columns(4 omega,8);
+    }
+
+    @include at-breakpoint($large) {
+      @include span-columns(4,12);
+    }
+  }
+
+  .col3 {
+    text-align: left;
+
+    @include at-breakpoint($medium) {
+      .intro__section {
+        &:first-child {
+          @include span-columns(4,8);
+        }
+        &:last-child {
+          @include span-columns(4 omega,8);
+        }
+      }
+    }
+
+    @include at-breakpoint($large) {
+      .intro__section {
+        &:first-child,
+        &:last-child {
+          width: 100%;
+        }
+      }
+
+      @include span-columns(4 omega,12);
+    }
+  }
+
+  & > img {
+    @include border-radius(999px);
+    @include leader(2);
+    width: columns(1,4);
+    height: auto;
+
+    @include at-breakpoint($medium) {
+      width: columns(2,8);
+    }
+
+    @include at-breakpoint($large) {
+      width: columns(2,12);
+    }
+  }
+}
+
+.intro__headline {
+  @include padding-leader(3);
+  @include trailer(1/3);
+  font-weight: normal;
+  font-size: 1.375em;
+  line-height: 1.3em;
+
+  @include at-breakpoint($medium) {
+    @include adjust-font-size-to(32px);
+    @include padding-leader;
+  }
+
+  @include at-breakpoint($large) {
+    @include adjust-font-size-to(48px);
+    text-align: center;
+  }
+
+  & + p {
+    @include trailer(2);
+
+    @include at-breakpoint($large) {
+      text-align: center;
+    }
+  }
+}
+
+.intro__section-headline {
+  @extend .gamma;
+  margin: 0;
+}
+
+/*
+ * Passions
+ */
+
+a.shuffle-passions {
+  color: lighten($black,30%);
+
+  .no-js & {
+    display: none;
+  }
+}

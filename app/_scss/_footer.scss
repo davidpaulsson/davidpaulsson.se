@@ -1,0 +1,42 @@
+/* =Site footer
+-------------------------------------------------------------- */
+
+/*
+ * Footer
+ */
+
+.site-footer {
+  @include padding-trailer(4);
+  @include padding-leader(3);
+  background: $black;
+  color: $white;
+  font-family: $sans-serif-font-stack;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  a {
+    color: $white;
+  }
+
+  .fa-heart {
+    padding: 0 .1em 0 .25em;
+  }
+}
+
+.site-footer__colophon {
+  @include at-breakpoint($large) {
+    @include span-columns(8, 12);
+  }
+
+  i {
+    color: $red;
+  }
+}
+
+.site-footer__contact {
+  @include at-breakpoint($large) {
+    @include span-columns(4 omega, 12);
+  }
+}

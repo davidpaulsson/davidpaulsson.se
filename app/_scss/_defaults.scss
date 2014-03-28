@@ -1,0 +1,187 @@
+/* =Defaults
+-------------------------------------------------------------- */
+
+/*
+ * Layout
+ */
+
+.wrapper {
+  @include container;
+}
+
+/*
+ * Apply a natural box layout model to all elements
+ */
+
+* {
+  @include box-sizing(border-box);
+}
+
+/*
+ * Type
+ */
+
+html {
+  height: 100%;
+  font-size: 100%;
+  font-kerning: normal; // Set the default for kerning
+  font-synthesis: none; // Don't allow the font to create sythetic bold/italic
+  text-rendering: optimizeLegibility; // Improve kerning pairs. Caution: Webkit gets funny with this sometimes
+  -webkit-font-smoothing: antialiased; // Improve (or in some cases screw with) safari's legibility somewhat
+
+  // Stop iPhone/iPad from scaling text
+  // Absolute measure here, as we're talking about devices, not screen size
+  @media screen and (max-width: 769px) {
+    -webkit-text-size-adjust:none;
+  }
+}
+
+body {
+  @include adjust-font-size-to(16px);
+}
+
+p {
+  @include trailer;
+
+  @include at-breakpoint($large) {
+    @include adjust-font-size-to(18px);
+  }
+}
+
+// Enable liagtures in our font
+
+#{headings(3)} {
+  font-family: $sans-serif-font-stack;
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig";
+}
+
+// Sizes
+
+h1,
+.alpha {
+  @include adjust-font-size-to(32px);
+  @include trailer;
+  font-family: $serif-font-stack;
+
+  @include at-breakpoint($medium) {
+    @include adjust-font-size-to(40px);
+  }
+
+  @include at-breakpoint($large) {
+    @include adjust-font-size-to(48px);
+  }
+}
+
+h2,
+.beta {
+  @include adjust-font-size-to(26px);
+  @include trailer(1/2);
+
+  @include at-breakpoint($medium) {
+    @include adjust-font-size-to(32px);
+  }
+
+  @include at-breakpoint($large) {
+    @include adjust-font-size-to(36px);
+  }
+}
+
+h3,
+.gamma {
+  @include adjust-font-size-to(22px);
+  @include trailer(1/2);
+  @include leader;
+
+  @include at-breakpoint($medium) {
+    @include adjust-font-size-to(24px);
+  }
+
+  @include at-breakpoint($large) {
+    @include adjust-font-size-to(28px);
+  }
+}
+
+h4,
+.delta {
+  @include adjust-font-size-to(18px);
+  @include leader;
+}
+
+.epsilon {
+  @include adjust-font-size-to(16px);
+}
+
+.zeta {
+  @include adjust-font-size-to(14px);
+}
+
+/*
+ * Make blockquotes, lists etc behave
+ */
+
+blockquote {
+  @include adjust-font-size-to(18px);
+  @include trailer;
+  @include leader;
+
+  @include at-breakpoint($medium) {
+    @include adjust-font-size-to(22px);
+  }
+}
+
+ul {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+ol {
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+
+li {
+  line-height: auto;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+em,
+i,
+q {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+pre {
+  @include padding-leader;
+  @include padding-trailer;
+  @include trailer;
+  font-family: $monospace-font-stack;
+}
+
+/*
+ * Animations
+ */
+
+.fade--in {
+  @include animate(fade-in, 0.5s);
+}
+
+.fade--in-down {
+  @include animate(fade-in-down, 0.25s);
+}
+
+.fade--out-up {
+  @include animate(fade-out-up, 0.25s);
+}

@@ -1,0 +1,74 @@
+  {% include header.html %}
+
+  <article class="post wrapper">
+    <header class="post__header">
+      <h1 class="post__title">{{ page.title }}</h1>
+      <p class="post__meta">
+        <span><img src="/img/davidpaulsson.jpg" alt=""><em>by</em> <a href="http://twitter.com/{{ site.author.twitter }}" rel="me">{{ site.author.name }}</a></span>
+        <span><i class="fa fa-calendar"></i> {{ page.date | date_to_long_string }}</span>
+        {{ % if page.comments % }}
+          <span><i class="fa fa-comment"></i> <a href="{{ post.url }}#disqus_thread"></a></span>
+        {{ % endif % }}
+      </p>
+      <hr class="post__hr">
+    </header>
+
+    <aside class="post__aside">
+      <ul>
+        <li>
+          <span class="aside__name">Last updated:</span>
+          <span class="aside__value">{% render_time %}</span>
+        </li>
+        <li>
+          <span class="aside__name">Est. Read Time:</span>
+          <span class="aside__value">{{ page.content | reading_time }}</span>
+        </li>
+        <li>
+          <span class="aside__name">Share this:</span>
+          <span class="aside__value aside__value--share"><a href="https://twitter.com/intent/tweet?url={{ site.url }}{{ page.url }}&amp;via=davidpaulsson&amp;text=Reading →" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=700,width=700');return false;"><i class="fa fa-twitter"></i> Twitter</a></span>
+          <span class="aside__value aside__value--share"><a href="http://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=700,width=700');return false;"><i class="fa fa-facebook"></i> Facebook</a></span>
+        </li>
+        <li>
+          <span class="aside__name">Tagged</span>
+          {% for tag in page.tags %}
+            <span class="aside__value aside__value--tag">{{ tag }}</span>
+          {% endfor %}
+        </li>
+      </ul>
+    </aside>
+
+    {% if page.vimeo %}
+      <iframe src="http://player.vimeo.com/video/{{ page.vimeo }}?title=0&amp;byline=0&amp;portrait=0" width="620" height="349" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+    {% endif %}
+
+    {{ content }}
+  </article>
+
+  {{ % if page.comments % }}
+    <div class="comments wrapper">
+      <h3>Comments</h3>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          var disqus_shortname = 'davidpaulsson';
+          (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+
+              var s = document.createElement('script'); s.async = true;
+              s.type = 'text/javascript';
+              s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+              (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+          })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  {{ % endif % }}
+
+  {% include footer.html %}
+  {% include scripts.html %}
+  {% include googleanalytics.html %}
+
+  </body>
+</html>

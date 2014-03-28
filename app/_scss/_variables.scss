@@ -1,0 +1,45 @@
+/* =Variables
+-------------------------------------------------------------- */
+
+/*
+ * Susy
+ */
+
+$total-columns: 4;
+$column-width: 4em;
+$gutter-width: 2em;
+$grid-padding: 0;
+$container-style: fluid;
+
+$medium: 8;
+$large: 12;
+$huge: 16;
+
+@include border-box-sizing;
+
+// Show grid helpers?
+
+$show-grid: false;
+
+/*
+ * Colors
+ */
+
+$white: #ecf0f1; // clouds
+$black: #2c3e50; // midnight blue
+$green: #2ecc71; // emerald
+$red: #e74c3c; // alizarin
+$yellow: #f1c40f; // sun flower
+
+/*
+ * Type
+ */
+
+$base-font-size: 16px;
+$base-line-height: 24px;
+$serif-font-stack: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+$sans-serif-font-stack: "aktiv-grotesk-std", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$monospace-font-stack: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+$round-to-nearest-half-line: true;
+
+@include establish-baseline;
