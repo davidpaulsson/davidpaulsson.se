@@ -249,9 +249,6 @@ module.exports = function (grunt) {
     },
     imagemin: {
       dist: {
-        options: {
-          progressive: true
-        },
         files: [{
           expand: true,
           cwd: '<%= yeoman.dist %>',
@@ -385,7 +382,7 @@ module.exports = function (grunt) {
           authKey: 'key1',
         },
         src: '<%= yeoman.dist %>',
-        dest: '/www/new',
+        dest: '/www/davidpaulsson.se',
       }
     },
     concurrent: {
@@ -482,7 +479,7 @@ module.exports = function (grunt) {
     'autoprefixer:dist',
     'cssmin',
     'uglify',
-    // 'imagemin',
+    'imagemin',
     'svgmin',
     'filerev',
     'usemin',
@@ -494,7 +491,7 @@ module.exports = function (grunt) {
     'test',
     'build',
     // 'replace',
-    // 'ftpush'
+    'ftpush'
     // 'buildcontrol'
     ]);
 
