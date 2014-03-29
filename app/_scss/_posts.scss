@@ -296,9 +296,9 @@ $post-hr-color: lighten($black,30%);
 
 .aside__value--tag {
   text-transform: lowercase;
+  margin-right: .5em;
 
   &:before {
-    margin-left: .5em;
     color: #919191;
     content: "#";
   }
