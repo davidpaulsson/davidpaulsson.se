@@ -282,7 +282,8 @@ module.exports = function (grunt) {
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            '_bower_components/jquery/jquery.js',
+            '_bower_components/jquery/dist/jquery.min.js',
+            '_bower_components/instafeed.js/instafeed.min.js',
             'favicon.ico',
             'apple-touch*.png'
           ],
@@ -361,9 +362,6 @@ module.exports = function (grunt) {
       dist: {
         'devFile' : '<%= yeoman.app %>/_bower_components/modernizr/modernizr.js',
         'outputFile' : '<%= yeoman.app %>/js/modernizr-custom.js',
-        'extra' : {
-          'load' : false,
-        },
         'files' : {
           'src': [
             '<%= yeoman.app %>/_scss/**/*.scss',

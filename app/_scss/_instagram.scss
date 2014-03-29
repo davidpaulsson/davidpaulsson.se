@@ -57,12 +57,8 @@
   font-weight: bold;
   font-family: $sans-serif-font-stack;
 
-  &:before {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    // background: inline-image("icon-heart.svg") 0 5px no-repeat;
-    background-size: 1em;
-    content: "";
+  i {
+    margin-right: .25em;
   }
+
 }
