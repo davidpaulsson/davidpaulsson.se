@@ -283,6 +283,7 @@ module.exports = function (grunt) {
             '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
             '_bower_components/jquery/dist/jquery.min.js',
+            '_bower_components/FitVids/jquery.fitvids.js',
             '_bower_components/instafeed.js/instafeed.min.js',
             'favicon.ico',
             'apple-touch*.png'

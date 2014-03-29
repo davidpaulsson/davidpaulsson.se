@@ -3,8 +3,7 @@
 #
 
 $ ->
-  if $(".instagram").length
-    console.log "test"
+  if $("#instagram").length
     yepnope
       load: "/_bower_components/instafeed.js/instafeed.js"
       complete: ->
