@@ -20,7 +20,7 @@ Att veta exakt vilken ppi besökaren har på sin skärm är nästan omöjligt. J
 Det hela är väldigt rörigt, men alla vi är vana att skapa design för webb i Photoshop med ett dokument som har 72 ppi. Jag gör det, du gör det, alla gör det. Det hela är väldigt krångigt och det är ok, man behöver inte veta exakt hur det fungerar. Men 72 ppi har fungerat hittills, och om skärmen har betydligt högre upplösning än så (till exempel en iPhone 4 eller de nya MacBook Pro-skärmarna) så kommer massor av krångliga algoritmer försöka hitta på nya pixlar med så kallad sub-pixel rendering.
 
 <figure class="caption caption--right">
-  <img data-src="/img/retinaskarm-pixel.png" alt="">
+  <img data-src="/img/retinaskarm-pixel.jpg" alt="">
   <figcaption>1) En pixel är en pixel. <br>2) En pixel kommer ”delas upp” och visas på samma yta, men är i själva verket flera stycken pixlar tack vare högre upplösning.</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ Till exempel finns det spännande webbprojekt som Layer Styles där du i ett bek
 Till vardags använder jag själv ett litet program som heter Gradient för att skapa gradienter som fungerar bra på webben. Och igår köpte jag en Photoshop-plugin som heter CSS Hat som kan skapa CSS utifrån effektinställningarna på dina lager.
 
 <figure class="caption caption--left">
-  <img data-src="/img/csshat-test.png" alt="">
+  <img data-src="/img/csshat-test.jpg" alt="">
   <figcaption>Samma knapp på en retinaskärm. Den övre är CSS och den undre är pixlar. Bättre upplösning = sämre knapp. Du kan själv surfa till <a href="http://dev.davidpaulsson.se/csshat">http://dev.davidpaulsson.se/csshat/</a> om du vill inspektera och titta vilken kod som CSS Hat trycker ut.</figcaption>
 </figure>
 
@@ -54,10 +54,10 @@ Scalable Vector Graphics eller SVG är något som snart kommer kännas helt natu
 ## Ladda separata bilder för skärmar med högre upplösning
 
 <figure>
-  <img data-src="/img/retinajs.png" alt="retina.js">
+  <img data-src="/img/retinajs.jpg" alt="retina.js">
 </figure>
 
-Ett snabbhack som kommer att fungera ett par år till är också att helt enkelt ladda större bilder för besökare som använder skärmar med bättre upplösning. Till exempel [Retina.js](http://retinajs.com/) som kommer att leta efter samma bild fast med ett tillägg i slutet och ladda de bilderna istället om användarens skärm stödjer det. Så då kan du skapa två bilder till exempel bild.png och bild@2x.png och be den hålla utkik för filtillägget @2x. Men det går bra att be den kika efter vad som helst, så du kan [sätta upp egna storlekar](http://codex.wordpress.org/Function_Reference/add_image_size) och låta WordPress-egna bildskalning skapa separata bilder för retinastärmar. Om WordPress då har skapat bild-150-150.png så kan du byta ut den till bild-300-300.png.
+Ett snabbhack som kommer att fungera ett par år till är också att helt enkelt ladda större bilder för besökare som använder skärmar med bättre upplösning. Till exempel [Retina.js](http://retinajs.com/) som kommer att leta efter samma bild fast med ett tillägg i slutet och ladda de bilderna istället om användarens skärm stödjer det. Så då kan du skapa två bilder till exempel bild.jpg och bild@2x.jpg och be den hålla utkik för filtillägget @2x. Men det går bra att be den kika efter vad som helst, så du kan [sätta upp egna storlekar](http://codex.wordpress.org/Function_Reference/add_image_size) och låta WordPress-egna bildskalning skapa separata bilder för retinastärmar. Om WordPress då har skapat bild-150-150.jpg så kan du byta ut den till bild-300-300.jpg.
 
 ## Vad tror ni?
 

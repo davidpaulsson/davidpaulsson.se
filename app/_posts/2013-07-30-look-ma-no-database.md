@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Look, ma! No database!
-image: jekyllrb.com.png
+image: jekyllrb.com.jpg
 comments: true
 tags:
 - Jekyll
@@ -24,7 +24,7 @@ Stick around and I’ll try to explain my workflow.
 
 [Jekyll](http://jekyllrb.com/) is a tool to “transform your plain text into static websites and blogs. No more databases, comment moderation, or pesky updates to install—just your content”.
 
-![jekyllrb.com](/img//jekyllrb.com.png)
+![jekyllrb.com](/img//jekyllrb.com.jpg)
 
 In other words you create your templates in HTML, write your site content in Markdown (or [Textile](http://textile.sitemonks.com/)) and let Jekyll compile everything to finished `.html` files. And if you’ve got your fancy pants on you throw in some [Liquid](http://wiki.shopify.com/Liquid) templating markup (in your HTML templates) before you let Jekyll spit out your static site ready for deployment.
 
@@ -55,13 +55,13 @@ Programs and scripts to make my life easier. Here is what I use, and now I'm sha
 
 * [Sublime Text 2](http://www.sublimetext.com/2). My weapon of choice when it comes to IDEs. Speedy, customizable and awesome.
 
-![Sublime Text 2](/img//sublimetext.png)
+![Sublime Text 2](/img//sublimetext.jpg)
 
 * [Codekit](http://incident57.com/codekit/). I use it to compile my SASS to CSS and concatenate and minify my JS.  Yes, you could use Grunt or Jekyll plugins or whatever to do that but Codekit comes with a personal favorite of mine: style injection. This is way better than live reload. And I like to use a GUI whenever I can.
 * [ImgOptim](http://imageoptim.com/). Makes your images small(er). Does a better job than Codekit in my opinion.
 * [iA Writer](http://www.iawriter.com/). I write posts in Markdown on my phone, tablet or computer. iA Writer makes writing a pleasure. And it synchs all documents seamlessly between my devices through iCloud and Dropbox.
 
-![iA Writer](/img//iawriter.png)
+![iA Writer](/img//iawriter.jpg)
 
 * [Photoshop](http://www.photoshop.com/). Yeah, design in the browser and yada yada. I still enjoy the process of mocking things up visually before I start to code. [Here’s a `.psd` file of how this site looked in Photoshop before code](http://davidpaulsson.se/img//davidpaulsson_se-large.psd.zip).
 
@@ -70,7 +70,7 @@ Programs and scripts to make my life easier. Here is what I use, and now I'm sha
 * [Github](https://github.com/). I push all my source files to Github. Easy to manage, fun to share. Version control and…ye, I don’t need to tell you how awesome it is.
 * [FTPloy](http://ftploy.com/). Push to Github (or [Bitbucket](https://bitbucket.org/)) and deploy with FTP/SSH. Did I mention it’s free?
 
-![FTPloy](/img//ftploy.png)
+![FTPloy](/img//ftploy.jpg)
 
 ### Scripts
 

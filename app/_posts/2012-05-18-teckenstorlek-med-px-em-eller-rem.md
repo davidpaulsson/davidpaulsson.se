@@ -20,7 +20,7 @@ Den lättaste lösningen är att kopiera samma teckenstorlek som förlagan i Pho
 Att skriva teckenstorleken i px är det absolut bästa sättet om man vill vara riktigt pixelexakt med sin design utifrån förlagan. 12 px är helt enkelt 12 pixlar.
 
 <figure class="caption caption--right">
-  <img data-src="/img/12px.png" alt="Text som är satt till 12px med CSS är 12 pixlar hög.">
+  <img data-src="/img/12px.jpg" alt="Text som är satt till 12px med CSS är 12 pixlar hög.">
   <figcaption>Text som är satt till 12px med CSS är 12 pixlar hög.</figcaption>
 </figure>
 

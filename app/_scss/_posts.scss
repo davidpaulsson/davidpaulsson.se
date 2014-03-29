@@ -41,6 +41,7 @@
 
 .post {
   #{headings()},
+  .alert,
   pre,
   p {
     img {
@@ -309,6 +310,14 @@ $post-hr-color: lighten($black,30%);
 
 .highlight {
   @include full-width-bgr(lighten($white,2%));
+
+  pre {
+    overflow: scroll;
+  }
+}
+
+.fluid-width-video-wrapper {
+  @include trailer;
 }
 
 /*

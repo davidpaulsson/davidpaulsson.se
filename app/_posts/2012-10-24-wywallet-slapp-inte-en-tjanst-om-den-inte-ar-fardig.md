@@ -21,7 +21,7 @@ I den bästa av alla världar kan jag fortsätta att betala via SMS och kostnade
 WyWallet hanterar nu alla mina köp. Utan möjlighet för mig att kunna välja själv. Går jag in i min WyWallet-app så finns det under Inställningar ett val där jag ska kunna ändra ”Betalsätt för SMS-köp”.
 
 <figure class="caption caption--left">
-  <img data-src="/img/wywallet-1.png" alt="WyWallet ger mig inte så många valmöjligheter">
+  <img data-src="/img/wywallet-1.jpg" alt="WyWallet ger mig inte så många valmöjligheter">
   <figcaption>WyWallet ger mig inte så många valmöjligheter.</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ Jag testar väl att beställa min SL-biljett via SMS som jag alltid gjort. Och s
 2. det funkar inte, men jag får någon slags möjlighet att betala via mitt abonnemang ändå.
 
 <figure class="caption caption--right">
-  <img data-src="/img/wywallet-2.png" alt="Nehe? Vad gör jag nu då?">
+  <img data-src="/img/wywallet-2.jpg" alt="Nehe? Vad gör jag nu då?">
   <figcaption>Nehe? Vad gör jag nu då?</figcaption>
 </figure>
 
