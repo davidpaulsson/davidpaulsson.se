@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Look, ma! No database!
+title: Look, ma! No Database!
 image: jekyllrb.com.jpg
 comments: true
+category: blog
 tags:
 - Jekyll
 - Design

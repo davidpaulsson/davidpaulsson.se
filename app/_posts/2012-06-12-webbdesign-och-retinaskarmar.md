@@ -2,6 +2,7 @@
 layout: post
 title: "Webbdesign och retinaskärmar"
 comments: true
+category: blog
 tags:
 - Design
 - Retina

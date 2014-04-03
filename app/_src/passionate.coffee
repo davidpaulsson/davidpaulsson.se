@@ -21,6 +21,7 @@ passions = [
   "travel",
   "food",
   "agile",
+  "#a11y",
   "my&nbsp;friends",
   "my&nbsp;wife",
   "semantics",

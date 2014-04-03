@@ -2,6 +2,7 @@
 layout: post
 title: "Teckenstorlek med px, %, em eller&nbsp;rem?"
 comments: true
+category: blog
 tags:
 - Type
 - REM

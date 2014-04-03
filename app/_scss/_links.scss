@@ -3,9 +3,9 @@
 
 a {
   @include force-wrap; // Force text links to wrap
-  color: $black;
+  color: $red;
   text-decoration: none;
-  font-weight: bold;
+  // font-weight: bold;
 
   &:hover,
   &:focus,

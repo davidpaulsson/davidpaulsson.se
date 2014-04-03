@@ -2,6 +2,7 @@
 layout: post
 title: "WyWallet: Släpp inte en tjänst om den inte är&nbsp;färdig"
 comments: true
+category: blog
 tags:
 - WyWallet
 date: 2012-10-24

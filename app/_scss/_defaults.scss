@@ -134,11 +134,13 @@ blockquote {
 }
 
 ul {
+  @include trailer;
   list-style-position: inside;
   list-style-type: disc;
 }
 
 ol {
+  @include trailer;
   list-style-position: inside;
   list-style-type: decimal;
 }
@@ -167,7 +169,18 @@ pre {
   @include padding-leader;
   @include padding-trailer;
   @include trailer;
+
+  code {
+    padding: 0;
+    background: transparent;
+  }
+}
+
+code {
+  padding: 0 .25em;
+  background: #fff;
   font-family: $monospace-font-stack;
+  line-height: 1em;
 }
 
 /*

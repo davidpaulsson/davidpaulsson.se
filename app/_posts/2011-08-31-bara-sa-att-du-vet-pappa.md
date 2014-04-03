@@ -2,6 +2,7 @@
 layout: post
 title: "Bara så att du vet&nbsp;pappa"
 comments: true
+category: blog
 tags:
 - Personal
 date: 2011-08-31

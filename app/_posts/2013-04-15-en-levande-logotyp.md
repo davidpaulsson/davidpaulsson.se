@@ -2,6 +2,7 @@
 layout: post
 title: "En levande logotyp"
 comments: true
+category: blog
 tags:
 - Logo
 - Design

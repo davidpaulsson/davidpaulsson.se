@@ -1,7 +1,8 @@
 ---
 layout: post
-title: I’m joining Valtech!
+title: I’m Joining Valtech!
 comments: true
+category: blog
 tags:
 - Personal
 date: 2013-08-22
