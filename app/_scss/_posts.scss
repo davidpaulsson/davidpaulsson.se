@@ -14,6 +14,15 @@
   @include padding-leader;
   @include padding-trailer;
 
+  &:hover {
+    @include full-width-bgr($white);
+    color: $black;
+
+    a {
+      color: $black;
+    }
+  }
+
   h2 {
     @include trailer(1/4);
   }
@@ -29,23 +38,23 @@
 }
 
 .posts__post--one {
-  @include full-width-bgr(tint($black,70%));
+  @include full-width-bgr(lighten($black,70%));
 }
 
 .posts__post--two {
-  @include full-width-bgr(tint($black,60%));
+  @include full-width-bgr(lighten($black,60%));
 }
 
 .posts__post--three {
-  @include full-width-bgr(tint($black,50%));
+  @include full-width-bgr(lighten($black,50%));
 }
 
 .posts__post--four {
-  @include full-width-bgr(tint($black,40%));
+  @include full-width-bgr(lighten($black,40%));
 }
 
 .posts__post--five {
-  @include full-width-bgr(tint($black,30%));
+  @include full-width-bgr(lighten($black,30%));
   color: tint($black,70%);
 
   a {
@@ -54,7 +63,7 @@
 }
 
 .posts__post--six {
-  @include full-width-bgr(tint($black,20%));
+  @include full-width-bgr(lighten($black,20%));
   color: tint($black,80%);
 
   a {
