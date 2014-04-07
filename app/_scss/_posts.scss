@@ -14,15 +14,6 @@
   @include padding-leader;
   @include padding-trailer;
 
-  &:hover {
-    @include full-width-bgr($white);
-    color: $black;
-
-    a {
-      color: $black;
-    }
-  }
-
   h2 {
     @include trailer(1/4);
   }
@@ -55,28 +46,28 @@
 
 .posts__post--five {
   @include full-width-bgr(lighten($black,30%));
-  color: tint($black,70%);
+  color: darken($black,70%);
 
   a {
-    color: tint($black,70%);
+    color: darken($black,70%);
   }
 }
 
 .posts__post--six {
   @include full-width-bgr(lighten($black,20%));
-  color: tint($black,80%);
+  color: darken($black,80%);
 
   a {
-    color: tint($black,80%);
+    color: darken($black,80%);
   }
 }
 
 .posts__post--seven {
-  @include full-width-bgr(tint($black,10%));
-  color: tint($black,90%);
+  @include full-width-bgr(lighten($black,10%));
+  color: darken($black,90%);
 
   a {
-    color: tint($black,90%);
+    color: darken($black,90%);
   }
 }
 
@@ -160,7 +151,7 @@
 
       img {
         @include at-breakpoint($medium) {
-          @include span-columns(9,12);
+          @include span-columns(9, 12);
         }
       }
     }
@@ -171,7 +162,7 @@
         text-align: right;
 
         @include at-breakpoint($medium) {
-          @include span-columns(3,12);
+          @include span-columns(3, 12);
         }
       }
 
