@@ -21,7 +21,7 @@ I den bästa av alla världar kan jag fortsätta att betala via SMS och kostnade
 
 WyWallet hanterar nu alla mina köp. Utan möjlighet för mig att kunna välja själv. Går jag in i min WyWallet-app så finns det under Inställningar ett val där jag ska kunna ändra ”Betalsätt för SMS-köp”.
 
-<figure class="caption caption--left">
+<figure class="caption">
   <img data-src="/img/wywallet-1.jpg" alt="WyWallet ger mig inte så många valmöjligheter">
   <figcaption>WyWallet ger mig inte så många valmöjligheter.</figcaption>
 </figure>
@@ -33,7 +33,7 @@ Jag testar väl att beställa min SL-biljett via SMS som jag alltid gjort. Och s
 1. Det fungerar som vanligt eller
 2. det funkar inte, men jag får någon slags möjlighet att betala via mitt abonnemang ändå.
 
-<figure class="caption caption--right">
+<figure class="caption">
   <img data-src="/img/wywallet-2.jpg" alt="Nehe? Vad gör jag nu då?">
   <figcaption>Nehe? Vad gör jag nu då?</figcaption>
 </figure>
@@ -50,7 +50,7 @@ Jag besöker wywallet.se, loggar in och hittar mitt telefonnummer. Väljer att k
 
 Ok? Varför visar ni mig en knapp där jag kan ta bort mig själv om det ändå inte går? Suck. Jag börjar Googla och [hittar följande på WyWallets kundsida](http://wywallet.se/kundtjanst/#10):
 
-> 10. **Hur avslutar jag WyWallet?** För att avsluta WyWallet måste du skicka ett mejl från den e-postadress du har registrerat hos oss till kundtjanst@wywallet.se. Du måste ta ut alla dina pengar från WyWallet när du avslutar ditt konto.
+> **Hur avslutar jag WyWallet?** <br>För att avsluta WyWallet måste du skicka ett mejl från den e-postadress du har registrerat hos oss till [kundtjanst@wywallet.se](mailto:kundtjanst@wywallet.se). Du måste ta ut alla dina pengar från WyWallet när du avslutar ditt konto.
 
 Förlåt, men jag är lite allergisk mot tjänster som man inte kan avsluta (enkelt) om och när man vill.
 

@@ -16,5 +16,21 @@
     @include container();
     @if $show-grid == true { @include susy-grid-background; }
     max-width: 80%;
+
+    & > article,
+    & > section,
+    & > .fluid-width-video-wrapper,
+    & > h1,
+    & > h2,
+    & > h3,
+    & > h4,
+    & > h5,
+    & > h6,
+    & > p,
+    & > div,
+    & > ol,
+    & > ul {
+      @include post(6);
+    }
   }
 }

@@ -16,7 +16,7 @@ Uppdraget gick ut på att tänka igenom RFSL:s nuvarande design och motivera sin
 
 I designprocesses gjordes två olika snabba förslag. En ny version av start-/landingssidan och en snabb skiss på hur en mobil version av webbsidan skulle kunna se ut.
 
-<figure class="caption caption--right">
+<figure class="caption">
   <img data-src="/img/rfsl-preview.png" alt="En förhandsvisning på hur förslaget på ny design blev.">
   <figcaption>En förhandsvisning på hur förslaget på ny design blev.</figcaption>
 </figure>

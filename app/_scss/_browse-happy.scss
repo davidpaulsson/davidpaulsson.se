@@ -9,9 +9,9 @@
   text-align: center;
 
   a {
+    border-bottom: 1px solid $white;
     color: $white;
     font-weight: normal;
-    border-bottom: 1px solid $white;
 
     &:hover {
       border-bottom: none;

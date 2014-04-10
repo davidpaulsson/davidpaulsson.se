@@ -178,7 +178,7 @@ pre {
 
 code {
   padding: 0 .25em;
-  background: #fff;
+  background: darken($white, 10%);
   font-family: $monospace-font-stack;
   line-height: 1em;
 }

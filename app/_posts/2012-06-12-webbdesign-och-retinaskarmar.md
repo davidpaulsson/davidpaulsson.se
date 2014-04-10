@@ -12,7 +12,9 @@ description: Ska vi fortsätta hysterin och göra separata bilder för alla olik
 
 [Igår släppte Apple sin nya MacBook Pro](http://www.apple.com/se/macbook-pro/) och äntligen får vi retinaupplösning på våra ”vanliga” skärmar. Fotografer och filmskapare är lyriska, men hur ska vi som jobbar med design på webben anpassa oss för en upplösning på 2880×1800 pixlar på en 15” skärm som ger hela 226.42 ppi?
 
-**Ska vi fortsätta hysterin och göra separata bilder för alla olika enheter eller ska webbutvecklare äntligen börja arbeta med CSS3 och skalbar grafik på webben? Om vi fortsätter att skapa dubbla uppsättningar av våra bilder; ska vi ”straffa” besökare med bra skärmar med längre laddningstider bara för att vi måste ladda ner bilder som är dubbelt så stora?**
+> Ska vi fortsätta hysterin och göra separata bilder för alla olika enheter eller ska webbutvecklare äntligen börja arbeta med CSS3 och skalbar grafik på webben?
+
+Ska vi fortsätta hysterin och göra separata bilder för alla olika enheter eller ska webbutvecklare äntligen börja arbeta med CSS3 och skalbar grafik på webben? Om vi fortsätter att skapa dubbla uppsättningar av våra bilder; ska vi ”straffa” besökare med bra skärmar med längre laddningstider bara för att vi måste ladda ner bilder som är dubbelt så stora?
 
 ## Hur fungerar det rent tekniskt?
 
@@ -20,7 +22,7 @@ Att veta exakt vilken ppi besökaren har på sin skärm är nästan omöjligt. J
 
 Det hela är väldigt rörigt, men alla vi är vana att skapa design för webb i Photoshop med ett dokument som har 72 ppi. Jag gör det, du gör det, alla gör det. Det hela är väldigt krångigt och det är ok, man behöver inte veta exakt hur det fungerar. Men 72 ppi har fungerat hittills, och om skärmen har betydligt högre upplösning än så (till exempel en iPhone 4 eller de nya MacBook Pro-skärmarna) så kommer massor av krångliga algoritmer försöka hitta på nya pixlar med så kallad sub-pixel rendering.
 
-<figure class="caption caption--right">
+<figure class="caption">
   <img data-src="/img/retinaskarm-pixel.jpg" alt="">
   <figcaption>1) En pixel är en pixel. <br>2) En pixel kommer ”delas upp” och visas på samma yta, men är i själva verket flera stycken pixlar tack vare högre upplösning.</figcaption>
 </figure>
@@ -39,7 +41,7 @@ Till exempel finns det spännande webbprojekt som Layer Styles där du i ett bek
 
 Till vardags använder jag själv ett litet program som heter Gradient för att skapa gradienter som fungerar bra på webben. Och igår köpte jag en Photoshop-plugin som heter CSS Hat som kan skapa CSS utifrån effektinställningarna på dina lager.
 
-<figure class="caption caption--left">
+<figure class="caption">
   <img data-src="/img/csshat-test.jpg" alt="">
   <figcaption>Samma knapp på en retinaskärm. Den övre är CSS och den undre är pixlar. Bättre upplösning = sämre knapp. Du kan själv surfa till <a href="http://dev.davidpaulsson.se/csshat">http://dev.davidpaulsson.se/csshat/</a> om du vill inspektera och titta vilken kod som CSS Hat trycker ut.</figcaption>
 </figure>

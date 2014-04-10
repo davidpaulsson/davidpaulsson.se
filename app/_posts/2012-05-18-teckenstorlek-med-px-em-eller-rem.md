@@ -20,7 +20,7 @@ Den lättaste lösningen är att kopiera samma teckenstorlek som förlagan i Pho
 
 Att skriva teckenstorleken i px är det absolut bästa sättet om man vill vara riktigt pixelexakt med sin design utifrån förlagan. 12 px är helt enkelt 12 pixlar.
 
-<figure class="caption caption--right">
+<figure class="caption">
   <img data-src="/img/12px.jpg" alt="Text som är satt till 12px med CSS är 12 pixlar hög.">
   <figcaption>Text som är satt till 12px med CSS är 12 pixlar hög.</figcaption>
 </figure>
@@ -70,7 +70,7 @@ REM, eller Root EM, är en hyfsat ny måttenhet som kom med CSS3 och beter sig s
 
 Jo, tyvärr så är det rätt så kasst–men det finns ljuspunkter. Minns ni vad jag skrev om att inte ens nya versioner av Internet Explorer klarar av att skala text utan att zooma hela webbsidan? Ta-daa; från och med Internet Explorer 9 och uppåt klarar man det, men bara med REM. Dock så har inte versioner tidigare än Internet Explorer 9 någon som helst aning om vad REM är så då måste vi lägga in en fallback i vår kod. Men ändå, att skriva en fallback är ett litet pris att betala för att slippa slita sitt hår varje gång man vill ta vara på användarvänlighet och enkelt kunna räkna ut teckenstorleken.
 
-{% highlight css %}
+{% highlight scss %}
 p {
   font-size: 12px; // Fallback för IE8 och tidigare
   font-size: 1.2rem; // Alla andra vettiga webbläsare

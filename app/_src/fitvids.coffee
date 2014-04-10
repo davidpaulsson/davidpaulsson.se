@@ -7,4 +7,4 @@ $ ->
     yepnope
       load: "/_bower_components/FitVids/jquery.fitvids.js"
       complete: ->
-        $(".post").fitVids()
+        $(".wrapper").fitVids()

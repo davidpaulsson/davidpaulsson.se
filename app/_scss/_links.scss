@@ -3,15 +3,7 @@
 
 a {
   @include force-wrap; // Force text links to wrap
-  color: $red;
-  text-decoration: none;
-  // font-weight: bold;
-
-  &:hover,
-  &:focus,
-  &:active {
-    border-bottom: 1px solid;
-  }
+  @include underline($red);
 }
 
 /*

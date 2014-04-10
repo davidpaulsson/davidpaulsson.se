@@ -10,7 +10,6 @@
   },
   "devDependencies": {
     "susy": "1.0.9",
-    "animated.sass": "https://github.com/simko-io/animated.sass.git",
-    "font-awesome": "~4.0.3"
+    "animated.sass": "https://github.com/simko-io/animated.sass.git"
   }
 }
