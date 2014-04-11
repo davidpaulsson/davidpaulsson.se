@@ -29,7 +29,8 @@
     & > p,
     & > div,
     & > ol,
-    & > ul {
+    & > ul,
+    & > hr {
       @include post(6);
     }
   }

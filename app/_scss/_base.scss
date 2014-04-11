@@ -43,12 +43,23 @@ body {
  */
 
 hr {
-  display: block;
-  margin: 1em 0;
-  padding: 0;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid $black;
+  @include leader(2);
+  @include trailer(2);
+  color: darken($white, 25%);
+  border: none;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  position: relative;
+
+  &:after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    content: "\00A7";
+    text-align: center;
+    line-height: 0;
+  }
 }
 
 /*

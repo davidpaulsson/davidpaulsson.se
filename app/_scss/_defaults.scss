@@ -38,14 +38,14 @@ html {
 
 body {
   @include adjust-font-size-to(16px);
-}
-
-p {
-  @include trailer;
 
   @include at-breakpoint($large) {
     @include adjust-font-size-to(18px);
   }
+}
+
+p {
+  @include trailer;
 }
 
 // Enable liagtures in our font
@@ -87,6 +87,10 @@ h2,
 
   @include at-breakpoint($large) {
     @include adjust-font-size-to(36px);
+  }
+
+  .page & {
+    @include leader;
   }
 }
 
@@ -137,6 +141,10 @@ ul {
   @include trailer;
   list-style-position: inside;
   list-style-type: disc;
+
+  @include at-breakpoint($medium) {
+    list-style-position: outside;
+  }
 }
 
 ol {
