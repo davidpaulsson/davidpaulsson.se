@@ -111,6 +111,8 @@ I’m not really a fan of opinionated CSS frameworks like [Bootstrap](http://get
 
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/). Icons designed for Bootstrap, but works fine with any project really.
 - [Entypo](http://www.entypo.com/). Entypo is a set of 250+ carefully crafted pictograms. The package contains an icon font — OpenType, TrueType and @font-face — EPS, PDF and PSD files.
+- [The Noun Project](http://thenounproject.com/). A community driven project with icons. Amazing.
+
 
 ## Tools
 
@@ -126,6 +128,8 @@ Must have apps for your mac.
 - [LittleIpsum](http://littleipsum.com/). Copy Lorem Ipsum text from anywhere.
 - [RecordIt](http://recordit.co/). Record screencasts fast & free, with GIF Support!
 - [Shift It](https://github.com/fikovnik/ShiftIt). ShiftIt is an application for OS X that allows you to quickly manipulate window position and size using keyboard shortcuts.
+- [Droplr](https://droplr.com/). The easiest way to send files.
+No folders, no syncing, no waiting.
 
 ## Legal
 
@@ -173,4 +177,4 @@ Got something to add? Tweet [@davidpaulsson](https://twitter.com/davidpaulsson),
 #### Updates
 
 Thank you:
-- [Daniel Lauding](https://twitter.com/daniellauding) for [Viewport Resizer](http://lab.maltewassermann.com/viewport-resizer/).
+- [Daniel Lauding](https://twitter.com/daniellauding) for [Viewport Resizer](http://lab.maltewassermann.com/viewport-resizer/), [Droplr](https://droplr.com/) and [The Noun Project](http://thenounproject.com/).
