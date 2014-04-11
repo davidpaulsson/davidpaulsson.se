@@ -10,9 +10,6 @@
             <ul class="post__meta">
               <li><span>Published:</span> {{ page.date | date_to_long_string }}</li>
               <li><span>Last updated:</span> {% render_time %}</li>
-              {{ % if page.comments % }}
-                <li><span>Comments:</span> <a href="{{ post.url }}#disqus_thread"></a></li>
-              {{ % endif % }}
               <li><span>Est. Read Time:</span> {{ page.content | reading_time }}</li>
             </ul>
             <h2>{{ page.description }}</h2>

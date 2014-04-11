@@ -13,7 +13,7 @@ module Jekyll
     end
 
     def render(context)
-      "#{@text} #{Time.now.strftime("%B %d, %Y")}"
+      "#{@text} #{Time.now.strftime("%d %B %Y")}"
     end
   end
 end
