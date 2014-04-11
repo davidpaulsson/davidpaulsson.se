@@ -34,6 +34,7 @@ This will be updated regularly.
 - [Gulp](http://gulpjs.com/). Same thing as Grunt basically, but faster. There’s more too it, but I won’t go into _Use this over that_ here. They both run tasks, they both do a great job. Pick your favourite.
 - [Bower](http://bower.io/). Front end dependency management.
 - [Jekyll](http://jekyllrb.com/). Simple, blog-aware, static sites.
+- [Viewport Resizer](http://lab.maltewassermann.com/viewport-resizer/). A bookmarklet that let you test your responsive design in the browser, quick and easy!
 
 ### Grunt plugins
 
@@ -168,3 +169,8 @@ community-driven effort to make web accessibility easier.
 <hr>
 
 Got something to add? Tweet [@davidpaulsson](https://twitter.com/davidpaulsson), submit a pull request to this post or just leave a comment below.
+
+#### Updates
+
+Thank you:
+- [Daniel Lauding](https://twitter.com/daniellauding) for [Viewport Resizer](http://lab.maltewassermann.com/viewport-resizer/).

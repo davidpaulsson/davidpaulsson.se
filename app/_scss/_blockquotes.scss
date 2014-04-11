@@ -17,21 +17,21 @@ blockquote {
     text-align: center;
 
     &:before {
+      @include skewY(-2deg);
       display: block;
       margin-top: -1em;
       height: 2em;
       background: $yellow;
       content: "";
-      transform: skewY(-2deg);
     }
 
     &:after {
+      @include skewY(2deg);
       display: block;
       margin-bottom: -1em;
       height: 2em;
       background: $yellow;
       content: "";
-      transform: skewY(2deg);
     }
   }
 
