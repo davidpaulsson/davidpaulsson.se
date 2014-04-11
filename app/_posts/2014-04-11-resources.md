@@ -13,7 +13,8 @@ This will be updated regularly.
 ## Typography
 
 - [Typographic Pocket Guide](http://typogui.de/). A pocket guide to master every day’s typographic adventures.
-- [Butterick’s Practical Typography](http://practicaltypography.com/typography-in-ten-minutes.html). If you learn and fol­low these ty­pog­ra­phy rules, you will be a better typog­ra­ph­er than 95% of pro­fes­sion­al writ­ers and 70% of profession­al de­sign­ers. 
+- [Butterick’s Practical Typography](http://practicaltypography.com/typography-in-ten-minutes.html). If you learn and fol­low these ty­pog­ra­phy rules, you will be a better typog­ra­ph­er than 95% of pro­fes­sion­al writ­ers and 70% of profession­al de­sign­ers.
+- [WhatFont Bookmarklet](http://chengyinliu.com/whatfont.html). Find out the font, font size and line height with ease.
 
 ## Photography
 
@@ -45,7 +46,7 @@ This will be updated regularly.
 - [grunt-modernizr](https://github.com/Modernizr/grunt-modernizr). Build out a lean, mean Modernizr machine.
 - [grunt-webfont](https://github.com/sapegin/grunt-webfont). SVG to webfont converter for Grunt.
 - [grunt-dev-update](https://github.com/pgilad/grunt-dev-update). Automate the updating of your package.json packages with a grunt task.
-- [grunt-ftpush](https://github.com/inossidabile/grunt-ftpush). Grunt task for incremental code deployment over FTP.
+- [grunt-sftp-deploy](https://github.com/thrashr888/grunt-sftp-deploy). Grunt task for code deployment over sftp.
 
 ### jQuery plugins
 
@@ -148,6 +149,10 @@ No folders, no syncing, no waiting.
 - [Pattern Tap](http://patterntap.com/). Explore common design patterns for the web.
 - [Panda](https://chrome.google.com/webstore/detail/panda-dribbble-layervault/jhiocdmmaannaccoofjfmjpbfkogmnap). A Chrome browser plugin that will bring you the most popular shots from Dribbble and latest news from Designer News, Hacker News etc.
 
+## Design
+
+- [Subtle Patterns](http://subtlepatterns.com/). A great collection of of tilable textured patterns, free to use.
+
 ## Podcasts
 
 - [Shoptalk Show](http://shoptalkshow.com/). Shoptalk is a podcast about front end web design, development and UX.
@@ -174,7 +179,8 @@ community-driven effort to make web accessibility easier.
 
 Got something to add? Tweet [@davidpaulsson](https://twitter.com/davidpaulsson), submit a pull request to this post or just leave a comment below.
 
-#### Updates
+#### Thank you!
 
-Thank you:
 - [Daniel Lauding](https://twitter.com/daniellauding) for [Viewport Resizer](http://lab.maltewassermann.com/viewport-resizer/), [Droplr](https://droplr.com/) and [The Noun Project](http://thenounproject.com/).
+- [Anders Larsson](https://www.facebook.com/anders.larsson.7773631) for [Subtle Patterns](http://subtlepatterns.com/).
+- [Björn Söderqvist](https://twitter.com/bjorn_js) for pointing out that ftp sucks. I’ve updated the article with a reference to to a grunt plugin that uses sftp instead.
