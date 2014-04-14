@@ -54,6 +54,8 @@ This will be updated regularly.
 - [UnSlider](http://unslider.com/). A carousel plugin that’s super tiny, but only slides, nothing else.
 - [MixItUp](https://mixitup.kunkalabs.com/). MixItUp is a jQuery plugin providing animated filtering and sorting.
 - [FitVids](http://fitvidsjs.com/). A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
+- [Transit](http://ricostacruz.com/jquery.transit/). Super-smooth CSS transitions & transformations for jQuery. Just use Use `$('...').transition` instead of jQuery's `$('...').animate`.
+- [Parsley](http://parsleyjs.org/). THE ultimate javascript form validation library.
 
 
 _And of course there are many many more great plugins available, these are just a few I’d like to have easy access to. Visit [Unheap](http://www.unheap.com/) for a tidy repository of jQuery plugins._
@@ -62,6 +64,7 @@ _And of course there are many many more great plugins available, these are just 
 
 - [Eq.js](https://github.com/Snugug/eq.js). Element queries, fast and light. Do RWD on an element by element basis.
 - [List.js](http://listjs.com/). Tiny, invisible and simple, yet powerful and incredibly fast vanilla Javascript that adds search, sort, filters and flexibility to plain HTML lists, tables, or anything.
+- [Fastclick](https://github.com/ftlabs/fastclick). FastClick is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a click event on mobile browsers.
 
 ### Sublime Text plugins
 
@@ -113,6 +116,7 @@ I’m not really a fan of opinionated CSS frameworks like [Bootstrap](http://get
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/). Icons designed for Bootstrap, but works fine with any project really.
 - [Entypo](http://www.entypo.com/). Entypo is a set of 250+ carefully crafted pictograms. The package contains an icon font — OpenType, TrueType and @font-face — EPS, PDF and PSD files.
 - [The Noun Project](http://thenounproject.com/). A community driven project with icons. Amazing.
+- [Iconmonstr](http://iconmonstr.com/). A nice searchable collection of icons that’s available as SVG or PNG downloads.
 
 
 ## Tools
@@ -148,6 +152,7 @@ No folders, no syncing, no waiting.
 - [Niice](http://niice.co/). A search engine with taste.
 - [Pattern Tap](http://patterntap.com/). Explore common design patterns for the web.
 - [Panda](https://chrome.google.com/webstore/detail/panda-dribbble-layervault/jhiocdmmaannaccoofjfmjpbfkogmnap). A Chrome browser plugin that will bring you the most popular shots from Dribbble and latest news from Designer News, Hacker News etc.
+- [Style guide links](http://susanjeanrobertson.com/code/style-guide-links/). A list of front end style guides for companies like Starbucks, Yelp and many others. 
 
 ## Design
 
@@ -184,3 +189,11 @@ Got something to add? Tweet [@davidpaulsson](https://twitter.com/davidpaulsson),
 - [Daniel Lauding](https://twitter.com/daniellauding) for [Viewport Resizer](http://lab.maltewassermann.com/viewport-resizer/), [Droplr](https://droplr.com/) and [The Noun Project](http://thenounproject.com/).
 - [Anders Larsson](https://www.facebook.com/anders.larsson.7773631) for [Subtle Patterns](http://subtlepatterns.com/).
 - [Björn Söderqvist](https://twitter.com/bjorn_js) for pointing out that ftp sucks. I’ve updated the article with a reference to to a grunt plugin that uses sftp instead.
+
+#### Updates
+
+##### 14 April 2014
+[Style guide links](http://susanjeanrobertson.com/code/style-guide-links/), [Iconmonstr](http://iconmonstr.com/), [Transit](http://ricostacruz.com/jquery.transit/), [Parsley](http://parsleyjs.org/) and [Fastclick](https://github.com/ftlabs/fastclick).
+
+##### 11 April 2014
+[Viewport Resizer](http://lab.maltewassermann.com/viewport-resizer/), [Droplr](https://droplr.com/) and [Subtle Patterns](http://subtlepatterns.com/).
