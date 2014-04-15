@@ -1,0 +1,63 @@
+/* =Testimonials
+-------------------------------------------------------------- */
+
+.testimonials {
+  @include full-width-bgr(darken($white, 10%));
+  @include leader(3);
+  @include padding-leader(3);
+  @include padding-trailer(3);
+}
+
+.testimonial {
+  @include pie-clearfix;
+  @include padding-leader;
+  @include padding-trailer;
+  @include trailer;
+  padding-right: 1.5em;
+  padding-left: 3.5em;
+  border-radius: 4px;
+  background: $white;
+  box-shadow: 0 2px 4px darken($white, 20%);
+  font-style: italic;
+
+  img {
+    width: auto;
+    border-radius: 4px;
+    float: right;
+    width: 50px;
+    margin-left: 1em;
+    margin-bottom: 1em;
+
+    @include at-breakpoint($medium) {
+      width: 75px;
+    }
+
+    @include at-breakpoint($large) {
+      width: 100px;
+    }
+  }
+
+  footer {
+    font-style: normal;
+  }
+
+  blockquote {
+    @include adjust-font-size-to(16px);
+    margin: 0;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      z-index: 999;
+      float: left;
+      margin-left: -.5em;
+      content: "“";
+      font-size: 4em;
+      line-height: .5em;
+    }
+
+    @include at-breakpoint($large) {
+      @include adjust-font-size-to(18px);
+    }
+  }
+}
