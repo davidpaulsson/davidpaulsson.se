@@ -1,7 +1,8 @@
 /* =Blockquotes
 -------------------------------------------------------------- */
 
-blockquote {
+.page blockquote,
+.post blockquote {
   @include adjust-font-size-to(18px);
   border-left: 5px solid $yellow;
   font-style: italic;
