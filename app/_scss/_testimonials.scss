@@ -14,11 +14,15 @@
   @include padding-trailer;
   @include trailer;
   padding-right: 1.5em;
-  padding-left: 3.5em;
+  padding-left: 1.5em;
   border-radius: 4px;
   background: $white;
   box-shadow: 0 2px 4px darken($white, 20%);
   font-style: italic;
+
+  @include at-breakpoint($medium) {
+    padding-left: 3.5em;
+  }
 
   img {
     width: auto;
@@ -46,14 +50,16 @@
     margin: 0;
     position: relative;
 
-    &:before {
-      position: absolute;
-      z-index: 999;
-      float: left;
-      margin-left: -.5em;
-      content: "“";
-      font-size: 4em;
-      line-height: .5em;
+    @include at-breakpoint($medium) {
+      &:before {
+        position: absolute;
+        z-index: 999;
+        float: left;
+        margin-left: -.5em;
+        content: "“";
+        font-size: 4em;
+        line-height: .5em;
+      }
     }
 
     @include at-breakpoint($large) {
