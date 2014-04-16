@@ -56,7 +56,7 @@ This will be updated regularly.
 - [FitVids](http://fitvidsjs.com/). A lightweight, easy-to-use jQuery plugin for fluid width video embeds.
 - [Transit](http://ricostacruz.com/jquery.transit/). Super-smooth CSS transitions & transformations for jQuery. Just use Use `$('...').transition` instead of jQuery's `$('...').animate`.
 - [Parsley](http://parsleyjs.org/). THE ultimate javascript form validation library.
-
+- [Lazy Load XT](http://ressio.github.io/lazy-load-xt/). My personal favourite when it comes to lazy load libraries. 
 
 _And of course there are many many more great plugins available, these are just a few I’d like to have easy access to. Visit [Unheap](http://www.unheap.com/) for a tidy repository of jQuery plugins._
 
@@ -81,7 +81,7 @@ _And of course there are many many more great plugins available, these are just 
 ### Photoshop extensions
 
 - [GuideGuide](http://guideguide.me/). Because dealing with grids in Photoshop is a pain.
-- [Social Kit](http://socialkit.madebysource.com/). Customizable templates for [insert social media site here].
+- [Soc.l Kit](http://socialkit.madebysource.com/). Customizable templates for [insert social media site here].
 - [Velositey](http://dandkagency.com/velositey/). Not so much for the layout starters, but for the awesome spacing and tiling tools, the measure tool, the generate font specifications tool, the renaming tool, the …
 
 ### Illustrator extensions
@@ -135,6 +135,9 @@ Must have apps for your mac.
 - [Shift It](https://github.com/fikovnik/ShiftIt). ShiftIt is an application for OS X that allows you to quickly manipulate window position and size using keyboard shortcuts.
 - [Droplr](https://droplr.com/). The easiest way to send files.
 No folders, no syncing, no waiting.
+- [Reeder](http://reederapp.com/mac/). The best RSS reader that recently came back as a Mac app (currently in beta).
+- [Pocket](http://getpocket.com/). A _“read it later”_ app. All those posts you’d like to read from Reeder? Send them to Pocket and catch up later.
+- [iA Writer](http://www.iawriter.com/). A really great Markdown editor. Available for all your Mac devices. Write and sync your posts via Dropbox or iCloud.
 
 ## Legal
 
@@ -170,6 +173,7 @@ No folders, no syncing, no waiting.
 - [The Accessibility Project](http://a11yproject.com/). A
 community-driven effort to make web accessibility easier.
 - [You Dont Know JS](https://github.com/getify/You-Dont-Know-JS). A JavaScript book series launched through Kickstarter.
+- [The CSS Animations Pocket Guide](http://valhead.com/book/). A book for web designers or developers who are new to CSS animations. By [Val Head](http://twitter.com/vlh).
 
 ## Articles
 
@@ -191,6 +195,9 @@ Got something to add? Tweet [@davidpaulsson](https://twitter.com/davidpaulsson),
 - [Björn Söderqvist](https://twitter.com/bjorn_js) for pointing out that ftp sucks. I’ve updated the article with a reference to to a grunt plugin that uses sftp instead.
 
 #### Updates
+
+##### 16 April 2014
+[The CSS Animations Pocket Guide](http://valhead.com/book/), [Reeder](http://reederapp.com/mac/), [Pocket](http://getpocket.com/), [iA Writer](http://www.iawriter.com/) and [Lazy Load XT](http://ressio.github.io/lazy-load-xt/).
 
 ##### 14 April 2014
 [Style guide links](http://susanjeanrobertson.com/code/style-guide-links/), [Iconmonstr](http://iconmonstr.com/), [Transit](http://ricostacruz.com/jquery.transit/), [Parsley](http://parsleyjs.org/) and [Fastclick](https://github.com/ftlabs/fastclick).
