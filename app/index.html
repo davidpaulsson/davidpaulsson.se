@@ -8,7 +8,7 @@ title: David Paulsson | Front end developer
 <div class="wrapper">
   <section class="posts">
     <h1>Latest blog post</h1>
-    {% for post in site.categories.blog %}
+    {% for post in site.categories.blog limit:4 %}
       <article class="posts__post">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <div class="meta">
@@ -23,7 +23,8 @@ title: David Paulsson | Front end developer
         </div>
       </article>
     {% endfor %}
-    <p><a class="go" href="/archive/">View archive</a></p>
+    <hr>
+    <p><a class="go" href="/archive/">View the blog archive</a></p>
   </section>
 
   {% include testimonials.html %}

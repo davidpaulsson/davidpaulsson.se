@@ -248,7 +248,9 @@ module.exports = function (grunt) {
       }
     },
     imagemin: {
-      // options: { cache: false },
+      // options: {
+      //   cache: false
+      // },
       dist: {
         files: [{
           expand: true,
@@ -404,7 +406,7 @@ module.exports = function (grunt) {
           // should task report already updated dependencies
           // reportUpdated: false,
           // can be 'force'|'report'|'prompt'
-          updateType: 'report',
+          updateType: 'force',
           semver: false
         }
       }
