@@ -200,7 +200,7 @@ Got something to add? Tweet [@davidpaulsson](https://twitter.com/davidpaulsson),
 #### Updates
 
 ##### 12 May 2014
-- [ka•ku](http://kaku.ps/), [Rangeslider.js](http://andreruffert.github.io/rangeslider.js/) and [Hologram](http://trulia.github.io/hologram/).
+[ka•ku](http://kaku.ps/), [Rangeslider.js](http://andreruffert.github.io/rangeslider.js/) and [Hologram](http://trulia.github.io/hologram/).
 
 ##### 16 April 2014
 [The CSS Animations Pocket Guide](http://valhead.com/book/), [Reeder](http://reederapp.com/mac/), [Pocket](http://getpocket.com/), [iA Writer](http://www.iawriter.com/) and [Lazy Load XT](http://ressio.github.io/lazy-load-xt/).
