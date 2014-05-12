@@ -36,6 +36,7 @@ This will be updated regularly.
 - [Bower](http://bower.io/). Front end dependency management.
 - [Jekyll](http://jekyllrb.com/). Simple, blog-aware, static sites.
 - [Viewport Resizer](http://lab.maltewassermann.com/viewport-resizer/). A bookmarklet that let you test your responsive design in the browser, quick and easy!
+- [Hologram](http://trulia.github.io/hologram/). A markdown based documentation system for OOCSS.
 
 ### Grunt plugins
 
@@ -57,6 +58,7 @@ This will be updated regularly.
 - [Transit](http://ricostacruz.com/jquery.transit/). Super-smooth CSS transitions & transformations for jQuery. Just use Use `$('...').transition` instead of jQuery's `$('...').animate`.
 - [Parsley](http://parsleyjs.org/). THE ultimate javascript form validation library.
 - [Lazy Load XT](http://ressio.github.io/lazy-load-xt/). My personal favourite when it comes to lazy load libraries. 
+- [Rangeslider.js](http://andreruffert.github.io/rangeslider.js/). A great polyfill for the HTML5 `input type="range"` element.
 
 _And of course there are many many more great plugins available, these are just a few I’d like to have easy access to. Visit [Unheap](http://www.unheap.com/) for a tidy repository of jQuery plugins._
 
@@ -83,6 +85,7 @@ _And of course there are many many more great plugins available, these are just 
 - [GuideGuide](http://guideguide.me/). Because dealing with grids in Photoshop is a pain.
 - [Soc.l Kit](http://socialkit.madebysource.com/). Customizable templates for [insert social media site here].
 - [Velositey](http://dandkagency.com/velositey/). Not so much for the layout starters, but for the awesome spacing and tiling tools, the measure tool, the generate font specifications tool, the renaming tool, the …
+- [ka•ku](http://kaku.ps/). Translate Photoshop text layers into different languages. Quick and easy way to test internationalisation in your designs.
 
 ### Illustrator extensions
 
@@ -195,6 +198,9 @@ Got something to add? Tweet [@davidpaulsson](https://twitter.com/davidpaulsson),
 - [Björn Söderqvist](https://twitter.com/bjorn_js) for pointing out that ftp sucks. I’ve updated the article with a reference to to a grunt plugin that uses sftp instead.
 
 #### Updates
+
+##### 12 May 2014
+- [ka•ku](http://kaku.ps/), [Rangeslider.js](http://andreruffert.github.io/rangeslider.js/) and [Hologram](http://trulia.github.io/hologram/).
 
 ##### 16 April 2014
 [The CSS Animations Pocket Guide](http://valhead.com/book/), [Reeder](http://reederapp.com/mac/), [Pocket](http://getpocket.com/), [iA Writer](http://www.iawriter.com/) and [Lazy Load XT](http://ressio.github.io/lazy-load-xt/).
