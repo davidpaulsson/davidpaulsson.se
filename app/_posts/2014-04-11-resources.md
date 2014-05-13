@@ -173,6 +173,7 @@ No folders, no syncing, no waiting.
 ## “Books”
 
 - [WTF, HTML and CSS?](http://wtfhtmlcss.com/). A curated list of commonly frustrating _HTML_ and _CSS_ quandaries, miscues, and dilemmas.
+- [WTF, Forms?](http://wtfforms.com/). Friendlier HTML form controls with a little CSS magic. 
 - [The Accessibility Project](http://a11yproject.com/). A
 community-driven effort to make web accessibility easier.
 - [You Dont Know JS](https://github.com/getify/You-Dont-Know-JS). A JavaScript book series launched through Kickstarter.
@@ -198,6 +199,9 @@ Got something to add? Tweet [@davidpaulsson](https://twitter.com/davidpaulsson),
 - [Björn Söderqvist](https://twitter.com/bjorn_js) for pointing out that ftp sucks. I’ve updated the article with a reference to to a grunt plugin that uses sftp instead.
 
 #### Updates
+
+##### 13 May 2014
+[WTF, Forms?](http://wtfforms.com/).
 
 ##### 12 May 2014
 [ka•ku](http://kaku.ps/), [Rangeslider.js](http://andreruffert.github.io/rangeslider.js/) and [Hologram](http://trulia.github.io/hologram/).
