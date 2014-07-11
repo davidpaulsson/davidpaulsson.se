@@ -6,7 +6,7 @@ category: blog
 tags:
 - Personal
 - Automile
-date: 2014-07-03
+date: 2014-07-11
 description: Automile PRO is an electronic vehicle trip logger with insight analytics that gives your business all the tools to manage your fleet while saving money from day one and ensuring tax compliance. Available in 53 countries.
 ---
 
