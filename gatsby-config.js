@@ -2,11 +2,45 @@ module.exports = {
   siteMetadata: {
     title: `David Paulsson`,
     description: ``,
-    author: `@davidpaulsson`,
+    email: `david@davidpaulsson.se`,
+    author: `davidpaulsson`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/content/pages`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `experiences`,
+        path: `${__dirname}/src/content/experiences`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `education`,
+        path: `${__dirname}/src/content/education`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `awards`,
+        path: `${__dirname}/src/content/awards`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `testimonials`,
+        path: `${__dirname}/src/content/testimonials`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,6 +48,9 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
