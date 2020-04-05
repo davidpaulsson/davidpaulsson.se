@@ -1,9 +1,8 @@
 ---
 title: David Paulsson
 description: A Front-end Developer based in Stockholm, Sweden
+headline: David Paulsson is a Front-end Developer based in Stockholm, Sweden.<br>Specialized in CSS, JavaScript, HTML and&nbsp;Design.
 ---
-
-# David Paulsson is a Front-end Developer based in Stockholm, Sweden.<br>Specialized in CSS, JavaScript, HTML and&nbsp;Design.
 
 Currently working as a Front-end focused React Native developer at [Heja](https://heja.io/)—a sports team management and messaging app for coaches, managers, parents, and players. Before Heja, David has worked shaping the GPS Fleet Tracking world at [Automile](https://automile.com/), a startup with offices in San Fransisco and Stockholm. He's also worked with various clients, such as SR, TV4, GE, and ABB, while having a position as Consultant Interface Developer at [Valtech](https://www.valtech.com/sv-se/) and Digital Designer at [ByBrick](https://www.bybrick.se/). With an approach that is always design-driven, David creates user-friendly robust design systems for websites and mobile-native apps.
 

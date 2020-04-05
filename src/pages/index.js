@@ -1,7 +1,8 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
-import SEO from '../components/seo';
+import Header from '../components/header';
 import Section from '../components/section';
+import SEO from '../components/seo';
 
 const IndexPage = () => {
   const {
@@ -24,6 +25,7 @@ const IndexPage = () => {
           frontmatter {
             title
             description
+            headline
           }
           html
         }
@@ -114,7 +116,7 @@ const IndexPage = () => {
   );
 
   const {
-    frontmatter: { title, description },
+    frontmatter: { title, description, headline },
     html,
   } = content;
 
@@ -122,12 +124,7 @@ const IndexPage = () => {
     <>
       <SEO {...{ title, description }} />
 
-      <header
-        dangerouslySetInnerHTML={{
-          __html: html.replace('</h1>', '</h1><div>') + '</div>',
-        }}
-        style={{ marginBottom: '6rem' }}
-      />
+      <Header {...{ headline, html }} />
 
       <Section
         title="Experiences"
