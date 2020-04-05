@@ -1,0 +1,11 @@
+:root {
+  /* Light mode variables */
+  --text: #0a0a0a;
+  --background: #fefefe;
+}
+
+html.__dark-mode:root {
+  /* Dark mode variables */
+  --text: #fefefe;
+  --background: #0a0a0a;
+}

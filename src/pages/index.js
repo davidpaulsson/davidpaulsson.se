@@ -1,6 +1,7 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import SEO from '../components/seo';
+import Section from '../components/section';
 
 const IndexPage = () => {
   const {
@@ -120,10 +121,18 @@ const IndexPage = () => {
   return (
     <>
       <SEO {...{ title, description }} />
-      <header dangerouslySetInnerHTML={{ __html: html }} />
-      <section>
-        <h2>Experiences</h2>
-        {experiences.edges.map(
+
+      <header
+        dangerouslySetInnerHTML={{
+          __html: html.replace('</h1>', '</h1><div>') + '</div>',
+        }}
+        style={{ marginBottom: '6rem' }}
+      />
+
+      <Section
+        title="Experiences"
+        columnHeaders={['Years', 'Company', 'Role', 'Responsibilities', 'Info']}
+        columnData={experiences.edges.map(
           ({
             node: {
               id,
@@ -132,22 +141,14 @@ const IndexPage = () => {
                 html,
               },
             },
-          }) => (
-            <div key={id}>
-              {start}
-              {end}
-              {company}
-              {role}
-              {responsibilities}
-              <div dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
-          )
+          }) => [id, `${start} — ${end}`, company, role, responsibilities, html]
         )}
-      </section>
+      />
 
-      <section>
-        <h2>Education</h2>
-        {education.edges.map(
+      <Section
+        title="Education"
+        columnHeaders={['Years', 'School', 'Degree']}
+        columnData={education.edges.map(
           ({
             node: {
               id,
@@ -155,20 +156,14 @@ const IndexPage = () => {
                 frontmatter: { start, end, school, degree },
               },
             },
-          }) => (
-            <div key={id}>
-              {start}
-              {end}
-              {school}
-              {degree}
-            </div>
-          )
+          }) => [id, `${start} — ${end}`, school, degree]
         )}
-      </section>
+      />
 
-      <section>
-        <h2>Honors & Awards</h2>
-        {awards.edges.map(
+      <Section
+        title="Honors & Awards"
+        columnHeaders={['Year', 'Award', 'Issuer', 'Info']}
+        columnData={awards.edges.map(
           ({
             node: {
               id,
@@ -177,18 +172,11 @@ const IndexPage = () => {
                 html,
               },
             },
-          }) => (
-            <div key={id}>
-              {year}
-              {award}
-              {issuer}
-              <div dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
-          )
+          }) => [id, year, award, issuer, html]
         )}
-      </section>
+      />
 
-      <section>
+      <section style={{ marginBottom: '6rem' }}>
         <h2>Contact</h2>
         E-mail{' '}
         <a href={`mailto:${meta.siteMetadata.email}`}>
@@ -208,7 +196,7 @@ const IndexPage = () => {
         </a>
       </section>
 
-      <section>
+      <section style={{ marginBottom: '6rem' }}>
         <h2>Testimonials</h2>
         {testimonials.edges.map(
           ({

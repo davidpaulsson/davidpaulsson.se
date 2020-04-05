@@ -1,0 +1,29 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0.5rem;
+
+  color: var(--text);
+  background-color: var(--background);
+
+  font-family: 'Px Grotesk';
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 2rem;
+
+  font-display: swap;
+}
+
+h1,
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+
+  @media (min-width: 980px) {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}

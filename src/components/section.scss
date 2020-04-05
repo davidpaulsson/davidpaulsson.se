@@ -1,0 +1,108 @@
+$numbers: zero one two three four five six seven eight nine;
+
+.section {
+  margin-bottom: 6rem;
+
+  // &__title {
+  // }
+
+  &__headers {
+    display: none;
+
+    @media (min-width: 980px) {
+      display: grid;
+
+      column-gap: 0.5rem;
+      grid-template-columns: repeat(10, 1fr);
+    }
+
+    &--experiences {
+      div:nth-child(1) {
+        grid-column: 1 / 2;
+      }
+      div:nth-child(2) {
+        grid-column: 2 / 3;
+      }
+      div:nth-child(3) {
+        grid-column: 3 / 5;
+      }
+      div:nth-child(4) {
+        grid-column: 5 / 8;
+      }
+      div:nth-child(5) {
+        grid-column: 8 / 11;
+        column-span: 3;
+      }
+    }
+
+    &--education {
+      div:nth-child(1) {
+        grid-column: 1 / 2;
+      }
+      div:nth-child(2) {
+        grid-column: 2 / 5;
+      }
+      div:nth-child(3) {
+        grid-column: 5 / 11;
+      }
+    }
+
+    &--honors-and-awards {
+      div:nth-child(1) {
+        grid-column: 1 / 2;
+      }
+      div:nth-child(2) {
+        grid-column: 2 / 5;
+      }
+      div:nth-child(3) {
+        grid-column: 5 / 8;
+      }
+      div:nth-child(4) {
+        grid-column: 8 / 11;
+      }
+    }
+  }
+
+  &__data {
+    display: grid;
+
+    margin-bottom: 3rem;
+
+    column-gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+      'zero one'
+      '. two'
+      'three three'
+      'four four'
+      'five five'
+      'six six'
+      'seven seven'
+      'eight eight'
+      'nine nine';
+
+    @media (min-width: 980px) {
+      grid-template-columns: repeat(10, 1fr);
+
+      &--experiences {
+        grid-template-areas: 'zero one two two three three three four four four';
+      }
+      &--education {
+        grid-template-areas: 'zero one one one two two two two two two';
+      }
+      &--honors-and-awards {
+        grid-template-areas: 'zero one one one two two two three three three';
+      }
+    }
+
+    &__item {
+      @each $number in $numbers {
+        $i: index($numbers, $number);
+        &:nth-child(#{$i}) {
+          grid-area: $number;
+        }
+      }
+    }
+  }
+}
