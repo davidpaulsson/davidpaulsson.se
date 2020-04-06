@@ -10,6 +10,7 @@ const Header = ({ headline, html }) => {
     <header className="header">
       <motion.h1
         animate={isOpen ? { opacity: 0.6 } : { opacity: 1 }}
+        transition={{ duration: 0.3 }}
         className="header__title"
         dangerouslySetInnerHTML={{ __html: headline }}
       />
