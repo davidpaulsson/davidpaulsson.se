@@ -2,6 +2,7 @@
 start: 2010
 end: 2013
 company: byBrick
+link: https://www.bybrick.se/
 role: Digital Designer
 responsibilities: UX, UI, IA, Print Design, Brand Strategies, Social Media
 ---

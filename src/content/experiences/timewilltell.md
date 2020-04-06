@@ -2,6 +2,7 @@
 start: 2007
 end: 2011
 company: Time Will Tell
+link:
 role: Developer
 responsibilities: TBD
 ---

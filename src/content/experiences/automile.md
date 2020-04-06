@@ -2,6 +2,7 @@
 start: 2014
 end: 2017
 company: Automile
+link: https://automile.com/
 role: Lead Front-End Developer
 responsibilities: Front-end Architecture, Front-end Performance, External Website, Web App, Pattern Library, Email Templates
 ---

@@ -2,6 +2,7 @@
 start: 2010
 end:
 company: Freelance
+link:
 role: Developer
 responsibilities: TBD
 ---

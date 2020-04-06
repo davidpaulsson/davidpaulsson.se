@@ -2,6 +2,7 @@
 start: 2013
 end: 2014
 company: Valtech
+link: https://www.valtech.com/sv-se/
 role: Interface Developer
 responsibilities: Interface Development, Front-end Development, Front-end Performance, Mobile Development, Accessibility
 ---

@@ -45,6 +45,7 @@ const IndexPage = () => {
                   start
                   end
                   company
+                  link
                   role
                   responsibilities
                 }
@@ -135,11 +136,25 @@ const IndexPage = () => {
             node: {
               id,
               childMarkdownRemark: {
-                frontmatter: { start, end, company, role, responsibilities },
+                frontmatter: {
+                  start,
+                  end,
+                  company,
+                  link,
+                  role,
+                  responsibilities,
+                },
                 html,
               },
             },
-          }) => [id, `${start} — ${end}`, company, role, responsibilities, html]
+          }) => [
+            id,
+            `${start} — ${end}`,
+            link ? `<a href="${link}">${company}</a>` : company,
+            role,
+            responsibilities,
+            html,
+          ]
         )}
       />
 
