@@ -1,12 +1,45 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './logo.scss';
+import { AnimatePresence, motion, useCycle } from 'framer-motion';
 
-const Logo = () => (
-  <svg className="logo" viewBox="0 0 60 45" width="60" height="45">
-    <rect width="10" height="45" />
+const Logo = () => {
+  const [isDarkMode, setIsDarkMode] = useCycle(false, true);
 
-    <circle cx="38" cy="23" r="17" />
-  </svg>
-);
+  const htmlTag =
+    typeof window !== `undefined` ? document.body.parentNode : null;
+
+  useEffect(() => {
+    if (htmlTag.classList.contains('__dark-mode')) {
+      setIsDarkMode();
+    }
+  }, []);
+
+  return (
+    <motion.svg
+      className="logo"
+      viewBox="0 0 70 45"
+      width="70"
+      height="45"
+      onClick={() => {
+        htmlTag.classList.toggle('__dark-mode');
+        setIsDarkMode();
+      }}
+    >
+      <motion.rect
+        width="10"
+        height="45"
+        x="5"
+        y="0"
+        animate={{ x: isDarkMode ? 49 : 0 }}
+      />
+      <motion.circle
+        cx="42"
+        cy="22"
+        r="17"
+        animate={{ cx: isDarkMode ? 27 : 42 }}
+      />
+    </motion.svg>
+  );
+};
 
 export default Logo;

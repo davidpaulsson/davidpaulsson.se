@@ -1,4 +1,10 @@
 .logo {
+  margin-left: -0.5rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
   rect {
     fill: var(--text);
   }
