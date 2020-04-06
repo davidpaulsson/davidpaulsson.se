@@ -8,7 +8,8 @@ const Header = ({ headline, html }) => {
 
   return (
     <header className="header">
-      <h1
+      <motion.h1
+        animate={isOpen ? { opacity: 0.6 } : { opacity: 1 }}
         className="header__title"
         dangerouslySetInnerHTML={{ __html: headline }}
       />

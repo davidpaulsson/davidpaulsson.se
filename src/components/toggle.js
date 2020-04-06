@@ -16,7 +16,7 @@ const Toggle = ({ isOpen, setIsOpen }) => (
         },
       },
       closed: {
-        opacity: 0.8,
+        opacity: 0.6,
         transition: {
           staggerChildren: 0.1,
         },
@@ -25,7 +25,12 @@ const Toggle = ({ isOpen, setIsOpen }) => (
   >
     <div className="toggle__inner">
       <motion.svg viewBox="0 0 28 12" width="28" height="12" initial="closed">
-        <motion.circle cx="6" cy="6" r="1" />
+        <motion.circle
+          cx="6"
+          cy="6"
+          r="1"
+          // variants={{ open: { cy: 4 } }}
+        />
         <motion.circle
           cx="14"
           cy="6"
@@ -33,6 +38,7 @@ const Toggle = ({ isOpen, setIsOpen }) => (
           variants={{
             open: {
               cx: 14,
+              // cy: 4,
             },
             closed: {
               cx: 6,
@@ -46,6 +52,7 @@ const Toggle = ({ isOpen, setIsOpen }) => (
           variants={{
             open: {
               cx: 22,
+              // cy: 4,
             },
             closed: {
               cx: 6,
@@ -64,11 +71,9 @@ const Toggle = ({ isOpen, setIsOpen }) => (
           strokeLinecap="round"
           variants={{
             open: {
-              opacity: 1,
               x2: 6,
             },
             closed: {
-              opacity: 1,
               x2: 22,
             },
           }}
