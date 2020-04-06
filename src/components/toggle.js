@@ -13,11 +13,13 @@ const Toggle = ({ isOpen, setIsOpen }) => {
     if (state === 'closed') {
       setTimeout(() => {
         setState('waiting');
-      }, 2000);
+      }, 1000);
     }
   }, [state]);
 
-  console.log({ state });
+  useEffect(() => {
+    setState('waiting');
+  }, []);
 
   return (
     <motion.button
@@ -40,8 +42,8 @@ const Toggle = ({ isOpen, setIsOpen }) => {
             cy="6"
             r="1"
             variants={{
-              open: { cy: 6, opacity: 1 },
-              closed: { cy: 6, opacity: 1 },
+              open: { cy: 6, opacity: 0.6 },
+              closed: { cy: 6, opacity: 0.6 },
               waiting: {
                 cy: [6, 5, 6],
                 opacity: [0.6, 1, 0.6],
@@ -61,12 +63,12 @@ const Toggle = ({ isOpen, setIsOpen }) => {
               open: {
                 cx: 6,
                 cy: 6,
-                opacity: 1,
+                opacity: 0.6,
               },
               closed: {
                 cx: 14,
                 cy: 6,
-                opacity: 1,
+                opacity: 0.6,
               },
               waiting: {
                 cy: [6, 5, 6],
@@ -89,12 +91,12 @@ const Toggle = ({ isOpen, setIsOpen }) => {
               open: {
                 cx: 6,
                 cy: 6,
-                opacity: 1,
+                opacity: 0.6,
               },
               closed: {
                 cx: 22,
                 cy: 6,
-                opacity: 1,
+                opacity: 0.6,
               },
               waiting: {
                 cy: [6, 5, 6],
