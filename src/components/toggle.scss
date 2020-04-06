@@ -1,0 +1,35 @@
+.toggle {
+  position: absolute;
+
+  width: 5rem;
+  height: 2.5rem;
+  margin-left: 0.5rem;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  border: none;
+  border-radius: 3rem;
+  outline: none;
+  background-color: var(--text);
+
+  @media (min-width: 980px) {
+    width: 5rem;
+    height: 3rem;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
+
+  svg {
+    stroke: var(--background);
+    stroke-width: 2px;
+    fill: var(--background);
+  }
+}
