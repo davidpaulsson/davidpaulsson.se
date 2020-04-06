@@ -3,8 +3,11 @@ $numbers: zero one two three four five six seven eight nine;
 .section {
   margin-bottom: 6rem;
 
-  // &__title {
-  // }
+  &__title {
+    @media (min-width: 980px) {
+      margin-bottom: 6rem;
+    }
+  }
 
   &__headers {
     display: none;
@@ -66,7 +69,11 @@ $numbers: zero one two three four five six seven eight nine;
   &__data {
     display: grid;
 
+    margin-top: 1rem;
     margin-bottom: 3rem;
+    padding-top: 1rem;
+
+    border-top: 1px solid rgba($color: #000000, $alpha: 0.3);
 
     column-gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -81,6 +88,10 @@ $numbers: zero one two three four five six seven eight nine;
       'seven seven'
       'eight eight'
       'nine nine';
+
+    html.__dark-mode & {
+      border-top: 1px solid rgba($color: #fff, $alpha: 0.3);
+    }
 
     @media (min-width: 980px) {
       grid-template-columns: repeat(10, 1fr);
