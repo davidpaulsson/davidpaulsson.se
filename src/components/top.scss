@@ -1,0 +1,36 @@
+.top {
+  display: grid;
+
+  margin-bottom: 6rem;
+
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem;
+
+  @media (min-width: 980px) {
+    margin-bottom: 1rem;
+
+    grid-template-columns: repeat(10, 1fr);
+  }
+
+  &__logo {
+    grid-column: span 2;
+
+    @media (min-width: 980px) {
+      grid-column: span 4;
+    }
+  }
+
+  &__input,
+  &__cr {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+
+    @media (min-width: 980px) {
+      grid-column: span 3;
+    }
+
+    div {
+      opacity: 0.6;
+    }
+  }
+}

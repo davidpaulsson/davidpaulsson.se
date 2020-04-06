@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/header';
 import Section from '../components/section';
 import SEO from '../components/seo';
+import Top from '../components/top';
 
 const IndexPage = () => {
   const {
@@ -123,7 +124,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO {...{ title, description }} />
-
+      <Top />
       <Header {...{ headline, html }} />
 
       <Section

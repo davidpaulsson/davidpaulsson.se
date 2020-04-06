@@ -1,0 +1,11 @@
+.logo {
+  rect {
+    fill: var(--text);
+  }
+
+  circle {
+    fill: transparent;
+    stroke: var(--text);
+    stroke-width: 10;
+  }
+}
