@@ -31,13 +31,9 @@
       stroke: var(--background);
       stroke-width: 2px;
       fill: var(--background);
-
-      @media (max-width: 979px) {
-        transform: translateY(-2px);
-      }
     }
   }
 
-  &__content {
-  }
+  // &__content {
+  // }
 }

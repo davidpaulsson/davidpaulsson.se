@@ -12,19 +12,60 @@ const Header = ({ headline, html }) => {
         dangerouslySetInnerHTML={{ __html: headline }}
       />
 
-      <button className="header__toggle" onClick={toggleIsOpen}>
-        {isOpen ? (
-          <motion.svg viewBox="0 0 50 30" width="50" height="30">
-            <line x1="8" y1="14" x2="28" y2="14" />
-          </motion.svg>
-        ) : (
-          <motion.svg viewBox="0 0 50 30" width="50" height="30">
-            <circle cx="10" cy="14" r="1"></circle>
-            <circle cx="18" cy="14" r="1"></circle>
-            <circle cx="26" cy="14" r="1"></circle>
-          </motion.svg>
-        )}
-      </button>
+      <motion.button
+        className="header__toggle"
+        onClick={toggleIsOpen}
+        animate={!isOpen ? 'open' : 'closed'}
+        variants={{
+          open: {
+            opacity: 1,
+            transition: {
+              staggerChildren: 0.1,
+              staggerDirection: -1,
+            },
+          },
+          closed: {
+            opacity: 0.8,
+            transition: {
+              staggerChildren: 0.1,
+            },
+          },
+        }}
+      >
+        <motion.svg viewBox="0 0 24 8" width="24" height="8" initial="closed">
+          <motion.circle cx="4" cy="4" r="1" />
+          <motion.circle
+            cx="12"
+            cy="4"
+            r="1"
+            variants={{
+              open: { cx: 12 },
+              closed: { cx: 4 },
+            }}
+          />
+          <motion.circle
+            cx="20"
+            cy="4"
+            r="1"
+            variants={{
+              open: { cx: 20 },
+              closed: { cx: 4 },
+            }}
+          />
+
+          <motion.line
+            x1="2"
+            y1="4"
+            x2="22"
+            y2="4"
+            style={{ strokeWidth: 4 }}
+            variants={{
+              open: { opacity: 1, x2: 2 },
+              closed: { opacity: 1, x2: 22 },
+            }}
+          />
+        </motion.svg>
+      </motion.button>
 
       <AnimatePresence>
         {isOpen && (
