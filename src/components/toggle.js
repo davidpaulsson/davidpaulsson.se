@@ -10,16 +10,16 @@ const Toggle = ({ isOpen, setIsOpen }) => (
     variants={{
       open: {
         opacity: 1,
-        transition: {
-          staggerChildren: 0.1,
-          staggerDirection: -1,
-        },
+        // transition: {
+        //   staggerChildren: 0.1,
+        //   staggerDirection: -1,
+        // },
       },
       closed: {
         opacity: 0.6,
-        transition: {
-          staggerChildren: 0.1,
-        },
+        // transition: {
+        //   staggerChildren: 0.1,
+        // },
       },
     }}
   >
@@ -44,6 +44,7 @@ const Toggle = ({ isOpen, setIsOpen }) => (
               cx: 6,
             },
           }}
+          transition={{ delay: isOpen ? 0 : 0.2 }}
         />
         <motion.circle
           cx="22"
@@ -58,6 +59,7 @@ const Toggle = ({ isOpen, setIsOpen }) => (
               cx: 6,
             },
           }}
+          transition={{ delay: isOpen ? 0.2 : 0.4 }}
         />
 
         <motion.line
@@ -77,6 +79,7 @@ const Toggle = ({ isOpen, setIsOpen }) => (
               x2: 22,
             },
           }}
+          transition={{ delay: isOpen ? 0.4 : 0, type: 'tween' }}
         />
       </motion.svg>
     </div>
