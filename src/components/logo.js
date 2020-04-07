@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './logo.scss';
-import { AnimatePresence, motion, useCycle } from 'framer-motion';
+import { motion, useCycle } from 'framer-motion';
 
 const Logo = () => {
   const [isDarkMode, setIsDarkMode] = useCycle(false, true);
@@ -12,7 +12,7 @@ const Logo = () => {
     if (htmlTag.classList.contains('__dark-mode')) {
       setIsDarkMode();
     }
-  }, []);
+  }, [htmlTag.classList]);
 
   return (
     <motion.svg

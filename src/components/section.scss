@@ -12,6 +12,11 @@ $numbers: zero one two three four five six seven eight nine;
   &__headers {
     display: none;
 
+    color: rgba($color: #000, $alpha: 0.5);
+    html.__dark-mode & {
+      color: rgba($color: #fff, $alpha: 0.5);
+    }
+
     @media (min-width: 980px) {
       display: grid;
 
@@ -70,10 +75,10 @@ $numbers: zero one two three four five six seven eight nine;
     display: grid;
 
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     padding-top: 1rem;
 
-    border-top: 1px solid rgba($color: #000000, $alpha: 0.3);
+    border-top: 1px solid rgba($color: #000, $alpha: 0.1);
 
     column-gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
@@ -90,7 +95,7 @@ $numbers: zero one two three four five six seven eight nine;
       'nine nine';
 
     html.__dark-mode & {
-      border-top: 1px solid rgba($color: #fff, $alpha: 0.3);
+      border-top: 1px solid rgba($color: #fff, $alpha: 0.1);
     }
 
     @media (min-width: 980px) {
