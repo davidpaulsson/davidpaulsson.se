@@ -27,3 +27,36 @@ h2,
     line-height: 3rem;
   }
 }
+
+$lightModeColors: rgb(245, 135, 135), rgb(135, 245, 135), rgb(135, 135, 245),
+  rgb(135, 245, 245), rgb(245, 135, 245), rgb(245, 245, 135);
+
+$darkModeColors: rgb(255, 200, 200), rgb(200, 255, 200), rgb(200, 200, 255),
+  rgb(200, 255, 255), rgb(255, 200, 255), rgb(255, 255, 200);
+
+a {
+  text-decoration: none;
+
+  @each $color in $lightModeColors {
+    $i: index($lightModeColors, $color);
+    &:nth-child(#{$i}n) {
+      color: $color;
+
+      &:hover {
+        color: darken($color, 25);
+      }
+    }
+  }
+  .__dark-mode & {
+    @each $color in $darkModeColors {
+      $i: index($darkModeColors, $color);
+      &:nth-child(#{$i}n) {
+        color: $color;
+
+        &:hover {
+          color: darken($color, 25);
+        }
+      }
+    }
+  }
+}
