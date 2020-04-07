@@ -39,7 +39,7 @@ a {
 
   @each $color in $lightModeColors {
     $i: index($lightModeColors, $color);
-    &:nth-child(#{$i}n) {
+    &:nth-child(length($lightModeColors)n + #{$i}) {
       color: $color;
 
       &:hover {
@@ -50,7 +50,7 @@ a {
   .__dark-mode & {
     @each $color in $darkModeColors {
       $i: index($darkModeColors, $color);
-      &:nth-child(#{$i}n) {
+      &:nth-child(length($darkModeColors)n + #{$i}) {
         color: $color;
 
         &:hover {
