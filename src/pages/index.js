@@ -27,6 +27,7 @@ const IndexPage = () => {
             title
             description
             headline
+            subtitle
           }
           html
         }
@@ -118,7 +119,7 @@ const IndexPage = () => {
   );
 
   const {
-    frontmatter: { title, description, headline },
+    frontmatter: { title, description, headline, subtitle },
     html,
   } = content;
 
@@ -126,7 +127,7 @@ const IndexPage = () => {
     <>
       <SEO {...{ title, description }} />
       <Top />
-      <Header {...{ headline, html }} />
+      <Header {...{ headline, subtitle, html }} />
 
       <Section
         title="Experiences"

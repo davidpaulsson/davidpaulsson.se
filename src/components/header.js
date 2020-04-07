@@ -3,7 +3,17 @@ import React from 'react';
 import Toggle from './toggle';
 import './header.scss';
 
-const Header = ({ headline, html }) => {
+const horunge = (str, opt = 2) => {
+  const arr = str.trim().split(' ');
+  if (arr.length > 2) {
+    const lastWords = arr.slice(-opt).join('\u00A0');
+    arr.splice(-opt, opt, lastWords);
+    return arr.join(' ');
+  }
+  return str;
+};
+
+const Header = ({ headline, subtitle, html }) => {
   const [isOpen, setIsOpen] = useCycle(false, true);
 
   return (
@@ -12,10 +22,11 @@ const Header = ({ headline, html }) => {
         animate={isOpen ? { opacity: 0.5 } : { opacity: 1 }}
         transition={{ duration: 0.3 }}
         className="header__title"
-        dangerouslySetInnerHTML={{ __html: headline }}
-      />
-
-      <Toggle {...{ isOpen, setIsOpen }} />
+      >
+        {headline}
+        <br />
+        {horunge(subtitle)} <Toggle {...{ isOpen, setIsOpen }} />
+      </motion.h1>
 
       <AnimatePresence>
         <motion.div
