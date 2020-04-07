@@ -12,7 +12,7 @@ const Logo = () => {
     if (htmlTag.classList.contains('__dark-mode')) {
       setIsDarkMode();
     }
-  }, [htmlTag.classList]);
+  }, []);
 
   return (
     <motion.svg
