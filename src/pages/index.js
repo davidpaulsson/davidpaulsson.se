@@ -1,5 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
+import Contact from '../components/contact';
 import Header from '../components/header';
 import Section from '../components/section';
 import SEO from '../components/seo';
@@ -190,25 +191,30 @@ const IndexPage = () => {
         )}
       />
 
-      <section style={{ marginBottom: '6rem' }}>
-        <h2>Contact</h2>
-        E-mail{' '}
-        <a href={`mailto:${meta.siteMetadata.email}`}>
-          {meta.siteMetadata.email}
-        </a>
-        Twitter{' '}
-        <a href={`https://twitter.com/${meta.siteMetadata.author}`}>
-          @{meta.siteMetadata.author}
-        </a>
-        LinkedIn{' '}
-        <a href={`https://www.linkedin.com/in/${meta.siteMetadata.author}/`}>
-          /in/{meta.siteMetadata.author}
-        </a>
-        Github{' '}
-        <a href={`https://github.com/${meta.siteMetadata.author}`}>
-          /{meta.siteMetadata.author}
-        </a>
-      </section>
+      <Contact
+        data={[
+          {
+            key: `E-mail`,
+            val: meta.siteMetadata.email,
+            url: `mailto:${meta.siteMetadata.email}`,
+          },
+          {
+            key: `Twitter`,
+            val: `@${meta.siteMetadata.author}`,
+            url: `https://twitter.com/${meta.siteMetadata.author}`,
+          },
+          {
+            key: `Linkedin`,
+            val: `/in/${meta.siteMetadata.author}`,
+            url: `https://www.linkedin.com/in/${meta.siteMetadata.author}/`,
+          },
+          {
+            key: `Github`,
+            val: `/${meta.siteMetadata.author}`,
+            url: `https://github.com/${meta.siteMetadata.author}`,
+          },
+        ]}
+      />
 
       <section style={{ marginBottom: '6rem' }}>
         <h2>Testimonials</h2>
