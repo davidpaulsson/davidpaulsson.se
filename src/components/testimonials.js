@@ -35,7 +35,7 @@ const Testimonials = () => {
       <ul>
         <li className="testimonials__list-headers">
           <div>Testimonial</div>
-          <div>Writter by</div>
+          <div>Written by</div>
           <div>Company</div>
         </li>
         {testimonials.edges.map(
