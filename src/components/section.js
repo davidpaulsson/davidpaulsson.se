@@ -25,13 +25,21 @@ const Section = ({ title, columnHeaders, columnData }) => (
             )}`}
             key={data.shift()}
           >
-            {data.map((item, index) => (
-              <div
-                className="section__data__item"
-                key={index + item}
-                dangerouslySetInnerHTML={{ __html: item }}
-              />
-            ))}
+            {data.map((item, index) =>
+              index === 1 ? (
+                <h3
+                  className="section__data__item"
+                  key={index + item}
+                  dangerouslySetInnerHTML={{ __html: item }}
+                />
+              ) : (
+                <div
+                  className="section__data__item"
+                  key={index + item}
+                  dangerouslySetInnerHTML={{ __html: item }}
+                />
+              )
+            )}
           </li>
         </>
       ))}
