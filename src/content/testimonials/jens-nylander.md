@@ -4,4 +4,4 @@ role: CEO, Founder
 company: Automile
 ---
 
-David our front-end HTML, CSS ninja is just mind-blowing when he starts Sublime.
+David, our front-end HTML and CSS ninja, is just mind-blowing when he starts Sublime.
