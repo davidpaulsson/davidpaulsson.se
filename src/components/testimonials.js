@@ -32,7 +32,7 @@ const Testimonials = () => {
   return (
     <section className="testimonials">
       <h2 className="testimonials__title">Testimonials</h2>
-      <ul className="testimonials__list">
+      <ul>
         <li className="testimonials__list-headers">
           <div>Testimonial</div>
           <div>Writter by</div>
