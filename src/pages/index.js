@@ -191,30 +191,7 @@ const IndexPage = () => {
         )}
       />
 
-      <Contact
-        data={[
-          {
-            key: `E-mail`,
-            val: meta.siteMetadata.email,
-            url: `mailto:${meta.siteMetadata.email}`,
-          },
-          {
-            key: `Twitter`,
-            val: `@${meta.siteMetadata.author}`,
-            url: `https://twitter.com/${meta.siteMetadata.author}`,
-          },
-          {
-            key: `Linkedin`,
-            val: `/in/${meta.siteMetadata.author}`,
-            url: `https://www.linkedin.com/in/${meta.siteMetadata.author}/`,
-          },
-          {
-            key: `Github`,
-            val: `/${meta.siteMetadata.author}`,
-            url: `https://github.com/${meta.siteMetadata.author}`,
-          },
-        ]}
-      />
+      <Contact />
 
       <section style={{ marginBottom: '6rem' }}>
         <h2>Testimonials</h2>
