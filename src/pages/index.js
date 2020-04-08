@@ -5,24 +5,12 @@ import Header from '../components/header';
 import Section from '../components/section';
 import SEO from '../components/seo';
 import Top from '../components/top';
+import Testimonials from '../components/testimonials';
 
 const IndexPage = () => {
-  const {
-    meta,
-    content,
-    experiences,
-    education,
-    awards,
-    testimonials,
-  } = useStaticQuery(
+  const { content, experiences, education, awards } = useStaticQuery(
     graphql`
       query {
-        meta: site {
-          siteMetadata {
-            author
-            email
-          }
-        }
         content: markdownRemark(fileAbsolutePath: { regex: "/home.md/" }) {
           frontmatter {
             title
@@ -92,23 +80,6 @@ const IndexPage = () => {
                   year
                   award
                   issuer
-                }
-                html
-              }
-            }
-          }
-        }
-        testimonials: allFile(
-          filter: { sourceInstanceName: { eq: "testimonials" } }
-        ) {
-          edges {
-            node {
-              id
-              childMarkdownRemark {
-                frontmatter {
-                  name
-                  role
-                  company
                 }
                 html
               }
@@ -193,27 +164,7 @@ const IndexPage = () => {
 
       <Contact />
 
-      <section style={{ marginBottom: '6rem' }}>
-        <h2>Testimonials</h2>
-        {testimonials.edges.map(
-          ({
-            node: {
-              id,
-              childMarkdownRemark: {
-                frontmatter: { name, role, company },
-                html,
-              },
-            },
-          }) => (
-            <div key={id}>
-              {name}
-              {role}
-              {company}
-              <div dangerouslySetInnerHTML={{ __html: html }} />
-            </div>
-          )
-        )}
-      </section>
+      <Testimonials />
     </>
   );
 };

@@ -1,0 +1,80 @@
+.testimonials {
+  margin-top: 6rem;
+
+  &__title {
+    @media (min-width: 980px) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__list {
+  }
+
+  &__list-headers {
+    display: none;
+
+    @media (min-width: 890px) {
+      display: grid;
+
+      opacity: 0.5;
+
+      grid-template-columns: repeat(10, 1fr);
+      column-gap: 0.5rem;
+
+      div {
+        &:nth-child(1) {
+          grid-column: span 4;
+        }
+        &:nth-child(2) {
+          grid-column: span 2;
+        }
+        &:nth-child(3) {
+          grid-column: span 4;
+        }
+      }
+    }
+  }
+
+  &__list-item {
+    display: grid;
+
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    border-top: 1px solid rgba($color: #000, $alpha: 0.1);
+
+    column-gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+
+    .__dark-mode {
+      border-top: 1px solid rgba($color: #fff, $alpha: 0.1);
+    }
+
+    div {
+      &:nth-child(1) {
+        grid-column: span 2;
+
+        p::before {
+          content: '—';
+        }
+      }
+    }
+
+    @media (min-width: 980px) {
+      grid-template-columns: repeat(10, 1fr);
+
+      div {
+        &:nth-child(1) {
+          grid-column: span 4;
+        }
+        &:nth-child(2) {
+          grid-column: span 2;
+        }
+        &:nth-child(3) {
+          grid-column: span 4;
+        }
+      }
+    }
+  }
+}
