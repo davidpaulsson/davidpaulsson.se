@@ -45,7 +45,7 @@ const Contact = () => {
       <h2 className="contact__title">Contact</h2>
       <ul className="contact__list">
         {data.map(({ key, val, url }) => (
-          <li className="contact__list-item">
+          <li className="contact__list-item" key={key}>
             <div className="contact__key">{key}</div>
             <div className="contact__val">
               <a href={url}>{val}</a>

@@ -3,8 +3,6 @@ html {
 }
 
 body {
-  padding: 0.5rem;
-
   color: var(--text);
   background-color: var(--background);
 
@@ -13,6 +11,10 @@ body {
   font-weight: normal;
   font-style: normal;
   line-height: 2rem;
+}
+
+.pad {
+  padding: 0.5rem;
 }
 
 h1,

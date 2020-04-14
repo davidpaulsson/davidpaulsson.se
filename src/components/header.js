@@ -1,7 +1,7 @@
-import { AnimatePresence, motion, useCycle } from 'framer-motion';
+import { motion, useCycle } from 'framer-motion';
 import React from 'react';
-import Toggle from './toggle';
 import './header.scss';
+import Toggle from './toggle';
 
 const horunge = (str, opt = 2) => {
   const arr = str.trim().split(' ');
@@ -28,16 +28,14 @@ const Header = ({ headline, subtitle, html }) => {
         {horunge(subtitle)} <Toggle {...{ isOpen, setIsOpen }} />
       </motion.h1>
 
-      <AnimatePresence>
-        <motion.div
-          className="h2 header__content"
-          style={{ overflow: 'hidden' }}
-          initial={{ height: 0 }}
-          animate={{ height: isOpen ? 'auto' : 0 }}
-          exit={{ height: 0 }}
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </AnimatePresence>
+      <motion.div
+        className="h2 header__content"
+        style={{ overflow: 'hidden' }}
+        initial={{ height: 0 }}
+        animate={{ height: isOpen ? 'auto' : 0 }}
+        exit={{ height: 0 }}
+        dangerouslySetInnerHTML={{ __html: html }}
+      />
     </header>
   );
 };

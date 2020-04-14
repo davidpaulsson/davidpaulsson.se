@@ -1,8 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
-
 import React from 'react';
 import './testimonials.scss';
-import Section from './section';
 
 const Testimonials = () => {
   const { testimonials } = useStaticQuery(
@@ -54,7 +52,6 @@ const Testimonials = () => {
                 <h3>{name}</h3>
                 {role}
               </div>
-
               <div>{company}</div>
             </li>
           )

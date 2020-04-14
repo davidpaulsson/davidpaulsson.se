@@ -17,7 +17,7 @@ const IndexPage = () => {
         transition={{ ease: 'easeInOut', duration: 2 }}
         className="behind pad"
       >
-        <Output />
+        <Input />
       </motion.div>
       <motion.div
         style={{
@@ -33,7 +33,7 @@ const IndexPage = () => {
         transition={{ ease: 'easeInOut', duration: 2 }}
         exit={{ opacity: 0 }}
       />
-      <Link className="behind" to="/output" />
+      <Link className="behind" to="/" />
       <motion.div
         className="front"
         initial={{ y: -180 }}
@@ -42,7 +42,7 @@ const IndexPage = () => {
         transition={{ ease: 'easeInOut', duration: 2 }}
       >
         <div className="pad">
-          <Input />
+          <Output />
         </div>
       </motion.div>
     </>
