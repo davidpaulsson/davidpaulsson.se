@@ -121,7 +121,6 @@ const Input = () => {
               },
             },
           }) => [
-            id,
             `${start} — ${end}`,
             link ? `<a href="${link}">${company}</a>` : company,
             role,
@@ -137,12 +136,11 @@ const Input = () => {
         columnData={education.edges.map(
           ({
             node: {
-              id,
               childMarkdownRemark: {
                 frontmatter: { start, end, school, degree },
               },
             },
-          }) => [id, `${start} — ${end}`, school, degree]
+          }) => [`${start} — ${end}`, school, degree]
         )}
       />
 
@@ -152,13 +150,12 @@ const Input = () => {
         columnData={awards.edges.map(
           ({
             node: {
-              id,
               childMarkdownRemark: {
-                frontmatter: { year, award, issuer, info },
+                frontmatter: { year, award, issuer },
                 html,
               },
             },
-          }) => [id, year, award, issuer, html]
+          }) => [year, award, issuer, html]
         )}
       />
 
