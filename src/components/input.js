@@ -98,7 +98,10 @@ const Input = () => {
   return (
     <>
       <SEO {...{ title, description }} />
-      <Top />
+      <Top>
+        <div>Input</div>
+        2003—2020
+      </Top>
       <Header {...{ headline, subtitle, html }} />
 
       <Section
