@@ -44,7 +44,7 @@
     column-gap: 0.5rem;
     grid-template-columns: repeat(2, 1fr);
 
-    .__dark-mode {
+    body.dark-mode {
       border-top: 1px solid rgba($color: #fff, $alpha: 0.1);
     }
 

@@ -13,7 +13,7 @@ $numbers: zero one two three four five six seven eight nine;
     display: none;
 
     color: rgba($color: #000, $alpha: 0.5);
-    html.__dark-mode & {
+    body.dark-mode & {
       color: rgba($color: #fff, $alpha: 0.5);
     }
 
@@ -94,7 +94,7 @@ $numbers: zero one two three four five six seven eight nine;
       'eight eight'
       'nine nine';
 
-    html.__dark-mode & {
+    body.dark-mode & {
       border-top: 1px solid rgba($color: #fff, $alpha: 0.1);
     }
 

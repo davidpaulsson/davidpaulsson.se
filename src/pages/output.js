@@ -3,6 +3,11 @@ import { Link } from 'gatsby';
 import React from 'react';
 import Input from '../components/input';
 import Output from '../components/output';
+import {
+  behindTransition,
+  coverTransition,
+  frontTransition,
+} from '../utils/transitions';
 import useWindowSize from '../utils/useWindowSize';
 import './styles.scss';
 
@@ -11,28 +16,12 @@ const IndexPage = () => {
 
   return (
     <>
-      <motion.div
-        initial={{ scale: 0.95 }}
-        animate={{ scale: 1 }}
-        transition={{ ease: 'easeInOut', duration: 2 }}
-        className="behind pad"
-      >
+      <motion.div className="behind pad" {...behindTransition}>
         <Input />
       </motion.div>
-      <motion.div
-        className="cover"
-        animate={{ opacity: 0.5 }}
-        transition={{ ease: 'easeInOut', duration: 2 }}
-        exit={{ opacity: 0 }}
-      />
+      <motion.div className="cover" {...coverTransition} />
       <Link className="behind" to="/" />
-      <motion.div
-        className="front"
-        initial={{ y: -180 }}
-        animate={{ y: 0 }}
-        exit={{ y: height - 180 }}
-        transition={{ ease: 'easeInOut', duration: 2 }}
-      >
+      <motion.div className="front" {...frontTransition({ height })}>
         <div className="pad">
           <Output />
         </div>

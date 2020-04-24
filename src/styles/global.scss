@@ -49,7 +49,7 @@ a {
       }
     }
   }
-  .__dark-mode & {
+  body.dark-mode & {
     @each $color in $darkModeColors {
       $i: index($darkModeColors, $color);
       &:nth-of-type(#{length($darkModeColors)}n + #{$i}) {
