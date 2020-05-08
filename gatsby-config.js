@@ -67,12 +67,12 @@ module.exports = {
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#ffffff`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/images/davidpaulsson-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 };

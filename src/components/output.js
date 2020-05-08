@@ -8,7 +8,7 @@ const Output = () => {
       <SEO
       // {...{ title, description }}
       />
-      <Top>
+      <Top output>
         <div>Output</div>
         001-034
       </Top>

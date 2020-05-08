@@ -28,6 +28,10 @@ function SEO({ description, lang, meta, title }) {
       title={title}
       meta={[
         {
+          name: `mobile-web-app-capable`,
+          content: `yes`,
+        },
+        {
           name: `description`,
           content: metaDescription,
         },

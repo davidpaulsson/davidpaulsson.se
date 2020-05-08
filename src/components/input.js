@@ -124,7 +124,7 @@ const Input = () => {
               },
             },
           }) => [
-            `${start} — ${end}`,
+            `${start} — ${end ? end : ''}`,
             link ? `<a href="${link}">${company}</a>` : company,
             role,
             responsibilities,

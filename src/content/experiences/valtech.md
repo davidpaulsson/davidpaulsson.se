@@ -4,7 +4,7 @@ end: 2014
 company: Valtech
 link: https://www.valtech.com/sv-se/
 role: Interface Developer
-responsibilities: Interface Development, Front-end Development, Front-end Performance, Mobile Development, Accessibility
+responsibilities: Front-end development, performance, architecture, and accessibility.
 ---
 
-Working as a consultant I was responsible for the Front-end implementation of lots of different projects for clients such as SR, TV4 and Svensk Fastighetsförmedling.
+From connected services to commerce platforms, Valtech provides you with the tools you need to emerge as a leader in your industry. They believe that when applied with your customers in mind, technology creates value, builds relationships, and grows revenue. I worked as a interface developer consultant for different projects and clients such as [Sveriges Radio](https://sverigesradio.se/), [TV4](https://www.tv4.se/) and [Svensk Fastighetsförmedling](https://www.svenskfast.se/).
