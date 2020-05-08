@@ -30,11 +30,9 @@ h2,
   }
 }
 
-$lightModeColors: rgb(245, 135, 135), rgb(135, 245, 135), rgb(135, 135, 245),
-  rgb(135, 245, 245), rgb(245, 135, 245), rgb(245, 245, 135);
+$lightModeColors: #e07578, #acb6ad, #8a88fb, #55a1a0, #d96cd0, #979956;
 
-$darkModeColors: rgb(255, 200, 200), rgb(200, 255, 200), rgb(200, 200, 255),
-  rgb(200, 255, 255), rgb(255, 200, 255), rgb(255, 255, 200);
+$darkModeColors: #aa5f60, #4b804e, #6d6cbc, #4b7d7b, #a25b9b, #767748;
 
 a {
   text-decoration: none;
@@ -49,16 +47,16 @@ a {
       }
     }
   }
-  body.dark-mode & {
-    @each $color in $darkModeColors {
-      $i: index($darkModeColors, $color);
-      &:nth-of-type(#{length($darkModeColors)}n + #{$i}) {
-        color: $color;
+  // body.dark-mode & {
+  //   @each $color in $darkModeColors {
+  //     $i: index($darkModeColors, $color);
+  //     &:nth-of-type(#{length($darkModeColors)}n + #{$i}) {
+  //       color: $color;
 
-        &:hover {
-          color: darken($color, 25);
-        }
-      }
-    }
-  }
+  //       &:hover {
+  //         color: darken($color, 25);
+  //       }
+  //     }
+  //   }
+  // }
 }

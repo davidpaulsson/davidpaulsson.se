@@ -28,6 +28,39 @@
   }
 
   &__list-item {
+    &:nth-child(1) {
+      a {
+        color: #e07578;
+        &:hover {
+          color: darken(#e07578, 25);
+        }
+      }
+    }
+    &:nth-child(2) {
+      a {
+        color: #d96cd0;
+        &:hover {
+          color: darken(#d96cd0, 25);
+        }
+      }
+    }
+    &:nth-child(3) {
+      a {
+        color: #8a88fb;
+        &:hover {
+          color: darken(#8a88fb, 25);
+        }
+      }
+    }
+    &:nth-child(4) {
+      a {
+        color: #55a1a0;
+        &:hover {
+          color: darken(#55a1a0, 25);
+        }
+      }
+    }
+
     @media (max-width: 979px) {
       display: grid;
 
