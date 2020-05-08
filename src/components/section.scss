@@ -111,13 +111,13 @@ $numbers: zero one two three four five six seven eight nine;
       grid-template-columns: repeat(10, 1fr);
 
       &--experiences {
-        grid-template-areas: 'zero one two two three three three four four four';
+        grid-template-areas: 'zero one two two three three . four four four';
       }
       &--education {
         grid-template-areas: 'zero one one one two two two two two two';
       }
       &--honors-and-awards {
-        grid-template-areas: 'zero one one one two two two three three three';
+        grid-template-areas: 'zero one one one two two . three three three';
       }
     }
 
