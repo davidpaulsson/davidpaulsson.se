@@ -1,10 +1,23 @@
 .header {
   margin-bottom: 6rem;
 
-  &__title {
-    display: inline;
+  @media (min-width: 980px) {
+    display: grid;
+
+    column-gap: 0.5rem;
+    grid-template-columns: repeat(10, 1fr);
   }
 
-  // &__content {
-  // }
+  &__title {
+    display: inline;
+    @media (min-width: 980px) {
+      grid-column: span 7;
+    }
+  }
+
+  &__content {
+    @media (min-width: 980px) {
+      grid-column: span 7;
+    }
+  }
 }
