@@ -3,6 +3,14 @@ $numbers: zero one two three four five six seven eight nine;
 .section {
   margin-bottom: 6rem;
 
+  a {
+    color: var(--text);
+
+    body.dark-mode & {
+      color: var(--text);
+    }
+  }
+
   &__title {
     @media (min-width: 980px) {
       margin-bottom: 6rem;
@@ -13,6 +21,7 @@ $numbers: zero one two three four five six seven eight nine;
     display: none;
 
     color: rgba($color: #000, $alpha: 0.5);
+
     body.dark-mode & {
       color: rgba($color: #fff, $alpha: 0.5);
     }
