@@ -1,6 +1,6 @@
 ---
 start: 2017
-end:
+end: 2020
 company: Heja
 link: https://heja.io/
 role: Front-end Developer
